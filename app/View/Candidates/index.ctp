@@ -1,5 +1,14 @@
 <div class="candidates index">
 	<h2><?php echo __('Candidates'); ?></h2>
+	<div class="search"><?php
+	        echo $this->Form->create('Candidate', array(
+	            'url' => array_merge(array('action' => 'index'), $this->params['pass'])
+	            ));
+	        echo $this->Form->input('name', array('div' => false, 'empty' => true,'class'=>'fieldSearch')); // empty creates blank option.
+	        echo $this->Form->submit(__('Search', true), array('div' => false));
+	        echo $this->Form->end();
+	    ?>
+	</div>
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('id'); ?></th>
@@ -64,6 +73,7 @@
 		<li><?php echo $this->Html->link(__('New Candidate'), array('action' => 'add')); ?></li>
 		<li><?php echo $this->Html->link(__('List Roles'), array('controller' => 'roles', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Role'), array('controller' => 'roles', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Candidate'), array('action' => 'index')); ?></li>
 		<!-- <li><?php echo $this->Html->link(__('List Acquirements'), array('controller' => 'acquirements', 'action' => 'index')); ?> </li>
 				<li><?php echo $this->Html->link(__('New Acquirement'), array('controller' => 'acquirements', 'action' => 'add')); ?> </li>
 				<li><?php echo $this->Html->link(__('List Experiences'), array('controller' => 'experiences', 'action' => 'index')); ?> </li>

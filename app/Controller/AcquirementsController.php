@@ -13,6 +13,7 @@ class AcquirementsController extends AppController {
  * @return void
  */
 	public function index() {
+		$this->layout = 'layout';
 		$this->Acquirement->recursive = 0;
 		$this->set('acquirements', $this->paginate());
 	}
@@ -26,10 +27,12 @@ class AcquirementsController extends AppController {
  */
 	public function view($id = null) {
 		$this->Acquirement->id = $id;
+		$this->layout = "layout";
 		if (!$this->Acquirement->exists()) {
 			throw new NotFoundException(__('Invalid acquirement'));
 		}
 		$this->set('acquirement', $this->Acquirement->read(null, $id));
+		$this->set('idCandidate', $this->Session->read('candidate_id'));
 	}
 
 /**
@@ -39,6 +42,7 @@ class AcquirementsController extends AppController {
  */
 	public function add($continue = null) {
 		$idCandidate = $this->Session->read('candidate_id');
+		$this->layout = "layout";
 		if ($this->request->is('post')) {
 			$this->Acquirement->create();
 			if ($this->Acquirement->save($this->request->data)) {
@@ -68,6 +72,7 @@ class AcquirementsController extends AppController {
 	public function edit($id = null) {
 		$this->Acquirement->id = $id;
 		$idCandidate = $this->Session->read('candidate_id');
+		$this->layout = "layout";
 		if (!$this->Acquirement->exists()) {
 			throw new NotFoundException(__('Invalid acquirement'));
 		}
@@ -98,14 +103,15 @@ class AcquirementsController extends AppController {
 			throw new MethodNotAllowedException();
 		}
 		$this->Acquirement->id = $id;
+		$idCandidate = $this->Session->read('candidate_id');
 		if (!$this->Acquirement->exists()) {
 			throw new NotFoundException(__('Invalid acquirement'));
 		}
 		if ($this->Acquirement->delete()) {
 			$this->Session->setFlash(__('Acquirement deleted'));
-			$this->redirect(array('action' => 'index'));
+			$this->redirect(array('controller'=>'candidates','action' => 'view',$idCandidate));
 		}
 		$this->Session->setFlash(__('Acquirement was not deleted'));
-		$this->redirect(array('action' => 'index'));
+		$this->redirect(array('controller'=>'candidates','action' => 'view',$idCandidate));
 	}
 }

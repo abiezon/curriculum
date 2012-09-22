@@ -13,6 +13,7 @@ class LanguagesController extends AppController {
  * @return void
  */
 	public function index() {
+		$this->layout = 'layout';
 		$this->Language->recursive = 0;
 		$this->set('languages', $this->paginate());
 	}
@@ -26,6 +27,7 @@ class LanguagesController extends AppController {
  */
 	public function view($id = null) {
 		$this->Language->id = $id;
+		$this->layout = 'layout';
 		if (!$this->Language->exists()) {
 			throw new NotFoundException(__('Invalid language'));
 		}
@@ -38,7 +40,8 @@ class LanguagesController extends AppController {
  * @return void
  */
 	public function add($continue = null) {
-		$idCandidate = $this->Session->read('candidate_id');	
+		$idCandidate = $this->Session->read('candidate_id');
+		$this->layout = 'layout';	
 		if ($this->request->is('post')) {
 			$this->Language->create();
 			if ($this->Language->save($this->request->data)) {
@@ -61,6 +64,7 @@ class LanguagesController extends AppController {
  */
 	public function edit($id = null) {
 		$this->Language->id = $id;
+		$this->layout = 'layout';
 		$idCandidate = $this->Session->read('candidate_id');
 		if (!$this->Language->exists()) {
 			throw new NotFoundException(__('Invalid language'));
@@ -92,14 +96,15 @@ class LanguagesController extends AppController {
 			throw new MethodNotAllowedException();
 		}
 		$this->Language->id = $id;
+		$idCandidate = $this->Session->read('candidate_id');
 		if (!$this->Language->exists()) {
 			throw new NotFoundException(__('Invalid language'));
 		}
 		if ($this->Language->delete()) {
 			$this->Session->setFlash(__('Language deleted'));
-			$this->redirect(array('action' => 'index'));
+			$this->redirect(array('controller'=>'candidates','action' => 'view',$idCandidate));
 		}
 		$this->Session->setFlash(__('Language was not deleted'));
-		$this->redirect(array('action' => 'index'));
+		$this->redirect(array('controller'=>'candidates','action' => 'view',$idCandidate));
 	}
 }

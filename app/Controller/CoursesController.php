@@ -13,6 +13,7 @@ class CoursesController extends AppController {
  * @return void
  */
 	public function index() {
+		$this->layout = 'layout';
 		$this->Course->recursive = 0;
 		$this->set('courses', $this->paginate());
 	}
@@ -26,6 +27,7 @@ class CoursesController extends AppController {
  */
 	public function view($id = null) {
 		$this->Course->id = $id;
+		$this->layout = 'layout';
 		if (!$this->Course->exists()) {
 			throw new NotFoundException(__('Invalid course'));
 		}
@@ -38,7 +40,8 @@ class CoursesController extends AppController {
  * @return void
  */
 	public function add($continue = null) {
-		$idCandidate = $this->Session->read('candidate_id');			
+		$idCandidate = $this->Session->read('candidate_id');
+		$this->layout = 'layout';			
 		if ($this->request->is('post')) {
 			$this->Course->create();
 			if ($this->Course->save($this->request->data)) {
@@ -67,6 +70,7 @@ class CoursesController extends AppController {
  */
 	public function edit($id = null) {
 		$this->Course->id = $id;
+		$this->layout = 'layout';
 		$idCandidate = $this->Session->read('candidate_id');
 		if (!$this->Course->exists()) {
 			throw new NotFoundException(__('Invalid course'));
@@ -98,14 +102,15 @@ class CoursesController extends AppController {
 			throw new MethodNotAllowedException();
 		}
 		$this->Course->id = $id;
+		$idCandidate = $this->Session->read('candidate_id');
 		if (!$this->Course->exists()) {
 			throw new NotFoundException(__('Invalid course'));
 		}
 		if ($this->Course->delete()) {
 			$this->Session->setFlash(__('Course deleted'));
-			$this->redirect(array('action' => 'index'));
+			$this->redirect(array('controller'=>'candidates','action' => 'view',$idCandidate));
 		}
 		$this->Session->setFlash(__('Course was not deleted'));
-		$this->redirect(array('action' => 'index'));
+		$this->redirect(array('controller'=>'candidates','action' => 'view',$idCandidate));
 	}
 }

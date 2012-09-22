@@ -17,6 +17,13 @@
 			&nbsp;
 		</dd>
 	</dl>
+	<p>&nbsp;</p>	
+	<p class="actions"><?php echo $this->Html->link(__('Back'), array(
+		'controller' => 'candidates',
+		'action' => 'view',
+		$idCandidate
+		)); ?> 
+	</p>
 </div>
 <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>

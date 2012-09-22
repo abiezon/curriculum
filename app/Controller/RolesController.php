@@ -13,6 +13,7 @@ class RolesController extends AppController {
  * @return void
  */
 	public function index() {
+		$this->layout = 'layout';
 		$this->Role->recursive = 0;
 		$this->set('roles', $this->paginate());
 	}
@@ -26,6 +27,7 @@ class RolesController extends AppController {
  */
 	public function view($id = null) {
 		$this->Role->id = $id;
+		$this->layout = 'layout';
 		if (!$this->Role->exists()) {
 			throw new NotFoundException(__('Invalid role'));
 		}
@@ -38,6 +40,7 @@ class RolesController extends AppController {
  * @return void
  */
 	public function add() {
+		$this->layout = 'layout';
 		if ($this->request->is('post')) {
 			$this->Role->create();
 			if ($this->Role->save($this->request->data)) {
@@ -58,6 +61,7 @@ class RolesController extends AppController {
  */
 	public function edit($id = null) {
 		$this->Role->id = $id;
+		$this->layout = 'layout';
 		if (!$this->Role->exists()) {
 			throw new NotFoundException(__('Invalid role'));
 		}

@@ -7,14 +7,22 @@ App::uses('AppController', 'Controller');
  */
 class CandidatesController extends AppController {
 
+  	public $components = array('Search.Prg');
+	public $presetVars = array(
+	    array('field' => 'name', 'type' => 'value'),	    
+	);	
+
 /**
  * index method
  *
  * @return void
  */
 	public function index() {
+		$this->Prg->commonProcess();
+		$this->layout = 'layout';
 		$this->Session->destroy();
 		$this->Candidate->recursive = 0;
+		$this->paginate = array('conditions' => $this->Candidate->parseCriteria($this->passedArgs));		    
 		$this->set('candidates', $this->paginate());
 	}
 
@@ -27,6 +35,7 @@ class CandidatesController extends AppController {
  */
 	public function view($id = null) {
 		$this->Candidate->id = $id;
+		$this->layout = 'layout';
 		if (!$this->Candidate->exists()) {
 			throw new NotFoundException(__('Invalid candidate'));
 		}
@@ -40,6 +49,7 @@ class CandidatesController extends AppController {
  * @return void
  */
 	public function add() {
+		$this->layout = 'layout';
 		if ($this->request->is('post')) {
 			$this->Candidate->create();
 			// debug($this->request->data);die();
@@ -65,6 +75,7 @@ class CandidatesController extends AppController {
  * @return void
  */
 	public function edit($id = null) {
+		$this->layout = 'layout';
 		$this->Candidate->id = $id;
 		if (!$this->Candidate->exists()) {
 			throw new NotFoundException(__('Invalid candidate'));
@@ -105,5 +116,22 @@ class CandidatesController extends AppController {
 		}
 		$this->Session->setFlash(__('Candidate was not deleted'));
 		$this->redirect(array('action' => 'index'));
+	}
+	
+	public function isAuthorized($user) {
+	    // All registered users can add posts
+	    if ($this->action === 'add') {
+	        return true;
+	    }
+
+	    // The owner of a post can edit and delete it
+	    if (in_array($this->action, array('edit', 'delete'))) {
+	        $candidateId = $this->request->params['pass'][0];
+	        if ($this->Candidate->isOwnedBy($candidateId, $user['id'])) {
+	            return true;
+	        }
+	    }// ver se todos poderão editar
+
+	    return parent::isAuthorized($user);
 	}
 }

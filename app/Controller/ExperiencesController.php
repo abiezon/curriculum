@@ -13,6 +13,7 @@ class ExperiencesController extends AppController {
  * @return void
  */
 	public function index() {
+		$this->layout = 'layout';
 		$this->Experience->recursive = 0;
 		$this->set('experiences', $this->paginate());
 	}
@@ -26,6 +27,7 @@ class ExperiencesController extends AppController {
  */
 	public function view($id = null) {
 		$this->Experience->id = $id;
+		$this->layout = 'layout';
 		if (!$this->Experience->exists()) {
 			throw new NotFoundException(__('Invalid experience'));
 		}
@@ -38,7 +40,8 @@ class ExperiencesController extends AppController {
  * @return void
  */
 	public function add($continue = null) {
-		$idCandidate = $this->Session->read('candidate_id');				
+		$idCandidate = $this->Session->read('candidate_id');
+		$this->layout = 'layout';				
 		if ($this->request->is('post')) {
 			$this->Experience->create();
 			if ($this->Experience->save($this->request->data)) {
@@ -67,6 +70,7 @@ class ExperiencesController extends AppController {
  */
 	public function edit($id = null) {
 		$this->Experience->id = $id;
+		$this->layout = 'layout';
 		$idCandidate = $this->Session->read('candidate_id');
 		if (!$this->Experience->exists()) {
 			throw new NotFoundException(__('Invalid experience'));
@@ -98,14 +102,15 @@ class ExperiencesController extends AppController {
 			throw new MethodNotAllowedException();
 		}
 		$this->Experience->id = $id;
+		$idCandidate = $this->Session->read('candidate_id');
 		if (!$this->Experience->exists()) {
 			throw new NotFoundException(__('Invalid experience'));
 		}
 		if ($this->Experience->delete()) {
 			$this->Session->setFlash(__('Experience deleted'));
-			$this->redirect(array('action' => 'index'));
+			$this->redirect(array('controller'=>'candidates','action' => 'view',$idCandidate));
 		}
 		$this->Session->setFlash(__('Experience was not deleted'));
-		$this->redirect(array('action' => 'index'));
+		$this->redirect(array('controller'=>'candidates','action' => 'view',$idCandidate));
 	}
 }

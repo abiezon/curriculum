@@ -10,6 +10,26 @@ App::uses('AppModel', 'Model');
  * @property Language $Language
  */
 class Candidate extends AppModel {
+	public $actsAs = array('Search.Searchable');
+	
+	public $filterArgs = array(
+	            array('name' => 'name', 'type' => 'query', 'method' => 'filterName')	            
+	        );
+	
+	public function filterName($data, $field = null) {
+         	if (empty($data['name'])) {
+              return array();
+          }
+          $nameField = '%' . $data['name'] . '%';
+          return array(
+              'OR' => array(
+                  $this->alias . '.name LIKE' => $nameField,
+                  ));
+      }
+
+	public function isOwnedBy($candidate, $user) {
+	    return $this->field('id', array('id' => $candidate, 'user_id' => $user)) === $candidate;
+	}
 
 /**
  * Display field

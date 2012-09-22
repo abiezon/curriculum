@@ -8,7 +8,7 @@
 		</dd>
 		<dt><?php echo __('Role'); ?></dt>
 		<dd>
-			<?php echo $this->Html->link($candidate['Role']['id'], array('controller' => 'roles', 'action' => 'view', $candidate['Role']['id'])); ?>
+			<?php echo $this->Html->link($candidate['Role']['role_name'], array('controller' => 'roles', 'action' => 'view', $candidate['Role']['id'])); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Name'); ?></dt>
@@ -75,32 +75,21 @@
 		<li><?php echo $this->Form->postLink(__('Delete Candidate'), array('action' => 'delete', $candidate['Candidate']['id']), null, __('Are you sure you want to delete # %s?', $candidate['Candidate']['id'])); ?> </li>
 		<li><?php echo $this->Html->link(__('List Candidates'), array('action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Candidate'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Roles'), array('controller' => 'roles', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Role'), array('controller' => 'roles', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Acquirements'), array('controller' => 'acquirements', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Acquirement'), array('controller' => 'acquirements', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Experiences'), array('controller' => 'experiences', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Experience'), array('controller' => 'experiences', 'action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Languages'), array('controller' => 'languages', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Language'), array('controller' => 'languages', 'action' => 'add')); ?> </li>
+		
 	</ul>
 </div>
 <div class="related">
 	<h3><?php echo __('Related Acquirements'); ?></h3>
 	<?php if (!empty($candidate['Acquirement'])): ?>
 	<table cellpadding = "0" cellspacing = "0">
-	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Candidate Id'); ?></th>
+	<tr>				
 		<th><?php echo __('Description'); ?></th>
 		<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php
 		$i = 0;
 		foreach ($candidate['Acquirement'] as $acquirement): ?>
-		<tr>
-			<td><?php echo $acquirement['id']; ?></td>
-			<td><?php echo $acquirement['candidate_id']; ?></td>
+		<tr>						
 			<td><?php echo $acquirement['description']; ?></td>
 			<td class="actions">
 				<?php echo $this->Html->link(__('View'), array('controller' => 'acquirements', 'action' => 'view', $acquirement['id'])); ?>
@@ -122,9 +111,7 @@
 	<h3><?php echo __('Related Experiences'); ?></h3>
 	<?php if (!empty($candidate['Experience'])): ?>
 	<table cellpadding = "0" cellspacing = "0">
-	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Candidate Id'); ?></th>
+	<tr>				
 		<th><?php echo __('Function'); ?></th>
 		<th><?php echo __('Time Worked'); ?></th>
 		<th><?php echo __('Start Date'); ?></th>
@@ -136,9 +123,7 @@
 	<?php
 		$i = 0;
 		foreach ($candidate['Experience'] as $experience): ?>
-		<tr>
-			<td><?php echo $experience['id']; ?></td>
-			<td><?php echo $experience['candidate_id']; ?></td>
+		<tr>						
 			<td><?php echo $experience['function']; ?></td>
 			<td><?php echo $experience['time_worked']; ?></td>
 			<td><?php echo $experience['start_date']; ?></td>
@@ -165,9 +150,7 @@
 	<h3><?php echo __('Related Courses'); ?></h3>
 	<?php if (!empty($candidate['Course'])): ?>
 	<table cellpadding = "0" cellspacing = "0">
-	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Candidate Id'); ?></th>
+	<tr>				
 		<th><?php echo __('Institution'); ?></th>
 		<th><?php echo __('Duration'); ?></th>
 		<th><?php echo __('Name of Course'); ?></th>
@@ -176,9 +159,7 @@
 	<?php
 		$i = 0;
 		foreach ($candidate['Course'] as $course): ?>
-		<tr>
-			<td><?php echo $course['id']; ?></td>
-			<td><?php echo $course['candidate_id']; ?></td>
+		<tr>						
 			<td><?php echo $course['institution']; ?></td>
 			<td><?php echo $course['duration']; ?></td>
 			<td><?php echo $course['name_course']; ?></td>
@@ -202,9 +183,7 @@
 	<h3><?php echo __('Related Languages'); ?></h3>
 	<?php if (!empty($candidate['Language'])): ?>
 	<table cellpadding = "0" cellspacing = "0">
-	<tr>
-		<th><?php echo __('Id'); ?></th>
-		<th><?php echo __('Candidate Id'); ?></th>
+	<tr>				
 		<th><?php echo __('Language'); ?></th>
 		<th><?php echo __('Fluency'); ?></th>
 		<th class="actions"><?php echo __('Actions'); ?></th>
@@ -212,9 +191,7 @@
 	<?php
 		$i = 0;
 		foreach ($candidate['Language'] as $language): ?>
-		<tr>
-			<td><?php echo $language['id']; ?></td>
-			<td><?php echo $language['candidate_id']; ?></td>
+		<tr>					
 			<td><?php echo $language['language']; ?></td>
 			<td><?php echo $language['fluency']; ?></td>
 			<td class="actions">
