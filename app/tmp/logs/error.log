@@ -1,0 +1,824 @@
+2012-09-10 10:38:56 Error: [MissingTableException] Table canditades for model Canditade was not found in datasource default.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(3179): Model->setSource('canditades')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1068): Model->getDataSource()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Course), Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Component/PaginatorComponent.php(173): Model->find('all', Array)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#5 /Users/abiezon/Sites/curriculum/app/Controller/CoursesController.php(17): Controller->paginate()
+#6 [internal function]: CoursesController->index()
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CoursesController), Array)
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CoursesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-09-10 11:11:26 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`curriculum`.`languages`, CONSTRAINT `candidate_language` FOREIGN KEY (`candidate_id`) REFERENCES `candidates` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `cu...')
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Language), Array, Array)
+#4 /Users/abiezon/Sites/curriculum/app/Controller/LanguagesController.php(43): Model->save(Array)
+#5 [internal function]: LanguagesController->add()
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(LanguagesController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-09-10 11:17:08 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`curriculum`.`languages`, CONSTRAINT `candidate_language` FOREIGN KEY (`candidate_id`) REFERENCES `candidates` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `cu...')
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Language), Array, Array)
+#4 /Users/abiezon/Sites/curriculum/app/Controller/LanguagesController.php(43): Model->save(Array)
+#5 [internal function]: LanguagesController->add()
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(LanguagesController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-09-10 11:34:13 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`curriculum`.`languages`, CONSTRAINT `candidatelanguage` FOREIGN KEY (`candidate_id`) REFERENCES `candidates` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `cu...')
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Language), Array, Array)
+#4 /Users/abiezon/Sites/curriculum/app/Controller/LanguagesController.php(43): Model->save(Array)
+#5 [internal function]: LanguagesController->add()
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(LanguagesController), Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(LanguagesController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-09-10 14:41:32 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/Controller/CandidatesController.php, line 48]
+2012-09-10 14:41:32 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 48)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 48, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 48, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-10 14:41:39 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/Controller/CandidatesController.php, line 48]
+2012-09-10 14:41:39 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 48)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 48, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 48, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-10 14:41:42 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/Controller/CandidatesController.php, line 48]
+2012-09-10 14:41:42 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 48)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 48, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 48, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-10 14:42:23 Error: [MissingActionException] Action CandidatesController::experience() could not be found.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CandidatesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-10 14:46:43 Error: [MissingActionException] Action CandidatesController::experience() could not be found.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CandidatesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-10 14:46:56 Error: [MissingControllerException] Controller class ExperienceController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-10 14:53:21 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Candidate.candidate_id' in 'where clause'
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Candida...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Candida...', Array, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Candida...', false)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Candidate), Array)
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(600): Model->find('first', Array)
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(784): DboSource->query('findByCandidate...', Array, Object(Candidate))
+#7 /Users/abiezon/Sites/curriculum/app/Controller/ExperiencesController.php(51): Model->__call('findByCandidate...', Array)
+#8 /Users/abiezon/Sites/curriculum/app/Controller/ExperiencesController.php(51): Candidate->findByCandidateId('10')
+#9 [internal function]: ExperiencesController->add('10')
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(ExperiencesController), Array)
+#11 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ExperiencesController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2012-09-10 15:18:51 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`curriculum`.`experiences`, CONSTRAINT `candidates` FOREIGN KEY (`candidate_id`) REFERENCES `candidates` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `cu...')
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Experience), Array, Array)
+#4 /Users/abiezon/Sites/curriculum/app/Controller/ExperiencesController.php(44): Model->save(Array)
+#5 [internal function]: ExperiencesController->add()
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(ExperiencesController), Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(ExperiencesController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-09-10 16:21:35 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/Controller/CandidatesController.php, line 47]
+2012-09-10 16:21:35 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 47, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 47, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-10 16:21:38 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/Controller/CandidatesController.php, line 47]
+2012-09-10 16:21:38 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 47)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 47, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 47, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-10 16:58:55 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`curriculum`.`acquirements`, CONSTRAINT `candidate_acquirements` FOREIGN KEY (`candidate_id`) REFERENCES `candidates` (`id`) ON DELETE CASCADE ON UPDATE CASCADE)
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `cu...')
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Acquirement), Array, Array)
+#4 /Users/abiezon/Sites/curriculum/app/Controller/AcquirementsController.php(44): Model->save(Array)
+#5 [internal function]: AcquirementsController->add()
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(AcquirementsController), Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AcquirementsController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-09-10 17:04:09 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/abiezon/Sites/curriculum/app/Controller/LanguagesController.php, line 77]
+2012-09-10 17:04:09 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/abiezon/...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/abiezon/...', 77, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/abiezon/...', 77, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-10 17:04:42 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/abiezon/Sites/curriculum/app/Controller/LanguagesController.php, line 77]
+2012-09-10 17:04:42 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/abiezon/...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/abiezon/...', 77, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/abiezon/...', 77, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-10 17:05:03 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/abiezon/Sites/curriculum/app/Controller/LanguagesController.php, line 77]
+2012-09-10 17:05:03 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/abiezon/...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/abiezon/...', 77, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/abiezon/...', 77, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-21 14:58:38 Error: [MissingPluginException] Plugin Search could not be found.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(364): CakePlugin::path('Search')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(225): App::pluginPath('Search')
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(542): App::path('Controller/Comp...', 'Search')
+#3 [internal function]: App::load('PrgComponent')
+#4 [internal function]: spl_autoload_call('PrgComponent')
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/ComponentCollection.php(99): class_exists('PrgComponent')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/ComponentCollection.php(52): ComponentCollection->load('Search.Prg', Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(635): ComponentCollection->init(Object(CandidatesController))
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(182): Controller->constructClasses()
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CandidatesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2012-09-21 14:59:34 Error: Fatal Error (1): Call to a member function parseCriteria() on a non-object in [/Users/abiezon/Sites/curriculum/app/Controller/CandidatesController.php, line 26]
+2012-09-21 14:59:34 Error: [FatalErrorException] Call to a member function parseCriteria() on a non-object
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/abiezon/...', 26)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/abiezon/...', 26, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/abiezon/...', 26, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-21 15:05:56 Error: [MissingControllerException] Controller class ProjectsController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-21 15:06:46 Error: [MissingControllerException] Controller class ProjectsController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-21 16:59:13 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/Users/abiezon/Sites/curriculum/app/Controller/UsersController.php, line 7]
+2012-09-21 16:59:13 Error: [FatalErrorException] Call to a member function allow() on a non-object
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/abiezon/...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/abiezon/...', 7, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/abiezon/...', 7, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-21 16:59:23 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/Users/abiezon/Sites/curriculum/app/Controller/UsersController.php, line 7]
+2012-09-21 16:59:23 Error: [FatalErrorException] Call to a member function allow() on a non-object
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/abiezon/...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/abiezon/...', 7, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/abiezon/...', 7, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-21 16:59:30 Error: Fatal Error (1): Call to a member function allow() on a non-object in [/Users/abiezon/Sites/curriculum/app/Controller/UsersController.php, line 7]
+2012-09-21 16:59:30 Error: [FatalErrorException] Call to a member function allow() on a non-object
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/abiezon/...', 7)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/abiezon/...', 7, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/abiezon/...', 7, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-21 17:03:06 Error: [MissingViewException] View file "/Users/abiezon/Sites/curriculum/app/View/Users/index.ctp" is missing.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-21 17:48:28 Error: [MissingViewException] View file "/Users/abiezon/Sites/curriculum/app/View/Users/index.ctp" is missing.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-21 17:48:43 Error: [MissingControllerException] Controller class PostsController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-21 17:50:17 Error: [MissingControllerException] Controller class PostsController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-21 18:00:41 Error: [MissingControllerException] Controller class LogoutController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-21 18:01:01 Error: [MissingViewException] View file "/Users/abiezon/Sites/curriculum/app/View/Users/index.ctp" is missing.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-22 11:38:09 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-22 11:38:09 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-22 11:38:09 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-22 11:38:09 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-22 11:38:09 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-22 11:38:09 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-22 11:38:09 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-22 11:38:57 Error: [MissingLayoutException] Layout file "/Users/abiezon/Sites/curriculum/app/View/Layouts/login.ctp" is missing.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(513): View->_getLayoutFileName('login')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(483): View->renderLayout('', 'login')
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#5 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2012-09-22 11:39:12 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-22 11:39:12 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-22 11:39:12 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-22 11:39:12 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-22 11:39:12 Error: [MissingControllerException] Controller class CssController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-22 11:39:12 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-22 11:39:12 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-22 12:32:56 Error: [CakeException] Authorization adapter "action" was not found.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Component/AuthComponent.php(376): AuthComponent->constructAuthorize()
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Component/AuthComponent.php(326): AuthComponent->isAuthorized(Array)
+#2 [internal function]: AuthComponent->startup(Object(PagesController))
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#4 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-09-22 12:40:33 Error: [CakeException] Authorization adapter "action" was not found.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Component/AuthComponent.php(376): AuthComponent->constructAuthorize()
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Component/AuthComponent.php(326): AuthComponent->isAuthorized(Array)
+#2 [internal function]: AuthComponent->startup(Object(RolesController))
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Utility/ObjectCollection.php(130): call_user_func_array(Array, Array)
+#4 [internal function]: ObjectCollection->trigger(Object(CakeEvent))
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Event/CakeEventManager.php(246): call_user_func(Array, Object(CakeEvent))
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(671): CakeEventManager->dispatch(Object(CakeEvent))
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(183): Controller->startupProcess()
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RolesController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-09-22 12:54:17 Error: [MissingActionException] Action PagesController::home() could not be found.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-09-22 14:09:03 Error: Fatal Error (64): require() [http://php.net/function.require]: Failed opening required '/Users/abiezon/Sites/curriculum/app/plugin/cake_ptbr/config/bootstrap.php' (include_path='/Users/abiezon/Sites/curriculum/lib:.:') in [/Users/abiezon/Sites/curriculum/app/Config/bootstrap.php, line 184]
+2012-09-22 14:09:03 Error: [FatalErrorException] require() [http://php.net/function.require]: Failed opening required '/Users/abiezon/Sites/curriculum/app/plugin/cake_ptbr/config/bootstrap.php' (include_path='/Users/abiezon/Sites/curriculum/lib:.:')
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'require() [http...', '/Users/abiezon/...', 184)
+#1 [internal function]: ErrorHandler::handleError(64, 'require() [http...', '/Users/abiezon/...', 184, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'require() [http...', '/Users/abiezon/...', 184, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-22 14:11:55 Error: Fatal Error (1): Unsupported operand types in [/Users/abiezon/Sites/curriculum/lib/Cake/Core/CakePlugin.php, line 77]
+2012-09-22 14:11:55 Error: [FatalErrorException] Unsupported operand types
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Unsupported ope...', '/Users/abiezon/...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', '/Users/abiezon/...', 77, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', '/Users/abiezon/...', 77, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-22 14:11:56 Error: Fatal Error (1): Unsupported operand types in [/Users/abiezon/Sites/curriculum/lib/Cake/Core/CakePlugin.php, line 77]
+2012-09-22 14:11:56 Error: [FatalErrorException] Unsupported operand types
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Unsupported ope...', '/Users/abiezon/...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', '/Users/abiezon/...', 77, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', '/Users/abiezon/...', 77, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-22 14:11:56 Error: Fatal Error (1): Unsupported operand types in [/Users/abiezon/Sites/curriculum/lib/Cake/Core/CakePlugin.php, line 77]
+2012-09-22 14:11:56 Error: [FatalErrorException] Unsupported operand types
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Unsupported ope...', '/Users/abiezon/...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', '/Users/abiezon/...', 77, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', '/Users/abiezon/...', 77, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-22 14:12:01 Error: Fatal Error (1): Unsupported operand types in [/Users/abiezon/Sites/curriculum/lib/Cake/Core/CakePlugin.php, line 77]
+2012-09-22 14:12:01 Error: [FatalErrorException] Unsupported operand types
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Unsupported ope...', '/Users/abiezon/...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', '/Users/abiezon/...', 77, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', '/Users/abiezon/...', 77, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-22 14:12:09 Error: Fatal Error (1): Unsupported operand types in [/Users/abiezon/Sites/curriculum/lib/Cake/Core/CakePlugin.php, line 77]
+2012-09-22 14:12:09 Error: [FatalErrorException] Unsupported operand types
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Unsupported ope...', '/Users/abiezon/...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', '/Users/abiezon/...', 77, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', '/Users/abiezon/...', 77, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-22 14:12:13 Error: Fatal Error (1): Unsupported operand types in [/Users/abiezon/Sites/curriculum/lib/Cake/Core/CakePlugin.php, line 77]
+2012-09-22 14:12:13 Error: [FatalErrorException] Unsupported operand types
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Unsupported ope...', '/Users/abiezon/...', 77)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', '/Users/abiezon/...', 77, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', '/Users/abiezon/...', 77, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-22 14:12:35 Error: Fatal Error (64): require() [http://php.net/function.require]: Failed opening required '/Users/abiezon/Sites/curriculum/app/plugin/cake_ptbr/config/bootstrap.php' (include_path='/Users/abiezon/Sites/curriculum/lib:.:') in [/Users/abiezon/Sites/curriculum/app/Config/bootstrap.php, line 184]
+2012-09-22 14:12:35 Error: [FatalErrorException] require() [http://php.net/function.require]: Failed opening required '/Users/abiezon/Sites/curriculum/app/plugin/cake_ptbr/config/bootstrap.php' (include_path='/Users/abiezon/Sites/curriculum/lib:.:')
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'require() [http...', '/Users/abiezon/...', 184)
+#1 [internal function]: ErrorHandler::handleError(64, 'require() [http...', '/Users/abiezon/...', 184, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'require() [http...', '/Users/abiezon/...', 184, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-22 14:13:20 Error: Fatal Error (64): require() [http://php.net/function.require]: Failed opening required '/Users/abiezon/Sites/curriculum/app/plugin/cake_ptbr/config/bootstrap.php' (include_path='/Users/abiezon/Sites/curriculum/lib:.:') in [/Users/abiezon/Sites/curriculum/app/Config/bootstrap.php, line 184]
+2012-09-22 14:13:20 Error: [FatalErrorException] require() [http://php.net/function.require]: Failed opening required '/Users/abiezon/Sites/curriculum/app/plugin/cake_ptbr/config/bootstrap.php' (include_path='/Users/abiezon/Sites/curriculum/lib:.:')
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'require() [http...', '/Users/abiezon/...', 184)
+#1 [internal function]: ErrorHandler::handleError(64, 'require() [http...', '/Users/abiezon/...', 184, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'require() [http...', '/Users/abiezon/...', 184, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-22 14:16:02 Error: Fatal Error (64): require() [http://php.net/function.require]: Failed opening required '/Users/abiezon/Sites/curriculum/app/plugin/CakePtbr/config/bootstrap.php' (include_path='/Users/abiezon/Sites/curriculum/lib:.:') in [/Users/abiezon/Sites/curriculum/app/Config/bootstrap.php, line 184]
+2012-09-22 14:16:02 Error: [FatalErrorException] require() [http://php.net/function.require]: Failed opening required '/Users/abiezon/Sites/curriculum/app/plugin/CakePtbr/config/bootstrap.php' (include_path='/Users/abiezon/Sites/curriculum/lib:.:')
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'require() [http...', '/Users/abiezon/...', 184)
+#1 [internal function]: ErrorHandler::handleError(64, 'require() [http...', '/Users/abiezon/...', 184, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'require() [http...', '/Users/abiezon/...', 184, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-22 14:16:15 Error: Fatal Error (64): require() [http://php.net/function.require]: Failed opening required '/Users/abiezon/Sites/curriculum/app/plugin/CakePtbr/config/bootstrap.php' (include_path='/Users/abiezon/Sites/curriculum/lib:.:') in [/Users/abiezon/Sites/curriculum/app/Config/bootstrap.php, line 184]
+2012-09-22 14:16:15 Error: [FatalErrorException] require() [http://php.net/function.require]: Failed opening required '/Users/abiezon/Sites/curriculum/app/plugin/CakePtbr/config/bootstrap.php' (include_path='/Users/abiezon/Sites/curriculum/lib:.:')
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'require() [http...', '/Users/abiezon/...', 184)
+#1 [internal function]: ErrorHandler::handleError(64, 'require() [http...', '/Users/abiezon/...', 184, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'require() [http...', '/Users/abiezon/...', 184, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-22 14:16:16 Error: Fatal Error (64): require() [http://php.net/function.require]: Failed opening required '/Users/abiezon/Sites/curriculum/app/plugin/CakePtbr/config/bootstrap.php' (include_path='/Users/abiezon/Sites/curriculum/lib:.:') in [/Users/abiezon/Sites/curriculum/app/Config/bootstrap.php, line 184]
+2012-09-22 14:16:16 Error: [FatalErrorException] require() [http://php.net/function.require]: Failed opening required '/Users/abiezon/Sites/curriculum/app/plugin/CakePtbr/config/bootstrap.php' (include_path='/Users/abiezon/Sites/curriculum/lib:.:')
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'require() [http...', '/Users/abiezon/...', 184)
+#1 [internal function]: ErrorHandler::handleError(64, 'require() [http...', '/Users/abiezon/...', 184, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'require() [http...', '/Users/abiezon/...', 184, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-22 14:16:16 Error: Fatal Error (64): require() [http://php.net/function.require]: Failed opening required '/Users/abiezon/Sites/curriculum/app/plugin/CakePtbr/config/bootstrap.php' (include_path='/Users/abiezon/Sites/curriculum/lib:.:') in [/Users/abiezon/Sites/curriculum/app/Config/bootstrap.php, line 184]
+2012-09-22 14:16:16 Error: [FatalErrorException] require() [http://php.net/function.require]: Failed opening required '/Users/abiezon/Sites/curriculum/app/plugin/CakePtbr/config/bootstrap.php' (include_path='/Users/abiezon/Sites/curriculum/lib:.:')
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'require() [http...', '/Users/abiezon/...', 184)
+#1 [internal function]: ErrorHandler::handleError(64, 'require() [http...', '/Users/abiezon/...', 184, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'require() [http...', '/Users/abiezon/...', 184, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-22 14:17:10 Error: Fatal Error (64): require() [http://php.net/function.require]: Failed opening required '/Users/abiezon/Sites/curriculum/app/plugin/CakePtbr/config/bootstrap.php' (include_path='/Users/abiezon/Sites/curriculum/lib:.:') in [/Users/abiezon/Sites/curriculum/app/Config/bootstrap.php, line 184]
+2012-09-22 14:17:10 Error: [FatalErrorException] require() [http://php.net/function.require]: Failed opening required '/Users/abiezon/Sites/curriculum/app/plugin/CakePtbr/config/bootstrap.php' (include_path='/Users/abiezon/Sites/curriculum/lib:.:')
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'require() [http...', '/Users/abiezon/...', 184)
+#1 [internal function]: ErrorHandler::handleError(64, 'require() [http...', '/Users/abiezon/...', 184, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'require() [http...', '/Users/abiezon/...', 184, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-22 14:17:25 Error: Fatal Error (64): require() [http://php.net/function.require]: Failed opening required '/Users/abiezon/Sites/curriculum/app/plugin/cake_ptbr/config/bootstrap.php' (include_path='/Users/abiezon/Sites/curriculum/lib:.:') in [/Users/abiezon/Sites/curriculum/app/Config/bootstrap.php, line 183]
+2012-09-22 14:17:25 Error: [FatalErrorException] require() [http://php.net/function.require]: Failed opening required '/Users/abiezon/Sites/curriculum/app/plugin/cake_ptbr/config/bootstrap.php' (include_path='/Users/abiezon/Sites/curriculum/lib:.:')
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'require() [http...', '/Users/abiezon/...', 183)
+#1 [internal function]: ErrorHandler::handleError(64, 'require() [http...', '/Users/abiezon/...', 183, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'require() [http...', '/Users/abiezon/...', 183, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-22 14:18:03 Error: Fatal Error (64): require() [http://php.net/function.require]: Failed opening required '/Users/abiezon/Sites/curriculum/app/plugin/cake_ptbr/config/bootstrap.php' (include_path='/Users/abiezon/Sites/curriculum/lib:.:') in [/Users/abiezon/Sites/curriculum/app/Config/bootstrap.php, line 184]
+2012-09-22 14:18:03 Error: [FatalErrorException] require() [http://php.net/function.require]: Failed opening required '/Users/abiezon/Sites/curriculum/app/plugin/cake_ptbr/config/bootstrap.php' (include_path='/Users/abiezon/Sites/curriculum/lib:.:')
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(64, 'require() [http...', '/Users/abiezon/...', 184)
+#1 [internal function]: ErrorHandler::handleError(64, 'require() [http...', '/Users/abiezon/...', 184, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 64, 'require() [http...', '/Users/abiezon/...', 184, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-09-22 14:26:13 Error: [MissingControllerException] Controller class LoginController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-22 14:26:36 Error: [MissingTableException] Table useres for model User was not found in datasource default.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(3179): Model->setSource('useres')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#4 /Users/abiezon/Sites/curriculum/app/View/Users/login.ctp(3): FormHelper->create('User')
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(920): include('/Users/abiezon/...')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(883): View->_evaluate('/Users/abiezon/...', Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(475): View->_render('/Users/abiezon/...')
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-09-22 14:28:12 Error: [MissingTableException] Table useres for model User was not found in datasource default.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(3179): Model->setSource('useres')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#4 /Users/abiezon/Sites/curriculum/app/View/Users/login.ctp(3): FormHelper->create('User')
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(920): include('/Users/abiezon/...')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(883): View->_evaluate('/Users/abiezon/...', Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(475): View->_render('/Users/abiezon/...')
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-09-22 14:29:08 Error: [MissingTableException] Table useres for model User was not found in datasource default.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(3179): Model->setSource('useres')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#4 /Users/abiezon/Sites/curriculum/app/View/Users/login.ctp(3): FormHelper->create('User')
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(920): include('/Users/abiezon/...')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(883): View->_evaluate('/Users/abiezon/...', Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(475): View->_render('/Users/abiezon/...')
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-09-22 14:29:09 Error: [MissingTableException] Table useres for model User was not found in datasource default.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(3179): Model->setSource('useres')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#4 /Users/abiezon/Sites/curriculum/app/View/Users/login.ctp(3): FormHelper->create('User')
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(920): include('/Users/abiezon/...')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(883): View->_evaluate('/Users/abiezon/...', Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(475): View->_render('/Users/abiezon/...')
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-09-22 14:29:09 Error: [MissingTableException] Table useres for model User was not found in datasource default.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(3179): Model->setSource('useres')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#4 /Users/abiezon/Sites/curriculum/app/View/Users/login.ctp(3): FormHelper->create('User')
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(920): include('/Users/abiezon/...')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(883): View->_evaluate('/Users/abiezon/...', Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(475): View->_render('/Users/abiezon/...')
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-09-22 14:29:13 Error: [MissingTableException] Table useres for model User was not found in datasource default.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(3179): Model->setSource('useres')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#4 /Users/abiezon/Sites/curriculum/app/View/Users/login.ctp(3): FormHelper->create('User')
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(920): include('/Users/abiezon/...')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(883): View->_evaluate('/Users/abiezon/...', Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(475): View->_render('/Users/abiezon/...')
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-09-22 14:29:19 Error: [MissingTableException] Table useres for model User was not found in datasource default.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(3179): Model->setSource('useres')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#4 /Users/abiezon/Sites/curriculum/app/View/Users/login.ctp(3): FormHelper->create('User')
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(920): include('/Users/abiezon/...')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(883): View->_evaluate('/Users/abiezon/...', Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(475): View->_render('/Users/abiezon/...')
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-09-22 14:34:27 Error: [MissingTableException] Table useres for model User was not found in datasource default.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(3179): Model->setSource('useres')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#4 /Users/abiezon/Sites/curriculum/app/View/Users/login.ctp(3): FormHelper->create('User')
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(920): include('/Users/abiezon/...')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(883): View->_evaluate('/Users/abiezon/...', Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(475): View->_render('/Users/abiezon/...')
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-09-22 14:35:53 Error: [MissingTableException] Table useres for model User was not found in datasource default.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(3179): Model->setSource('useres')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#4 /Users/abiezon/Sites/curriculum/app/View/Users/login.ctp(3): FormHelper->create('User')
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(920): include('/Users/abiezon/...')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(883): View->_evaluate('/Users/abiezon/...', Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(475): View->_render('/Users/abiezon/...')
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-09-22 14:43:28 Error: [MissingTableException] Table useres for model User was not found in datasource default.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(3179): Model->setSource('useres')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#4 /Users/abiezon/Sites/curriculum/app/View/Users/login.ctp(3): FormHelper->create('User')
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(920): include('/Users/abiezon/...')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(883): View->_evaluate('/Users/abiezon/...', Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(475): View->_render('/Users/abiezon/...')
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-09-22 14:49:16 Error: [MissingControllerException] Controller class LogoutController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-09-22 14:49:25 Error: [MissingTableException] Table useres for model User was not found in datasource default.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(3179): Model->setSource('useres')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#4 /Users/abiezon/Sites/curriculum/app/View/Users/login.ctp(3): FormHelper->create('User')
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(920): include('/Users/abiezon/...')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(883): View->_evaluate('/Users/abiezon/...', Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(475): View->_render('/Users/abiezon/...')
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-09-22 14:49:37 Error: [MissingViewException] View file "/Users/abiezon/Sites/curriculum/app/View/Users/index.ctp" is missing.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-09-22 14:49:50 Error: [MissingTableException] Table useres for model User was not found in datasource default.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(3179): Model->setSource('useres')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#4 /Users/abiezon/Sites/curriculum/app/View/Users/login.ctp(3): FormHelper->create('User')
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(920): include('/Users/abiezon/...')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(883): View->_evaluate('/Users/abiezon/...', Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(475): View->_render('/Users/abiezon/...')
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-09-22 14:49:56 Error: [MissingTableException] Table useres for model User was not found in datasource default.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(3179): Model->setSource('useres')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#4 /Users/abiezon/Sites/curriculum/app/View/Users/login.ctp(3): FormHelper->create('User')
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(920): include('/Users/abiezon/...')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(883): View->_evaluate('/Users/abiezon/...', Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(475): View->_render('/Users/abiezon/...')
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-09-22 14:50:35 Error: [MissingTableException] Table useres for model User was not found in datasource default.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(3179): Model->setSource('useres')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#4 /Users/abiezon/Sites/curriculum/app/View/Users/login.ctp(3): FormHelper->create('User')
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(920): include('/Users/abiezon/...')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(883): View->_evaluate('/Users/abiezon/...', Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(475): View->_render('/Users/abiezon/...')
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-09-22 14:50:51 Error: [MissingTableException] Table useres for model User was not found in datasource default.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(3179): Model->setSource('useres')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#4 /Users/abiezon/Sites/curriculum/app/View/Users/login.ctp(3): FormHelper->create('User')
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(920): include('/Users/abiezon/...')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(883): View->_evaluate('/Users/abiezon/...', Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(475): View->_render('/Users/abiezon/...')
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-09-22 14:50:52 Error: [MissingTableException] Table useres for model User was not found in datasource default.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(3179): Model->setSource('useres')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#4 /Users/abiezon/Sites/curriculum/app/View/Users/login.ctp(3): FormHelper->create('User')
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(920): include('/Users/abiezon/...')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(883): View->_evaluate('/Users/abiezon/...', Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(475): View->_render('/Users/abiezon/...')
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-09-22 14:50:52 Error: [MissingTableException] Table useres for model User was not found in datasource default.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(3179): Model->setSource('useres')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#4 /Users/abiezon/Sites/curriculum/app/View/Users/login.ctp(3): FormHelper->create('User')
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(920): include('/Users/abiezon/...')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(883): View->_evaluate('/Users/abiezon/...', Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(475): View->_render('/Users/abiezon/...')
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-09-22 14:50:53 Error: [MissingTableException] Table useres for model User was not found in datasource default.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(3179): Model->setSource('useres')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#4 /Users/abiezon/Sites/curriculum/app/View/Users/login.ctp(3): FormHelper->create('User')
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(920): include('/Users/abiezon/...')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(883): View->_evaluate('/Users/abiezon/...', Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(475): View->_render('/Users/abiezon/...')
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-09-22 14:50:54 Error: [MissingTableException] Table useres for model User was not found in datasource default.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(3179): Model->setSource('useres')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#4 /Users/abiezon/Sites/curriculum/app/View/Users/login.ctp(3): FormHelper->create('User')
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(920): include('/Users/abiezon/...')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(883): View->_evaluate('/Users/abiezon/...', Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(475): View->_render('/Users/abiezon/...')
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-09-22 14:50:54 Error: [MissingTableException] Table useres for model User was not found in datasource default.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(3179): Model->setSource('useres')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#4 /Users/abiezon/Sites/curriculum/app/View/Users/login.ctp(3): FormHelper->create('User')
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(920): include('/Users/abiezon/...')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(883): View->_evaluate('/Users/abiezon/...', Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(475): View->_render('/Users/abiezon/...')
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-09-22 15:00:52 Error: [MissingTableException] Table useres for model User was not found in datasource default.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(3179): Model->setSource('useres')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#4 /Users/abiezon/Sites/curriculum/app/View/Users/login.ctp(3): FormHelper->create('User')
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(920): include('/Users/abiezon/...')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(883): View->_evaluate('/Users/abiezon/...', Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(475): View->_render('/Users/abiezon/...')
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-09-22 15:00:54 Error: [MissingTableException] Table useres for model User was not found in datasource default.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(3179): Model->setSource('useres')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#4 /Users/abiezon/Sites/curriculum/app/View/Users/login.ctp(3): FormHelper->create('User')
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(920): include('/Users/abiezon/...')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(883): View->_evaluate('/Users/abiezon/...', Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(475): View->_render('/Users/abiezon/...')
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-09-22 15:00:55 Error: [MissingTableException] Table useres for model User was not found in datasource default.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(3179): Model->setSource('useres')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#4 /Users/abiezon/Sites/curriculum/app/View/Users/login.ctp(3): FormHelper->create('User')
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(920): include('/Users/abiezon/...')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(883): View->_evaluate('/Users/abiezon/...', Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(475): View->_render('/Users/abiezon/...')
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-09-22 15:00:55 Error: [MissingTableException] Table useres for model User was not found in datasource default.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(3179): Model->setSource('useres')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#4 /Users/abiezon/Sites/curriculum/app/View/Users/login.ctp(3): FormHelper->create('User')
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(920): include('/Users/abiezon/...')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(883): View->_evaluate('/Users/abiezon/...', Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(475): View->_render('/Users/abiezon/...')
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-09-22 15:06:02 Error: [MissingTableException] Table user for model User was not found in datasource default.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(3179): Model->setSource('user')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1301): Model->getDataSource()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(197): Model->schema()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/View/Helper/FormHelper.php(436): FormHelper->_introspectModel('User', 'fields')
+#4 /Users/abiezon/Sites/curriculum/app/View/Users/login.ctp(3): FormHelper->create('User')
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(920): include('/Users/abiezon/...')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(883): View->_evaluate('/Users/abiezon/...', Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(475): View->_render('/Users/abiezon/...')
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2012-09-22 17:37:34 Error: [MissingViewException] View file "/Users/abiezon/Sites/curriculum/app/View/Users/index.ctp" is missing.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

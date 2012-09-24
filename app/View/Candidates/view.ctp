@@ -15,15 +15,35 @@
 		<dd>
 			<?php echo h($candidate['Candidate']['name']); ?>
 			&nbsp;
-		</dd>
-		<dt><?php echo __('Cpf'); ?></dt>
+		</dd>		
+		<dt><?php echo __('Gender'); ?></dt>
 		<dd>
-			<?php echo h($candidate['Candidate']['cpf']); ?>
+			<?php echo h($candidate['Candidate']['gender']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Date of birth'); ?></dt>
+		<dd>
+			<?php echo h($candidate['Candidate']['date_birth']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Email'); ?></dt>
+		<dd>
+			<?php echo h($candidate['Candidate']['email']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Schooling'); ?></dt>
+		<dd>
+			<?php echo h($candidate['Candidate']['schooling']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Rg'); ?></dt>
 		<dd>
 			<?php echo h($candidate['Candidate']['rg']); ?>
+			&nbsp;
+		</dd>
+		<dt><?php echo __('Cpf'); ?></dt>
+		<dd>
+			<?php echo h($candidate['Candidate']['cpf']); ?>
 			&nbsp;
 		</dd>
 		<dt><?php echo __('Street'); ?></dt>
@@ -50,12 +70,7 @@
 		<dd>
 			<?php echo h($candidate['Candidate']['city']); ?>
 			&nbsp;
-		</dd>
-		<dt><?php echo __('Email'); ?></dt>
-		<dd>
-			<?php echo h($candidate['Candidate']['email']); ?>
-			&nbsp;
-		</dd>
+		</dd>		
 		<dt><?php echo __('Created'); ?></dt>
 		<dd>
 			<?php echo h($candidate['Candidate']['created']); ?>

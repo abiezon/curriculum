@@ -23,9 +23,11 @@
 		<h1><a class="replace" href="#"></a></h1>
 		<h2>Cadastro de Currículos - Betel</h2>
 	</div><!-- header -->
+	<?php echo $this->Session->flash('auth'); ?>
+	<?php echo $this->Session->flash(); ?>
 	<div id="content-wrap">		
 		<div id="login-wrap">
-                    <?php echo $this->Session->flash(); ?>
+                    
                     <?php echo $content_for_layout ?>
 		</div><!-- login -->	
 	</div><!-- content-wrap -->
