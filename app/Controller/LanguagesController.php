@@ -32,6 +32,7 @@ class LanguagesController extends AppController {
 			throw new NotFoundException(__('Invalid language'));
 		}
 		$this->set('language', $this->Language->read(null, $id));
+		$this->set('idCandidate', $this->Session->read('candidate_id'));
 	}
 
 /**
@@ -41,7 +42,7 @@ class LanguagesController extends AppController {
  */
 	public function add($continue = null) {
 		$idCandidate = $this->Session->read('candidate_id');
-		$this->layout = 'layout';	
+		$this->layout = 'new';	
 		if ($this->request->is('post')) {
 			$this->Language->create();
 			if ($this->Language->save($this->request->data)) {
@@ -52,7 +53,7 @@ class LanguagesController extends AppController {
 			}
 		}
 		$candidates = $this->Language->Candidate->find('list',array('conditions'=>array('Candidate.id'=>$idCandidate)));
-		$this->set(compact('candidates'));
+		$this->set(compact('candidates','idCandidate'));
 	}
 
 /**
@@ -80,7 +81,7 @@ class LanguagesController extends AppController {
 			$this->request->data = $this->Language->read(null, $id);
 		}
 		$candidates = $this->Language->Candidate->find('list');
-		$this->set(compact('candidates'));
+		$this->set(compact('candidates','idCandidate'));
 	}
 
 /**

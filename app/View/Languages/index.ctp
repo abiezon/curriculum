@@ -16,9 +16,9 @@
 		<td><?php echo h($language['Language']['language']); ?>&nbsp;</td>
 		<td><?php echo h($language['Language']['fluency']); ?>&nbsp;</td>
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $language['Language']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $language['Language']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $language['Language']['id']), null, __('Are you sure you want to delete # %s?', $language['Language']['id'])); ?>
+			<?php echo $this->Html->link(__('View'), array('action' => 'view', $language['Language']['id']),array('class'=>'replace btn-ver')); ?>
+			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $language['Language']['id']),array('class'=>'replace btn-editar')); ?>
+			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $language['Language']['id']), array('class'=>'replace btn-deletar'), __('Are you sure you want to delete # %s?', $language['Language']['id'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>

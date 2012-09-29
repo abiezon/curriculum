@@ -44,10 +44,10 @@ class RolesController extends AppController {
 		if ($this->request->is('post')) {
 			$this->Role->create();
 			if ($this->Role->save($this->request->data)) {
-				$this->Session->setFlash(__('The role has been saved'));
+				$this->Session->setFlash(__('The role has been saved'),'msg-ok');
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The role could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The role could not be saved. Please, try again.'),'msg-error');
 			}
 		}
 	}
@@ -67,10 +67,10 @@ class RolesController extends AppController {
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Role->save($this->request->data)) {
-				$this->Session->setFlash(__('The role has been saved'));
+				$this->Session->setFlash(__('The role has been saved'),'msg-ok');
 				$this->redirect(array('action' => 'index'));
 			} else {
-				$this->Session->setFlash(__('The role could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The role could not be saved. Please, try again.'),'msg-error');
 			}
 		} else {
 			$this->request->data = $this->Role->read(null, $id);
@@ -94,10 +94,10 @@ class RolesController extends AppController {
 			throw new NotFoundException(__('Invalid role'));
 		}
 		if ($this->Role->delete()) {
-			$this->Session->setFlash(__('Role deleted'));
+			$this->Session->setFlash(__('Role deleted'),'msg-ok');
 			$this->redirect(array('action' => 'index'));
 		}
-		$this->Session->setFlash(__('Role was not deleted'));
+		$this->Session->setFlash(__('Role was not deleted'),'msg-error');
 		$this->redirect(array('action' => 'index'));
 	}
 }

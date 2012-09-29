@@ -1,14 +1,20 @@
-<div class="candidates index">
-	<h2><?php echo __('Candidates'); ?></h2>
-	<div class="search"><?php
-	        echo $this->Form->create('Candidate', array(
-	            'url' => array_merge(array('action' => 'index'), $this->params['pass'])
-	            ));
-	        echo $this->Form->input('name', array('div' => false, 'empty' => true,'class'=>'fieldSearch')); // empty creates blank option.
-	        echo $this->Form->submit(__('Search', true), array('div' => false));
-	        echo $this->Form->end();
-	    ?>
+<div class="box-head">
+	<h2 class="left"><?php echo __('Candidates'); ?></h2>
+	<div class="right">
+		<?php
+		        echo $this->Form->create('Candidate', array(
+		            'url' => array_merge(array('action' => 'index'), $this->params['pass'])
+		            ));
+		        echo $this->Form->input('name', array('div' => false, 'empty' => true,'class'=>'field small-field')); // empty creates blank option.
+		        echo $this->Form->submit(__('Search', true), array('div' => false,'class'=>'button'));
+		        echo $this->Form->end();
+		    ?>
 	</div>
+</div>
+
+
+<div class="candidates index">
+	
 	<table cellpadding="0" cellspacing="0">
 	<tr>
 			<th><?php echo $this->Paginator->sort('role_id'); ?></th>
@@ -43,9 +49,9 @@
 		<!-- <td><?php echo h($candidate['Candidate']['created']); ?>&nbsp;</td>
 				<td><?php echo h($candidate['Candidate']['modified']); ?>&nbsp;</td> -->
 		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $candidate['Candidate']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $candidate['Candidate']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $candidate['Candidate']['id']), null, __('Are you sure you want to delete # %s?', $candidate['Candidate']['id'])); ?>
+			<?php echo $this->Html->link(__('View'), array('action' => 'view', $candidate['Candidate']['id']),array('class'=>'replace btn-ver')); ?>
+			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $candidate['Candidate']['id']),array('class'=>'replace btn-editar')); ?>
+			<?php echo $this->Form->postLink(__('Delete'),array('action' => 'delete', $candidate['Candidate']['id']), array('class'=>'replace btn-deletar'), __('Are you sure you want to delete # %s?', $candidate['Candidate']['name'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
@@ -72,7 +78,7 @@
 		<!-- <li><?php echo $this->Html->link(__('List Roles'), array('controller' => 'roles', 'action' => 'index')); ?> </li> -->
 		<!-- <li><?php echo $this->Html->link(__('New Role'), array('controller' => 'roles', 'action' => 'add')); ?> </li> -->
 		<li><?php echo $this->Html->link(__('List Candidate'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('Logout'), array('controller' => 'users','action'=>'logout')); ?></li>
+		<!-- <li><?php echo $this->Html->link(__('Logout'), array('controller' => 'users','action'=>'logout')); ?></li> -->
 		<li><?php echo $this->Html->link(__('Home'), array('controller' => 'pages','action'=>'home')); ?></li>
 		<!-- <li><?php echo $this->Html->link(__('List Acquirements'), array('controller' => 'acquirements', 'action' => 'index')); ?> </li>
 				<li><?php echo $this->Html->link(__('New Acquirement'), array('controller' => 'acquirements', 'action' => 'add')); ?> </li>

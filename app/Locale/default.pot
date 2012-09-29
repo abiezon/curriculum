@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2012-09-22 16:58-0400\n"
+"POT-Creation-Date: 2012-09-27 15:14-0400\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -20,101 +20,101 @@ msgstr ""
 
 #: Controller/AcquirementsController.php:49;81
 msgid "The acquirement has been saved"
-msgstr "O conhecimento foi salvo com sucesso"
+msgstr ""
 
 #: Controller/AcquirementsController.php:58;84
 msgid "The acquirement could not be saved. Please, try again."
-msgstr "O conhecimento não pode ser salva. Por favor tente novamente"
+msgstr ""
 
 #: Controller/AcquirementsController.php:111
 msgid "Acquirement deleted"
-msgstr "Conhecimento apagado"
+msgstr ""
 
 #: Controller/AcquirementsController.php:114
 msgid "Acquirement was not deleted"
-msgstr "Conhecimento não pode ser apagado"
+msgstr ""
 
-#: Controller/CandidatesController.php:40;81;111
+#: Controller/CandidatesController.php:42;83;113
 msgid "Invalid candidate"
-msgstr "Candidato inválido"
+msgstr ""
 
-#: Controller/CandidatesController.php:57;85
+#: Controller/CandidatesController.php:59;87
 msgid "The candidate has been saved"
-msgstr "O candidato foi salvo com sucesso"
+msgstr ""
 
-#: Controller/CandidatesController.php:63;88
+#: Controller/CandidatesController.php:65;90
 msgid "The candidate could not be saved. Please, try again."
-msgstr "O candidato não pode ser salvo. Por favor tente novamente"
+msgstr ""
 
-#: Controller/CandidatesController.php:114
+#: Controller/CandidatesController.php:116
 msgid "Candidate deleted"
-msgstr "Candidato apagado"
+msgstr ""
 
-#: Controller/CandidatesController.php:117
+#: Controller/CandidatesController.php:119
 msgid "Candidate was not deleted"
 msgstr ""
 
-#: Controller/CoursesController.php:32;76;107
+#: Controller/CoursesController.php:33;78;109
 msgid "Invalid course"
 msgstr ""
 
-#: Controller/CoursesController.php:48;80
+#: Controller/CoursesController.php:50;82
 msgid "The course has been saved"
 msgstr ""
 
-#: Controller/CoursesController.php:57;83
+#: Controller/CoursesController.php:59;85
 msgid "The course could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/CoursesController.php:110
+#: Controller/CoursesController.php:112
 msgid "Course deleted"
 msgstr ""
 
-#: Controller/CoursesController.php:113
+#: Controller/CoursesController.php:115
 msgid "Course was not deleted"
 msgstr ""
 
-#: Controller/ExperiencesController.php:32;76;107
+#: Controller/ExperiencesController.php:33;78;109
 msgid "Invalid experience"
 msgstr ""
 
-#: Controller/ExperiencesController.php:48;80
+#: Controller/ExperiencesController.php:50;82
 msgid "The experience has been saved"
 msgstr ""
 
-#: Controller/ExperiencesController.php:57;83
+#: Controller/ExperiencesController.php:59;85
 msgid "The experience could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/ExperiencesController.php:110
+#: Controller/ExperiencesController.php:112
 msgid "Experience deleted"
 msgstr ""
 
-#: Controller/ExperiencesController.php:113
+#: Controller/ExperiencesController.php:115
 msgid "Experience was not deleted"
 msgstr ""
 
-#: Controller/LanguagesController.php:32;70;101
+#: Controller/LanguagesController.php:32;71;102
 msgid "Invalid language"
 msgstr ""
 
-#: Controller/LanguagesController.php:48
+#: Controller/LanguagesController.php:49
 msgid "The language has been saved!"
 msgstr ""
 
-#: Controller/LanguagesController.php:51;77
+#: Controller/LanguagesController.php:52;78
 msgid "The language could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/LanguagesController.php:74
+#: Controller/LanguagesController.php:75
 msgid "The language has been saved"
 msgstr ""
 
-#: Controller/LanguagesController.php:104
+#: Controller/LanguagesController.php:105
 msgid "Language deleted"
 msgstr ""
 
-#: Controller/LanguagesController.php:107
+#: Controller/LanguagesController.php:108
 msgid "Language was not deleted"
 msgstr ""
 
@@ -142,23 +142,23 @@ msgstr ""
 msgid "Invalid username or password, try again"
 msgstr ""
 
-#: Controller/UsersController.php:33;53;74
+#: Controller/UsersController.php:34;54;75
 msgid "Invalid user"
 msgstr ""
 
-#: Controller/UsersController.php:42;57
+#: Controller/UsersController.php:43;58
 msgid "The user has been saved"
 msgstr ""
 
-#: Controller/UsersController.php:45;60
+#: Controller/UsersController.php:46;61
 msgid "The user could not be saved. Please, try again."
 msgstr ""
 
-#: Controller/UsersController.php:77
+#: Controller/UsersController.php:79
 msgid "User deleted"
 msgstr ""
 
-#: Controller/UsersController.php:80
+#: Controller/UsersController.php:83
 msgid "User was not deleted"
 msgstr ""
 
@@ -166,78 +166,100 @@ msgstr ""
 msgid "Add Acquirement"
 msgstr ""
 
-#: View/Acquirements/add.ctp:10
+#: View/Acquirements/add.ctp:11
+#: View/Courses/add.ctp:13
+#: View/Experiences/add.ctp:17
+#: View/Languages/add.ctp:12
+msgid "Leave"
+msgstr ""
+
+#: View/Acquirements/add.ctp:11
+#: View/Acquirements/edit.ctp:12
+#: View/Acquirements/view.ctp:21
+#: View/Courses/add.ctp:13
+#: View/Courses/edit.ctp:14
+#: View/Courses/view.ctp:31
+#: View/Experiences/add.ctp:17
+#: View/Experiences/edit.ctp:18
+#: View/Experiences/view.ctp:45
+#: View/Languages/edit.ctp:13
+#: View/Languages/view.ctp:26
+msgid "Back"
+msgstr ""
+
+#: View/Acquirements/add.ctp:16
 #: View/Candidates/add.ctp:22
-#: View/Courses/add.ctp:12
-#: View/Experiences/add.ctp:16
+#: View/Courses/add.ctp:18
+#: View/Experiences/add.ctp:23
 msgid "Save and Continue"
 msgstr ""
 
-#: View/Acquirements/add.ctp:10
-#: View/Acquirements/edit.ctp:11
+#: View/Acquirements/add.ctp:16
+#: View/Acquirements/edit.ctp:17
 #: View/Candidates/edit.ctp:22
-#: View/Courses/add.ctp:12
-#: View/Courses/edit.ctp:13
-#: View/Experiences/add.ctp:16
-#: View/Experiences/edit.ctp:17
-#: View/Languages/add.ctp:11
-#: View/Languages/edit.ctp:12
+#: View/Courses/add.ctp:18
+#: View/Courses/edit.ctp:19
+#: View/Experiences/add.ctp:23
+#: View/Experiences/edit.ctp:24
+#: View/Languages/add.ctp:17
+#: View/Languages/edit.ctp:18
 msgid "Save"
 msgstr ""
 
-#: View/Acquirements/add.ctp:13
-#: View/Acquirements/edit.ctp:14
+#: View/Acquirements/add.ctp:19
+#: View/Acquirements/edit.ctp:20
 #: View/Acquirements/index.ctp:8;42
 #: View/Acquirements/view.ctp:29
 #: View/Candidates/add.ctp:26
 #: View/Candidates/edit.ctp:25
 #: View/Candidates/index.ctp:26;69
-#: View/Candidates/view.ctp:72;87;121;157;189
-#: View/Courses/add.ctp:15
-#: View/Courses/edit.ctp:16
+#: View/Candidates/view.ctp:78;99;132;162;192
+#: View/Courses/add.ctp:21
+#: View/Courses/edit.ctp:22
 #: View/Courses/index.ctp:10;46
-#: View/Courses/view.ctp:32
-#: View/Experiences/add.ctp:19
-#: View/Experiences/edit.ctp:20
+#: View/Courses/view.ctp:38
+#: View/Experiences/add.ctp:26
+#: View/Experiences/edit.ctp:27
 #: View/Experiences/index.ctp:13;52
-#: View/Experiences/view.ctp:47
-#: View/Languages/add.ctp:14
-#: View/Languages/edit.ctp:15
+#: View/Experiences/view.ctp:54
+#: View/Languages/add.ctp:20
+#: View/Languages/edit.ctp:21
 #: View/Languages/index.ctp:9;42
-#: View/Languages/view.ctp:27
-#: View/Pages/home.ctp:8
+#: View/Languages/view.ctp:33
+#: View/Pages/home.ctp:5
 #: View/Roles/add.ctp:12
 #: View/Roles/edit.ctp:13
 #: View/Roles/index.ctp:7;38
 #: View/Roles/view.ctp:17;45
+#: View/Users/index.ctp:10;44
 msgid "Actions"
 msgstr ""
 
-#: View/Acquirements/add.ctp:16
-#: View/Acquirements/edit.ctp:18
+#: View/Acquirements/add.ctp:22
+#: View/Acquirements/edit.ctp:24
 #: View/Acquirements/view.ctp:33
 #: View/Candidates/add.ctp:33
 #: View/Candidates/edit.ctp:32
 #: View/Candidates/index.ctp:77
-#: View/Pages/home.ctp:15
+#: View/Pages/home.ctp:12
 msgid "List Acquirements"
 msgstr ""
 
-#: View/Acquirements/add.ctp:17
-#: View/Acquirements/edit.ctp:19
+#: View/Acquirements/add.ctp:23
+#: View/Acquirements/edit.ctp:25
 #: View/Acquirements/index.ctp:45
 #: View/Acquirements/view.ctp:35
 #: View/Candidates/add.ctp:29
 #: View/Candidates/edit.ctp:29
-#: View/Candidates/view.ctp:76
-#: View/Courses/add.ctp:19
-#: View/Courses/edit.ctp:21
+#: View/Candidates/view.ctp:82
+#: View/Courses/add.ctp:25
+#: View/Courses/edit.ctp:27
 #: View/Courses/index.ctp:49
-#: View/Courses/view.ctp:38
-#: View/Experiences/add.ctp:23
-#: View/Experiences/edit.ctp:25
+#: View/Courses/view.ctp:44
+#: View/Experiences/add.ctp:30
+#: View/Experiences/edit.ctp:32
 #: View/Experiences/index.ctp:55
-#: View/Experiences/view.ctp:53
+#: View/Experiences/view.ctp:60
 #: View/Roles/add.ctp:16
 #: View/Roles/edit.ctp:18
 #: View/Roles/index.ctp:41
@@ -245,21 +267,21 @@ msgstr ""
 msgid "List Candidates"
 msgstr ""
 
-#: View/Acquirements/add.ctp:18
-#: View/Acquirements/edit.ctp:20
+#: View/Acquirements/add.ctp:24
+#: View/Acquirements/edit.ctp:26
 #: View/Acquirements/index.ctp:46
 #: View/Acquirements/view.ctp:36
 #: View/Candidates/index.ctp:71
-#: View/Candidates/view.ctp:77
-#: View/Courses/add.ctp:20
-#: View/Courses/edit.ctp:22
+#: View/Candidates/view.ctp:83
+#: View/Courses/add.ctp:26
+#: View/Courses/edit.ctp:28
 #: View/Courses/index.ctp:50
-#: View/Courses/view.ctp:39
-#: View/Experiences/add.ctp:24
-#: View/Experiences/edit.ctp:26
+#: View/Courses/view.ctp:45
+#: View/Experiences/add.ctp:31
+#: View/Experiences/edit.ctp:33
 #: View/Experiences/index.ctp:56
-#: View/Experiences/view.ctp:54
-#: View/Pages/home.ctp:10
+#: View/Experiences/view.ctp:61
+#: View/Pages/home.ctp:7
 #: View/Roles/add.ctp:17
 #: View/Roles/edit.ctp:19
 #: View/Roles/index.ctp:42
@@ -272,41 +294,43 @@ msgstr ""
 msgid "Edit Acquirement"
 msgstr ""
 
-#: View/Acquirements/edit.ctp:17
+#: View/Acquirements/edit.ctp:23
 #: View/Acquirements/index.ctp:21
 #: View/Candidates/edit.ctp:28
 #: View/Candidates/index.ctp:48
-#: View/Candidates/view.ctp:97;136;169;200
-#: View/Courses/edit.ctp:19
+#: View/Candidates/view.ctp:114;142;174;203
+#: View/Courses/edit.ctp:25
 #: View/Courses/index.ctp:25
-#: View/Experiences/edit.ctp:23
+#: View/Experiences/edit.ctp:30
 #: View/Experiences/index.ctp:31
-#: View/Languages/edit.ctp:18
+#: View/Languages/edit.ctp:24
 #: View/Languages/index.ctp:21
 #: View/Roles/edit.ctp:16
 #: View/Roles/index.ctp:17
 #: View/Roles/view.ctp:67
+#: View/Users/index.ctp:23
 msgid "Delete"
 msgstr ""
 
-#: View/Acquirements/edit.ctp:17
+#: View/Acquirements/edit.ctp:23
 #: View/Acquirements/index.ctp:21
 #: View/Acquirements/view.ctp:32
 #: View/Candidates/edit.ctp:28
 #: View/Candidates/index.ctp:48
-#: View/Candidates/view.ctp:75;97;136;169;200
-#: View/Courses/edit.ctp:19
+#: View/Candidates/view.ctp:81;114;142;174;203
+#: View/Courses/edit.ctp:25
 #: View/Courses/index.ctp:25
-#: View/Courses/view.ctp:35
-#: View/Experiences/edit.ctp:23
+#: View/Courses/view.ctp:41
+#: View/Experiences/edit.ctp:30
 #: View/Experiences/index.ctp:31
-#: View/Experiences/view.ctp:50
-#: View/Languages/edit.ctp:18
+#: View/Experiences/view.ctp:57
+#: View/Languages/edit.ctp:24
 #: View/Languages/index.ctp:21
-#: View/Languages/view.ctp:30
+#: View/Languages/view.ctp:36
 #: View/Roles/edit.ctp:16
 #: View/Roles/index.ctp:17
 #: View/Roles/view.ctp:20;67
+#: View/Users/index.ctp:23
 msgid "Are you sure you want to delete # %s?"
 msgstr ""
 
@@ -316,23 +340,25 @@ msgstr ""
 
 #: View/Acquirements/index.ctp:19
 #: View/Candidates/index.ctp:46
-#: View/Candidates/view.ctp:95;134;167;198
+#: View/Candidates/view.ctp:112;140;172;201
 #: View/Courses/index.ctp:23
 #: View/Experiences/index.ctp:29
 #: View/Languages/index.ctp:19
 #: View/Roles/index.ctp:15
 #: View/Roles/view.ctp:65
+#: View/Users/index.ctp:21
 msgid "View"
 msgstr ""
 
 #: View/Acquirements/index.ctp:20
 #: View/Candidates/index.ctp:47
-#: View/Candidates/view.ctp:96;135;168;199
+#: View/Candidates/view.ctp:113;141;173;202
 #: View/Courses/index.ctp:24
 #: View/Experiences/index.ctp:30
 #: View/Languages/index.ctp:20
 #: View/Roles/index.ctp:16
 #: View/Roles/view.ctp:66
+#: View/Users/index.ctp:22
 msgid "Edit"
 msgstr ""
 
@@ -342,6 +368,7 @@ msgstr ""
 #: View/Experiences/index.ctp:39
 #: View/Languages/index.ctp:29
 #: View/Roles/index.ctp:25
+#: View/Users/index.ctp:31
 msgid "Page {:page} of {:pages}, showing {:current} records out of {:count} total, starting on record {:start}, ending on {:end}"
 msgstr ""
 
@@ -351,6 +378,7 @@ msgstr ""
 #: View/Experiences/index.ctp:45
 #: View/Languages/index.ctp:35
 #: View/Roles/index.ctp:31
+#: View/Users/index.ctp:37
 msgid "previous"
 msgstr ""
 
@@ -360,6 +388,7 @@ msgstr ""
 #: View/Experiences/index.ctp:47
 #: View/Languages/index.ctp:37
 #: View/Roles/index.ctp:33
+#: View/Users/index.ctp:39
 msgid "next"
 msgstr ""
 
@@ -368,8 +397,8 @@ msgstr ""
 #: View/Candidates/add.ctp:34
 #: View/Candidates/edit.ctp:33
 #: View/Candidates/index.ctp:78
-#: View/Candidates/view.ctp:106
-#: View/Pages/home.ctp:16
+#: View/Candidates/view.ctp:150
+#: View/Pages/home.ctp:13
 msgid "New Acquirement"
 msgstr ""
 
@@ -378,7 +407,6 @@ msgid "Acquirement"
 msgstr ""
 
 #: View/Acquirements/view.ctp:4
-#: View/Candidates/view.ctp:4
 #: View/Courses/view.ctp:4
 #: View/Experiences/view.ctp:4
 #: View/Languages/view.ctp:4
@@ -394,12 +422,8 @@ msgid "Candidate"
 msgstr ""
 
 #: View/Acquirements/view.ctp:14
-#: View/Candidates/view.ctp:86
+#: View/Candidates/view.ctp:131
 msgid "Description"
-msgstr ""
-
-#: View/Acquirements/view.ctp:21
-msgid "Back"
 msgstr ""
 
 #: View/Acquirements/view.ctp:32
@@ -412,14 +436,14 @@ msgstr ""
 
 #: View/Candidates/add.ctp:30
 #: View/Candidates/index.ctp:75
-#: View/Pages/home.ctp:14
+#: View/Pages/home.ctp:11
 msgid "Logout"
 msgstr ""
 
 #: View/Candidates/add.ctp:31
 #: View/Candidates/edit.ctp:30
 #: View/Candidates/index.ctp:72
-#: View/Pages/home.ctp:11
+#: View/Pages/home.ctp:8
 #: View/Roles/add.ctp:15
 #: View/Roles/edit.ctp:17
 #: View/Roles/view.ctp:21
@@ -429,7 +453,7 @@ msgstr ""
 #: View/Candidates/add.ctp:32
 #: View/Candidates/edit.ctp:31
 #: View/Candidates/index.ctp:73
-#: View/Pages/home.ctp:12
+#: View/Pages/home.ctp:9
 #: View/Roles/index.ctp:40
 #: View/Roles/view.ctp:22
 msgid "New Role"
@@ -438,45 +462,45 @@ msgstr ""
 #: View/Candidates/add.ctp:35
 #: View/Candidates/edit.ctp:34
 #: View/Candidates/index.ctp:79
-#: View/Experiences/add.ctp:22
-#: View/Experiences/edit.ctp:24
-#: View/Experiences/view.ctp:51
-#: View/Pages/home.ctp:17
+#: View/Experiences/add.ctp:29
+#: View/Experiences/edit.ctp:31
+#: View/Experiences/view.ctp:58
+#: View/Pages/home.ctp:14
 msgid "List Experiences"
 msgstr ""
 
 #: View/Candidates/add.ctp:36
 #: View/Candidates/edit.ctp:35
 #: View/Candidates/index.ctp:80
-#: View/Candidates/view.ctp:145
+#: View/Candidates/view.ctp:122
 #: View/Experiences/index.ctp:54
-#: View/Experiences/view.ctp:52
-#: View/Pages/home.ctp:18
+#: View/Experiences/view.ctp:59
+#: View/Pages/home.ctp:15
 msgid "New Experience"
 msgstr ""
 
 #: View/Candidates/add.ctp:37
 #: View/Candidates/edit.ctp:36
 #: View/Candidates/index.ctp:83
-#: View/Languages/add.ctp:17
-#: View/Languages/edit.ctp:19
-#: View/Languages/view.ctp:31
-#: View/Pages/home.ctp:21
+#: View/Languages/add.ctp:23
+#: View/Languages/edit.ctp:25
+#: View/Languages/view.ctp:37
+#: View/Pages/home.ctp:18
 msgid "List Languages"
 msgstr ""
 
 #: View/Candidates/add.ctp:38
 #: View/Candidates/edit.ctp:37
 #: View/Candidates/index.ctp:84
-#: View/Candidates/view.ctp:209
+#: View/Candidates/view.ctp:211
 #: View/Languages/index.ctp:44
-#: View/Languages/view.ctp:32
-#: View/Pages/home.ctp:22
+#: View/Languages/view.ctp:38
+#: View/Pages/home.ctp:19
 msgid "New Language"
 msgstr ""
 
 #: View/Candidates/edit.ctp:4
-#: View/Candidates/view.ctp:74
+#: View/Candidates/view.ctp:80
 msgid "Edit Candidate"
 msgstr ""
 
@@ -489,160 +513,168 @@ msgid "Search"
 msgstr ""
 
 #: View/Candidates/index.ctp:74
-#: View/Pages/home.ctp:13
+#: View/Pages/home.ctp:10
 msgid "List Candidate"
 msgstr ""
 
 #: View/Candidates/index.ctp:76
+#: View/Roles/index.ctp:43
 msgid "Home"
 msgstr ""
 
 #: View/Candidates/index.ctp:81
-#: View/Courses/add.ctp:18
-#: View/Courses/edit.ctp:20
-#: View/Courses/view.ctp:36
-#: View/Pages/home.ctp:19
+#: View/Courses/add.ctp:24
+#: View/Courses/edit.ctp:26
+#: View/Courses/view.ctp:42
+#: View/Pages/home.ctp:16
 msgid "List Courses"
 msgstr ""
 
 #: View/Candidates/index.ctp:82
-#: View/Candidates/view.ctp:178
+#: View/Candidates/view.ctp:182
 #: View/Courses/index.ctp:48
-#: View/Courses/view.ctp:37
-#: View/Pages/home.ctp:20
+#: View/Courses/view.ctp:43
+#: View/Pages/home.ctp:17
 msgid "New Course"
 msgstr ""
 
-#: View/Candidates/view.ctp:9
+#: View/Candidates/view.ctp:5
 #: View/Roles/view.ctp:2
 msgid "Role"
 msgstr ""
 
-#: View/Candidates/view.ctp:14
+#: View/Candidates/view.ctp:10
 #: View/Roles/view.ctp:34
 msgid "Name"
 msgstr ""
 
-#: View/Candidates/view.ctp:19
-#: View/Roles/view.ctp:35
-msgid "Cpf"
+#: View/Candidates/view.ctp:15
+msgid "Gender"
 msgstr ""
 
-#: View/Candidates/view.ctp:24
-#: View/Roles/view.ctp:36
-msgid "Rg"
+#: View/Candidates/view.ctp:20
+msgid "Date of birth"
 msgstr ""
 
-#: View/Candidates/view.ctp:29
-#: View/Roles/view.ctp:37
-msgid "Street"
-msgstr ""
-
-#: View/Candidates/view.ctp:34
-#: View/Roles/view.ctp:38
-msgid "Street Number"
-msgstr ""
-
-#: View/Candidates/view.ctp:39
-#: View/Roles/view.ctp:39
-msgid "Complement"
-msgstr ""
-
-#: View/Candidates/view.ctp:44
-#: View/Roles/view.ctp:40
-msgid "State"
-msgstr ""
-
-#: View/Candidates/view.ctp:49
-#: View/Roles/view.ctp:41
-msgid "City"
-msgstr ""
-
-#: View/Candidates/view.ctp:54
+#: View/Candidates/view.ctp:25
 #: View/Roles/view.ctp:42
 msgid "Email"
 msgstr ""
 
-#: View/Candidates/view.ctp:59
+#: View/Candidates/view.ctp:30
+msgid "Schooling"
+msgstr ""
+
+#: View/Candidates/view.ctp:35
+#: View/Roles/view.ctp:36
+msgid "Rg"
+msgstr ""
+
+#: View/Candidates/view.ctp:40
+#: View/Roles/view.ctp:35
+msgid "Cpf"
+msgstr ""
+
+#: View/Candidates/view.ctp:45
+#: View/Roles/view.ctp:37
+msgid "Street"
+msgstr ""
+
+#: View/Candidates/view.ctp:50
+#: View/Roles/view.ctp:38
+msgid "Street Number"
+msgstr ""
+
+#: View/Candidates/view.ctp:55
+#: View/Roles/view.ctp:39
+msgid "Complement"
+msgstr ""
+
+#: View/Candidates/view.ctp:60
+#: View/Roles/view.ctp:40
+msgid "State"
+msgstr ""
+
+#: View/Candidates/view.ctp:65
+#: View/Roles/view.ctp:41
+msgid "City"
+msgstr ""
+
+#: View/Candidates/view.ctp:70
 #: View/Roles/view.ctp:43
 msgid "Created"
 msgstr ""
 
-#: View/Candidates/view.ctp:64
-#: View/Roles/view.ctp:44
-msgid "Modified"
-msgstr ""
-
-#: View/Candidates/view.ctp:75
+#: View/Candidates/view.ctp:81
 msgid "Delete Candidate"
 msgstr ""
 
-#: View/Candidates/view.ctp:82
-msgid "Related Acquirements"
-msgstr ""
-
-#: View/Candidates/view.ctp:111
+#: View/Candidates/view.ctp:89
 msgid "Related Experiences"
 msgstr ""
 
-#: View/Candidates/view.ctp:115
+#: View/Candidates/view.ctp:93
 #: View/Experiences/view.ctp:14
 msgid "Function"
 msgstr ""
 
-#: View/Candidates/view.ctp:116
+#: View/Candidates/view.ctp:94
 #: View/Experiences/view.ctp:19
 msgid "Time Worked"
 msgstr ""
 
-#: View/Candidates/view.ctp:117
+#: View/Candidates/view.ctp:95
 #: View/Experiences/view.ctp:24
 msgid "Start Date"
 msgstr ""
 
-#: View/Candidates/view.ctp:118
+#: View/Candidates/view.ctp:96
 #: View/Experiences/view.ctp:29
 msgid "End Date"
 msgstr ""
 
-#: View/Candidates/view.ctp:119
+#: View/Candidates/view.ctp:97
 #: View/Experiences/view.ctp:34
 msgid "Current Job"
 msgstr ""
 
-#: View/Candidates/view.ctp:120
+#: View/Candidates/view.ctp:98
 #: View/Experiences/view.ctp:39
 msgid "Job Description"
 msgstr ""
 
-#: View/Candidates/view.ctp:150
+#: View/Candidates/view.ctp:127
+msgid "Related Acquirements"
+msgstr ""
+
+#: View/Candidates/view.ctp:155
 msgid "Related Courses"
 msgstr ""
 
-#: View/Candidates/view.ctp:154
+#: View/Candidates/view.ctp:159
 #: View/Courses/view.ctp:14
 msgid "Institution"
 msgstr ""
 
-#: View/Candidates/view.ctp:155
+#: View/Candidates/view.ctp:160
 #: View/Courses/view.ctp:19
 msgid "Duration"
 msgstr ""
 
-#: View/Candidates/view.ctp:156
+#: View/Candidates/view.ctp:161
 msgid "Name of Course"
 msgstr ""
 
-#: View/Candidates/view.ctp:183
+#: View/Candidates/view.ctp:186
 msgid "Related Languages"
 msgstr ""
 
-#: View/Candidates/view.ctp:187
+#: View/Candidates/view.ctp:190
 #: View/Languages/view.ctp:2;14
 msgid "Language"
 msgstr ""
 
-#: View/Candidates/view.ctp:188
+#: View/Candidates/view.ctp:191
 #: View/Languages/view.ctp:19
 msgid "Fluency"
 msgstr ""
@@ -652,7 +684,7 @@ msgid "Add Course"
 msgstr ""
 
 #: View/Courses/edit.ctp:4
-#: View/Courses/view.ctp:34
+#: View/Courses/view.ctp:40
 msgid "Edit Course"
 msgstr ""
 
@@ -668,7 +700,7 @@ msgstr ""
 msgid "Name Course"
 msgstr ""
 
-#: View/Courses/view.ctp:35
+#: View/Courses/view.ctp:41
 msgid "Delete Course"
 msgstr ""
 
@@ -677,7 +709,7 @@ msgid "Add Experience"
 msgstr ""
 
 #: View/Experiences/edit.ctp:4
-#: View/Experiences/view.ctp:49
+#: View/Experiences/view.ctp:56
 msgid "Edit Experience"
 msgstr ""
 
@@ -689,7 +721,7 @@ msgstr ""
 msgid "Experience"
 msgstr ""
 
-#: View/Experiences/view.ctp:50
+#: View/Experiences/view.ctp:57
 msgid "Delete Experience"
 msgstr ""
 
@@ -698,7 +730,7 @@ msgid "Add Language"
 msgstr ""
 
 #: View/Languages/edit.ctp:4
-#: View/Languages/view.ctp:29
+#: View/Languages/view.ctp:35
 msgid "Edit Language"
 msgstr ""
 
@@ -710,8 +742,16 @@ msgstr ""
 msgid "Candidate Id"
 msgstr ""
 
-#: View/Languages/view.ctp:30
+#: View/Languages/view.ctp:36
 msgid "Delete Language"
+msgstr ""
+
+#: View/Layouts/layout.ctp:26
+msgid "editar perfil"
+msgstr ""
+
+#: View/Layouts/layout.ctp:33
+msgid "logout"
 msgstr ""
 
 #: View/Pages/home.ctp:2
@@ -753,8 +793,20 @@ msgstr ""
 msgid "Role Id"
 msgstr ""
 
+#: View/Roles/view.ctp:44
+msgid "Modified"
+msgstr ""
+
 #: View/Users/add.ctp:5
 msgid "Add User"
+msgstr ""
+
+#: View/Users/index.ctp:2
+msgid "Users"
+msgstr ""
+
+#: View/Users/index.ctp:46
+msgid "New user"
 msgstr ""
 
 #: View/Users/login.ctp:4

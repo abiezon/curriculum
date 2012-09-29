@@ -4,7 +4,7 @@ class UsersController extends AppController {
 
     public function beforeFilter() {
 	    parent::beforeFilter();
-	    $this->Auth->allow('add','logout'); // Letting users register themselves
+	    $this->Auth->allow('logout'); // Letting users register themselves
 	}
 
 	public function login() {
@@ -24,6 +24,7 @@ class UsersController extends AppController {
 
     public function index() {
         $this->User->recursive = 0;
+		$this->layout = 'layout';
         $this->set('users', $this->paginate());
     }
 
@@ -73,10 +74,12 @@ class UsersController extends AppController {
         if (!$this->User->exists()) {
             throw new NotFoundException(__('Invalid user'));
         }
-        if ($this->User->delete()) {
-            $this->Session->setFlash(__('User deleted'));
-            $this->redirect(array('action' => 'index'));
-        }
+		if($this->User->id != $this->Auth->user('id')):
+        	if ($this->User->delete()) {
+	            $this->Session->setFlash(__('User deleted'));
+	            $this->redirect(array('action' => 'index'));
+	        }
+		endif;	
         $this->Session->setFlash(__('User was not deleted'));
         $this->redirect(array('action' => 'index'));
     }

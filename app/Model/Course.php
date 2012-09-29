@@ -12,7 +12,7 @@ class Course extends AppModel {
  *
  * @var string
  */
-	public $displayField = 'id';
+	public $displayField = 'name_course';
 
 /**
  * Validation rules

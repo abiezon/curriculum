@@ -29,19 +29,19 @@ body {
 	font-size:90%;
 	margin: 0;
 }
-a {
+/*a {
 	color: #003d4c;
 	text-decoration: underline;
 	font-weight: bold;
-}
-a:hover {
+}*/
+/*a:hover {
 	color: #367889;
 	text-decoration:none;
-}
+}*/
 a img {
 	border:none;
 }
-h1, h2, h3, h4 {
+/*h1, h2, h3, h4 {
 	font-weight: normal;
 	margin-bottom:0.5em;
 }
@@ -49,14 +49,17 @@ h1 {
 	background:#fff;
 	color: #003d4c;
 	font-size: 100%;
-}
-h2 {
+}*/
+/*h2 {
 	background:#fff;
 	color: #e32;
 	font-family:'Gill Sans','lucida grande', helvetica, arial, sans-serif;
 	font-size: 190%;
+}*/
+.related {
+	height: 160px;
 }
-h3 {
+.related h3 {
 	color: #2c6877;
 	font-family:'Gill Sans','lucida grande', helvetica, arial, sans-serif;
 	font-size: 165%;
@@ -65,9 +68,9 @@ h4 {
 	color: #993;
 	font-weight: normal;
 }
-ul, li {
+/*ul, li {
 	margin: 0 12px;
-}
+}*/
 p {
 	margin: 0 0 1em 0;
 }
@@ -77,14 +80,25 @@ p {
 	text-align: left;
 }
 
-#header{
-	padding: 10px 20px;
-}
-#header h1 {
-	line-height:20px;
-	background: #003d4c url('../img/cake.icon.png') no-repeat left;
+/*#header{*/
+	/*padding: 10px 20px;
+		margin: auto;
+		width: 960px;*/
+	/*padding: 10px 20px;
+		margin: 10px auto 20px;
+		width: 960px;
+		background-color: 
+		#fff;
+		height: 82px;
+		border-radius: 8px;
+	}*/
+/*#header h1 {
+	line-height:100px;
+	background: #fff url('../img/logo.png') no-repeat left;
 	color: #fff;
 	padding: 0px 30px;
+	width: 45%;
+	margin-top: -10px;
 }
 #header h1 a {
 	color: #fff;
@@ -96,8 +110,17 @@ p {
 	color: #fff;
 	background: #003d4c;
 	text-decoration: underline;
+}*/
+#header h3{
+	font-size: 12px;
+/*	color: #FFF;*/
+	font-weight: bold;
+	margin: -30px 15px 20px 0;
+	display: inline;
+	float: right;
 }
-#content{
+
+/*#content{
 	background: #fff;
 	clear: both;
 	color: #333;
@@ -105,20 +128,21 @@ p {
 	overflow: auto;
 	width: 960px;
 	margin: 30px auto 0;
-}
-#footer {
+	border-radius: 8px 8px 8px 8px;
+}*/
+/*#footer {
 	clear: both;
 	padding: 6px 10px;
 	text-align: right;
-}
+}*/
 
 /** containers **/
 div.form,
 div.index,
 div.view {
-	float:right;
-	width:76%;
-	border-left:1px solid #666;
+/*	float:right;*/
+/*	width:76%;*/
+/*	border-left:1px solid #666;*/
 	padding:10px 2%;
 }
 div.actions {
@@ -170,10 +194,10 @@ td.actions {
 	text-align: center;
 	white-space: nowrap;
 }
-table td.actions a {
+/*table td.actions a {
 	margin: 0px 6px;
 	padding:2px 5px;
-}
+}*/
 
 /* SQL log */
 .cake-sql-log {
@@ -238,21 +262,24 @@ dl {
 	margin: 0em 0em;
 /*	width: 60%;*/
 }
-dl dd:nth-child(4n+2),
+/*dl dd:nth-child(4n+2),
 dl dt:nth-child(4n+1) {
 	background: #f4f4f4;
-}
+}*/
 
 dt {
-	font-weight: bold;
-	padding-left: 4px;
-	vertical-align: top;
-	width: 10em;
+	/*font-weight: bold;
+		padding-left: 4px;
+		vertical-align: top;
+		width: 10em;*/
+	font: bold 16px Arial;
 }
 dd {
-	margin-left: 10em;
-	margin-top: -2em;
+	/*margin-left: 10em;
+		margin-top: -2em;*/
 	vertical-align: top;
+	font: 14px Arial;
+	margin: 0 0 20px 0;
 }
 
 /** Forms **/
@@ -286,8 +313,8 @@ fieldset fieldset div {
 }
 form div {
 	clear: both;
-	margin-bottom: 1em;
-	padding: .5em;
+	margin-bottom: 0.5em;
+/*	padding: .5em;*/
 	vertical-align: text-top;
 }
 form .input {
@@ -311,13 +338,13 @@ label {
 	font-size: 110%;
 	margin-bottom:3px;
 }
-input, textarea {
+/*input, textarea {
 	clear: both;
 	font-size: 140%;
 	font-family: "frutiger linotype", "lucida grande", "verdana", sans-serif;
 	padding: 1%;
 	width:98%;
-}
+}*/
 select {
 	clear: both;
 	font-size: 120%;
@@ -355,7 +382,7 @@ input[type=submit] {
 	font-size: 110%;
 	width: auto;
 }
-form .submit input[type=submit] {
+/*form .submit input[type=submit] {
 	background:#62af56;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#76BF6B), to(#3B8230));
 	background-image: -webkit-linear-gradient(top, #76BF6B, #3B8230);
@@ -367,7 +394,7 @@ form .submit input[type=submit] {
 }
 form .submit input[type=submit]:hover {
 	background: #5BA150;
-}
+}*/
 /* Form errors */
 form .error {
 	background: #FFDACC;
@@ -508,8 +535,7 @@ p.error em {
 
 /* Buttons and button links */
 input[type=submit],
-.actions ul li a,
-.actions a {
+.actions ul li a {
 	font-weight:normal;
 	padding: 4px 8px;
 	background: #dcdcdc;
@@ -533,15 +559,14 @@ input[type=submit],
 	-webkit-user-select: none;
 	user-select: none;
 }
-.actions ul li a:hover,
-.actions a:hover {
+.actions ul li a:hover{
 	background: #ededed;
 	border-color: #acacac;
 	text-decoration: none;
 }
 input[type=submit]:active,
 .actions ul li a:active,
-.actions a:active {
+{
 	background: #eee;
 	background-image: -webkit-gradient(linear, left top, left bottom, from(#dfdfdf), to(#eee));
 	background-image: -webkit-linear-gradient(top, #dfdfdf, #eee);
@@ -558,13 +583,21 @@ input[type=submit]:active,
 }
 
 /** Related **/
-.related {
+/*.related {
 	clear: both;
 	display: block;
 	width: 76%;
 	float: right;
 	padding: 10px 2%;
 	border-left: 1px solid #666;
+}*/
+.related H3{
+	background-color: #eee;
+	line-height: 50px;
+}
+
+.related table{
+/*	display: none;*/
 }
 
 /** Debugging **/
@@ -776,12 +809,10 @@ pre {
 	width: 290px;
 	height: 240px;
 	padding: 25px 15px 15px 15px;
-	border-right: 1px solid 
-	#CCC;
-	border-bottom: 1px solid 
-	#CCC;
-	background: 
-	#FFF;
+	border-right: 1px solid #CCC;
+	border-bottom: 1px solid #CCC;
+	background: #FFF;
+	border-radius: 8px 8px 8px 8px;
 }
 #login-wrap fieldset{
 	padding:0;
@@ -793,4 +824,69 @@ pre {
 	float:none;
 	width:100%;
 	border:none;
-}	
+}
+.replace {
+overflow: hidden;
+display: block;
+text-indent: -5000px;
+width: 0px;
+height: 0px;
+font-size: 1px;
+}
+.btn-editar, .btn-ver, .btn-deletar, .btn-imprimir {
+background: url(/img/btn-buttons.gif) no-repeat;
+float: left;
+width: 30px;
+height: 23px;
+margin-right: 5px;
+}
+.btn-ver {
+background-position: -30px 0;
+}
+.btn-ver:hover {
+background-position: -30px -23px;
+}
+.btn-editar:hover {
+background-position: 0 -23px;
+}
+.btn-deletar {
+background-position: -60px 0;
+}
+.btn-deletar:hover {
+background-position: -60px -23px;
+}
+.btn-add {
+background: url(/img/add.png) no-repeat;
+float: right;
+width: 32px;
+height: 32px;
+/*margin-right: 40px;*/
+margin-top: -10px;
+}
+.new-right{
+	float:right !important;
+}
+.description .title{
+	background-color: #eee;
+	margin: 0;	
+/*	font: bold 16px Arial;*/
+	line-height: 2em;
+	color: #2c6877;
+	font-family: 'Gill Sans','lucida grande', helvetica, arial, sans-serif;
+	font-size: 165%;
+}
+.description p{
+	margin: 1em 1em;
+}
+.description p span{
+	font: bold 14px Arial;
+}
+.left{
+	float: left;
+	display: inline;
+	width: 30%;
+}
+.right{
+	float:right;
+}
+	

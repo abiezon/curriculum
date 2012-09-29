@@ -9,7 +9,7 @@
 	<?php
 		echo $this->Html->meta('icon');
 
-		// echo $this->Html->css('cake.generic');
+		echo $this->Html->css('cake.generic');
 		echo $this->Html->css('style');
 
 		echo $this->fetch('meta');
@@ -20,7 +20,7 @@
 <body id="container">
 <div id="container">
 	<div id="header">
-		<h1><a class="replace" href="#"></a></h1>
+		<!-- <h1><a class="replace" href="#"></a></h1> -->
 		<h2>Cadastro de Currículos - Betel</h2>
 	</div><!-- header -->
 	<?php echo $this->Session->flash('auth'); ?>

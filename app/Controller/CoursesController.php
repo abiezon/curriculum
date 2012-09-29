@@ -27,11 +27,13 @@ class CoursesController extends AppController {
  */
 	public function view($id = null) {
 		$this->Course->id = $id;
+		$idCandidate = $this->Session->read('candidate_id');
 		$this->layout = 'layout';
 		if (!$this->Course->exists()) {
 			throw new NotFoundException(__('Invalid course'));
 		}
 		$this->set('course', $this->Course->read(null, $id));
+		$this->set('idCandidate',$idCandidate);
 	}
 
 /**
@@ -41,7 +43,7 @@ class CoursesController extends AppController {
  */
 	public function add($continue = null) {
 		$idCandidate = $this->Session->read('candidate_id');
-		$this->layout = 'layout';			
+		$this->layout = 'new';			
 		if ($this->request->is('post')) {
 			$this->Course->create();
 			if ($this->Course->save($this->request->data)) {
@@ -58,7 +60,7 @@ class CoursesController extends AppController {
 			}
 		}
 		$candidates = $this->Course->Candidate->find('list',array('conditions'=>array('Candidate.id'=>$idCandidate)));
-		$this->set(compact('candidates','continue'));
+		$this->set(compact('candidates','continue','idCandidate'));
 	}
 
 /**
@@ -86,7 +88,7 @@ class CoursesController extends AppController {
 			$this->request->data = $this->Course->read(null, $id);
 		}
 		$candidates = $this->Course->Candidate->find('list');
-		$this->set(compact('candidates'));
+		$this->set(compact('candidates','idCandidate'));
 	}
 
 /**

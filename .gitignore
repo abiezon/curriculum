@@ -1,4 +1,9 @@
 .DS_Store
 */.DS_Store
 app/Config/database.php
+app/tmp
 app/tmp/*
+app/tmp/cache
+app/tmp/cache/*
+app/tmp/logs
+app/tmp/logs/*

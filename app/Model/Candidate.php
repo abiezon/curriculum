@@ -27,9 +27,9 @@ class Candidate extends AppModel {
                   ));
       }
 
-	public function isOwnedBy($candidate, $user) {
-	    return $this->field('id', array('id' => $candidate, 'user_id' => $user)) === $candidate;
-	}
+	// public function isOwnedBy($candidate, $user) {
+	// 	    return $this->field('id', array('id' => $candidate, 'user_id' => $user)) === $candidate;
+	// 	}
 
 /**
  * Display field
@@ -57,7 +57,7 @@ class Candidate extends AppModel {
 		'role_id' => array(
 			'notempty' => array(
 				'rule' => array('notempty'),
-				//'message' => 'Your custom message here',
+				'message' => 'Selecione uma opção',
 				//'allowEmpty' => false,
 				//'required' => false,
 				//'last' => false, // Stop validation after this rule
@@ -73,7 +73,52 @@ class Candidate extends AppModel {
 				//'last' => false, // Stop validation after this rule
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
+			'rule-2' =>array(
+				'rule' => array('minLength', 8),
+				'message' => 'Tamanho mínimo de 8 caracteres'
+			),
 		),
+		'email' => array(
+		        'isUnique' => array (
+		            'rule' => 'isUnique',
+		            'message' => 'Este endereço de email já foi cadastrado.'),
+		        'valid' => array (
+		            'rule' => array('email', false),
+		            'message' => 'Email inválido.'),        
+				'notempty' => array(
+					'rule' => array('notempty'),
+					'message' => 'Your custom message here')	
+		    ),
+		'cpf'=> array(
+				'rule' => '/[0-9]{11}$/i',
+				'message' => 'Preencha o campo (CPF) corretamente'
+		 ),
+		'rg'=> array(
+				'rule' => '/[0-9]{5,}$/i',
+				'message' => 'Preencha o campo (RG) corretamente'
+		 ),
+		'state'=> array(
+				'rule' => array('notempty'),
+				'message'=>'Selecione o estado'				
+		 ),
+		'gender' => array(
+			'notempty' => array(
+				'rule' => array('notempty'),
+				'message' => 'Selecione uma opção'				
+			),
+		),
+		'schooling' => array(
+			'notempty' => array(
+				'rule' => array('notempty'),
+				'message' => 'Selecione uma opção'				
+			),
+		),
+		'city' => array(
+			'notempty' => array(
+				'rule' => array('notempty')								
+			),
+		),
+		
 	);
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed

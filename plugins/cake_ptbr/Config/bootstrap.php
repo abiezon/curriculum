@@ -15,3 +15,4 @@ include CakePlugin::path('CakePtbr') . 'Config' . DS . 'traducao_core.php';
 
 // Alteração das regras de inflections
 include CakePlugin::path('CakePtbr') . 'Config' . DS . 'inflections.php';
+// include CakePlugin::path('CakePtbr').'Locale'.DS.'pt_br'.DS.'LC_MESSAGES'.DS.'default.pot';

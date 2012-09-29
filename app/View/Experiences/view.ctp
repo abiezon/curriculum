@@ -1,5 +1,9 @@
+<div class="box-head">
+	<h2><?php echo __('Experience'); ?></h2>
+</div>
+
 <div class="experiences view">
-<h2><?php  echo __('Experience'); ?></h2>
+
 	<dl>
 		<dt><?php echo __('Id'); ?></dt>
 		<dd>
@@ -41,6 +45,13 @@
 			<?php echo h($experience['Experience']['job_description']); ?>
 			&nbsp;
 		</dd>
+		<p>&nbsp;</p>	
+		<p class="actions"><?php echo $this->Html->link(__('Back'), array(
+			'controller' => 'candidates',
+			'action' => 'view',
+			$idCandidate,
+			)); ?> 
+		</p>
 	</dl>
 </div>
 <div class="actions">
@@ -48,9 +59,9 @@
 	<ul>
 		<li><?php echo $this->Html->link(__('Edit Experience'), array('action' => 'edit', $experience['Experience']['id'])); ?> </li>
 		<li><?php echo $this->Form->postLink(__('Delete Experience'), array('action' => 'delete', $experience['Experience']['id']), null, __('Are you sure you want to delete # %s?', $experience['Experience']['id'])); ?> </li>
-		<li><?php echo $this->Html->link(__('List Experiences'), array('action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Experience'), array('action' => 'add')); ?> </li>
-		<li><?php echo $this->Html->link(__('List Candidates'), array('controller' => 'candidates', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Candidate'), array('controller' => 'candidates', 'action' => 'add')); ?> </li>
+		<!-- <li><?php echo $this->Html->link(__('List Experiences'), array('action' => 'index')); ?> </li> -->
+		<!-- <li><?php echo $this->Html->link(__('New Experience'), array('action' => 'add')); ?> </li> -->
+		<!-- <li><?php echo $this->Html->link(__('List Candidates'), array('controller' => 'candidates', 'action' => 'index')); ?> </li> -->
+		<!-- <li><?php echo $this->Html->link(__('New Candidate'), array('controller' => 'candidates', 'action' => 'add')); ?> </li> -->
 	</ul>
 </div>

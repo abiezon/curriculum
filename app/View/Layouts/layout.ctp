@@ -9,8 +9,8 @@
 	<?php
 		echo $this->Html->meta('icon');
 
-		// echo $this->Html->css('cake.generic');
 		echo $this->Html->css('style');
+		echo $this->Html->css('style2');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -18,25 +18,97 @@
 	?>
 </head>
 <body>
-	<div id="container">
-		<div id="header">
-			<h1><?php // echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
+<!-- Header -->
+<div id="header">
+	<div class="shell">
+		<!-- Logo + Top Nav -->
+		<div id="top">
+			<h1><a href="#">Betel</a></h1>			
+			<div id="top-navigation">
+				<?php echo __('Bem-vindo')?>&nbsp;<strong><?php echo $this->Session->read('Auth.User.username') ?></strong>	<span>|</span>				
+				<?php
+				echo $this->Html->link(__('editar perfil'),array(
+				  'controller' => 'Users', 
+				  'action' => 'edit',
+				  $this->Session->read('Auth.User.id')
+				  ))
+				?>
+				<span>|</span>
+				<?php echo $this->Html->link(__('logout'),array('controller' => 'Users', 'action' => 'logout')) ?>
+			</div>
 		</div>
-		<div id="content">
-
-			<?php echo $this->Session->flash(); ?>
-
-			<?php echo $this->fetch('content'); ?>
+		<!-- End Logo + Top Nav -->
+		
+		<!-- Main Nav -->
+		<div id="navigation">
+			<ul>
+			    <li><a href="#" ><span>Home</span></a></li>
+			    <li><a href="#" class="active"><span>Candidato</span></a></li>
+			    <li><a href="#"><span>Aba3</span></a></li>
+			    <li><a href="#"><span>Aba4</span></a></li>
+			    <li><a href="#"><span>Aba5</span></a></li>
+			    <li><a href="#"><span>Aba6</span></a></li>
+			</ul>
 		</div>
-		<div id="footer">
-			<!-- <?php echo $this->Html->link(
-								$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-								'http://www.cakephp.org/',
-								array('target' => '_blank', 'escape' => false)
-							);
-						?> -->
-		</div>
+		<!-- End Main Nav -->
 	</div>
-	<?php //echo $this->element('sql_dump'); ?>
+</div>
+<!-- End Header -->
+
+<!-- Container -->
+<div id="container">
+	<div class="shell">
+		
+		<!-- Small Nav -->
+		<div class="small-nav">
+			<a href="#">Dashboard</a>
+			<span>&gt;</span>
+			Current Articles
+		</div>
+		<!-- End Small Nav -->
+		
+		<!-- Messages-->
+		<?php echo $this->Session->flash(); ?>	
+		<!-- End Messages-->
+		<br />
+		<!-- Main -->
+		<div id="main">
+			<div class="cl">&nbsp;</div>
+			
+			<!-- Content -->
+			<div id="content">
+				
+				<!-- Box -->
+				<div class="box">
+					
+					<?php echo $this->fetch('content'); ?>
+					
+				</div>			
+
+			</div>
+			<!-- End Content -->
+			
+			<!-- Sidebar -->
+			<?php  echo $this->element("sidebar")?>
+			<!-- End Sidebar -->
+			
+			<div class="cl">&nbsp;</div>			
+		</div>
+		<!-- Main -->
+	</div>
+</div>
+<!-- End Container -->
+
+<!-- Footer -->
+<div id="footer">
+	<div class="shell">
+		<span class="left">&copy; 2012 - Betel</span>
+		<span class="right">
+			Design by <a href="http://chocotemplates.com" target="_blank" title="The Sweetest CSS Templates WorldWide">Chocotemplates.com</a>
+		</span>
+	</div>
+</div>
+<!-- End Footer -->
+	
 </body>
 </html>

@@ -49,7 +49,10 @@ $_pluralIrregular = array(
 	'sacristao' => 'sacristaes',
 	'sotao' => 'sotaos',
 	'tabeliao' => 'tabeliaes',
-	'user' => 'users'	
+	'user' => 'users',
+	'course' => 'courses',
+	'candidate'=> 'candidates',
+	'experience'=>'experiences'	
 );
 
 Inflector::rules('singular', array(

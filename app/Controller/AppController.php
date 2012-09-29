@@ -38,6 +38,7 @@ class AppController extends Controller {
 	        'Auth' => array(
 	            'loginRedirect' => array('controller' => 'candidates', 'action' => 'index'),
 	            'logoutRedirect' => array('controller' => 'pages', 'action' => 'display', 'home'),
+				'authorize' => array('Controller')
 				// 'authorize' => array('controller' => 'candidates', 'action' => 'index')
 	        )
 	    );
@@ -51,8 +52,12 @@ class AppController extends Controller {
 	    // Default deny
 	    return false;
 	}
-
+	
+	public $helpers = array('Html', 'Form', 'Session');
     public function beforeFilter() {
-        $this->Auth->allow('index', 'view');
-    }
+	        //Configure AuthComponent
+	        $this->Auth->loginAction = array('controller' => 'users', 'action' => 'login');
+	        $this->Auth->logoutRedirect = array('controller' => 'users', 'action' => 'login');
+	        $this->Auth->loginRedirect = array('controller' => 'pages', 'action' => 'display');
+	    }
 }

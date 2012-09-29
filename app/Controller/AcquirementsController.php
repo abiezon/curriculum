@@ -42,7 +42,7 @@ class AcquirementsController extends AppController {
  */
 	public function add($continue = null) {
 		$idCandidate = $this->Session->read('candidate_id');
-		$this->layout = "layout";
+		$this->layout = "new";
 		if ($this->request->is('post')) {
 			$this->Acquirement->create();
 			if ($this->Acquirement->save($this->request->data)) {
@@ -59,7 +59,7 @@ class AcquirementsController extends AppController {
 			}
 		}
 		$candidates = $this->Acquirement->Candidate->find('list',array('conditions'=>array('Candidate.id'=>$idCandidate)));		
-		$this->set(compact('candidates','continue'));
+		$this->set(compact('candidates','continue','idCandidate'));
 	}
 
 /**
@@ -87,7 +87,7 @@ class AcquirementsController extends AppController {
 			$this->request->data = $this->Acquirement->read(null, $id);
 		}
 		$candidates = $this->Acquirement->Candidate->find('list');
-		$this->set(compact('candidates'));
+		$this->set(compact('candidates','idCandidate'));
 	}
 
 /**

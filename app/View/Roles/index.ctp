@@ -1,20 +1,24 @@
+<div class="box-head">
+	<h2 class="left"><?php echo __('Roles'); ?></h2>	
+</div>
+
 <div class="roles index">
-	<h2><?php echo __('Roles'); ?></h2>
+	<!-- <h2><?php echo __('Roles'); ?></h2> -->
 	<table cellpadding="0" cellspacing="0">
 	<tr>
-			<th><?php echo $this->Paginator->sort('id'); ?></th>
+			<!-- <th><?php echo $this->Paginator->sort('id'); ?></th> -->
 			<th><?php echo $this->Paginator->sort('role_name'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php
 	foreach ($roles as $role): ?>
 	<tr>
-		<td><?php echo h($role['Role']['id']); ?>&nbsp;</td>
+		<!-- <td><?php echo h($role['Role']['id']); ?>&nbsp;</td> -->
 		<td><?php echo h($role['Role']['role_name']); ?>&nbsp;</td>
-		<td class="actions">
-			<?php echo $this->Html->link(__('View'), array('action' => 'view', $role['Role']['id'])); ?>
-			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $role['Role']['id'])); ?>
-			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $role['Role']['id']), null, __('Are you sure you want to delete # %s?', $role['Role']['id'])); ?>
+		<td class="actions" style="width: 16%">
+			<?php echo $this->Html->link(__('View'), array('action' => 'view', $role['Role']['id']),array('class'=>'replace btn-ver')); ?>
+			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $role['Role']['id']),array('class'=>'replace btn-editar')); ?>
+			<?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $role['Role']['id']), array('class'=>'replace btn-deletar'), __('Are you sure you want to delete # %s?', $role['Role']['role_name'])); ?>
 		</td>
 	</tr>
 <?php endforeach; ?>
@@ -38,7 +42,8 @@
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 		<li><?php echo $this->Html->link(__('New Role'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Candidates'), array('controller' => 'candidates', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Candidate'), array('controller' => 'candidates', 'action' => 'add')); ?> </li>
+		<!-- <li><?php echo $this->Html->link(__('List Candidates'), array('controller' => 'candidates', 'action' => 'index')); ?> </li> -->
+		<!-- <li><?php echo $this->Html->link(__('New Candidate'), array('controller' => 'candidates', 'action' => 'add')); ?> </li> -->
+		<li><?php echo $this->Html->link(__('Home'), array('controller' => 'pages','action'=>'home')); ?></li>
 	</ul>
 </div>
