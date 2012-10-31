@@ -1849,3 +1849,350 @@
 #8 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
 #9 [internal function]: App::shutdown()
 #10 {main}
+2012-10-02 13:29:52 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/Elements/sidebar.ctp, line 19]
+2012-10-02 13:29:52 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 19, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 19, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-02 13:29:58 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/Elements/sidebar.ctp, line 19]
+2012-10-02 13:29:58 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 19, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 19, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-02 13:30:02 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/Elements/sidebar.ctp, line 19]
+2012-10-02 13:30:02 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 19)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 19, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 19, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-02 13:39:41 Error: [MissingViewException] View file "/Users/abiezon/Sites/curriculum/app/View/Pages/default.ctp" is missing.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(472): View->_getViewFileName('default')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render('default', NULL)
+#2 /Users/abiezon/Sites/curriculum/app/Controller/PagesController.php(74): Controller->render('default')
+#3 [internal function]: PagesController->display('default')
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-10-02 13:39:48 Error: [MissingControllerException] Controller class IndexController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-02 13:40:25 Error: [MissingViewException] View file "/Users/abiezon/Sites/curriculum/app/View/Pages/default.ctp" is missing.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(472): View->_getViewFileName('default')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render('default', NULL)
+#2 /Users/abiezon/Sites/curriculum/app/Controller/PagesController.php(74): Controller->render('default')
+#3 [internal function]: PagesController->display('default')
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-10-02 13:40:31 Error: [MissingControllerException] Controller class IndexController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-02 13:41:13 Error: [MissingViewException] View file "/Users/abiezon/Sites/curriculum/app/View/Pages/index.ctp" is missing.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(472): View->_getViewFileName('index')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render('index', NULL)
+#2 /Users/abiezon/Sites/curriculum/app/Controller/PagesController.php(74): Controller->render('index')
+#3 [internal function]: PagesController->display('index')
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest), Object(CakeResponse))
+#7 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#8 {main}
+2012-10-02 13:41:38 Error: [MissingControllerException] Controller class .candidatesController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-02 13:41:45 Error: [MissingControllerException] Controller class .candidatesController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-02 13:43:59 Error: [NotFoundException] Candidato inválido
+#0 [internal function]: CandidatesController->edit('candidates', 'index')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CandidatesController), Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CandidatesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-02 13:57:29 Error: Fatal Error (1): Call to a member function link() on a non-object in [/Users/abiezon/Sites/curriculum/app/View/Helper/HomeHelper.php, line 55]
+2012-10-02 13:57:29 Error: [FatalErrorException] Call to a member function link() on a non-object
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/abiezon/...', 55)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/abiezon/...', 55, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/abiezon/...', 55, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-02 13:59:42 Error: [MissingActionException] Action RolesController::roles() could not be found.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(RolesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-10-09 20:38:34 Error: [MissingViewException] View file "/Users/abiezon/Sites/curriculum/app/View/Users/edit.ctp" is missing.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-10-09 21:11:52 Error: [MissingControllerException] Controller class CandidateController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-09 21:23:58 Error: Fatal Error (1): Cannot use object of type SessionHelper as array in [/Users/abiezon/Sites/curriculum/app/View/Elements/menu_superior.ctp, line 4]
+2012-10-09 21:23:58 Error: [FatalErrorException] Cannot use object of type SessionHelper as array
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Cannot use obje...', '/Users/abiezon/...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', '/Users/abiezon/...', 4, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', '/Users/abiezon/...', 4, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-09 21:24:21 Error: Fatal Error (1): Cannot use object of type SessionHelper as array in [/Users/abiezon/Sites/curriculum/app/View/Elements/menu_superior.ctp, line 4]
+2012-10-09 21:24:21 Error: [FatalErrorException] Cannot use object of type SessionHelper as array
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Cannot use obje...', '/Users/abiezon/...', 4)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', '/Users/abiezon/...', 4, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', '/Users/abiezon/...', 4, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-09 21:24:45 Error: Fatal Error (1): Cannot use object of type SessionHelper as array in [/Users/abiezon/Sites/curriculum/app/View/Elements/menu_superior.ctp, line 6]
+2012-10-09 21:24:45 Error: [FatalErrorException] Cannot use object of type SessionHelper as array
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Cannot use obje...', '/Users/abiezon/...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', '/Users/abiezon/...', 6, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', '/Users/abiezon/...', 6, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-09 21:25:28 Error: Fatal Error (1): Cannot use object of type SessionHelper as array in [/Users/abiezon/Sites/curriculum/app/View/Elements/menu_superior.ctp, line 6]
+2012-10-09 21:25:28 Error: [FatalErrorException] Cannot use object of type SessionHelper as array
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Cannot use obje...', '/Users/abiezon/...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', '/Users/abiezon/...', 6, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', '/Users/abiezon/...', 6, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-09 21:25:47 Error: Fatal Error (1): Cannot use object of type SessionHelper as array in [/Users/abiezon/Sites/curriculum/app/View/Elements/menu_superior.ctp, line 6]
+2012-10-09 21:25:47 Error: [FatalErrorException] Cannot use object of type SessionHelper as array
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Cannot use obje...', '/Users/abiezon/...', 6)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot use obje...', '/Users/abiezon/...', 6, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Cannot use obje...', '/Users/abiezon/...', 6, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-14 17:48:33 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/Elements/menu_superior.ctp, line 7]
+2012-10-14 17:48:33 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 7, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 7, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-14 17:48:39 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/Elements/menu_superior.ctp, line 7]
+2012-10-14 17:48:39 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 7, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 7, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-14 17:59:09 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/Helper/HomeHelper.php, line 56]
+2012-10-14 17:59:09 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 56)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 56, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 56, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-14 17:59:09 Error: Fatal Error (256): [InvalidArgumentException] The eventKey variable is required
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(653): CakeEventManager->attach(NULL)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(922): Controller->getEventManager()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(127): Controller->render()
+#3 [internal function]: ErrorHandler::handleException(Object(FatalErrorException))
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(212): call_user_func('ErrorHandler::h...', Object(FatalErrorException))
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 56)
+#6 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 56, Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 56, Array)
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#9 [internal function]: App::shutdown()
+#10 {main} in [/Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php, line 136]
+2012-10-14 17:59:09 Error: [FatalErrorException] [InvalidArgumentException] The eventKey variable is required
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(653): CakeEventManager->attach(NULL)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(922): Controller->getEventManager()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(127): Controller->render()
+#3 [internal function]: ErrorHandler::handleException(Object(FatalErrorException))
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(212): call_user_func('ErrorHandler::h...', Object(FatalErrorException))
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 56)
+#6 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 56, Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 56, Array)
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#9 [internal function]: App::shutdown()
+#10 {main}
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(256, '[InvalidArgumen...', '/Users/abiezon/...', 136)
+#1 [internal function]: ErrorHandler::handleError(256, '[InvalidArgumen...', '/Users/abiezon/...', 136, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(136): trigger_error('[InvalidArgumen...', 256)
+#3 [internal function]: ErrorHandler::handleException(Object(FatalErrorException))
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(212): call_user_func('ErrorHandler::h...', Object(FatalErrorException))
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 56)
+#6 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 56, Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 56, Array)
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#9 [internal function]: App::shutdown()
+#10 {main}
+2012-10-25 20:45:02 Error: [CakeException] Unknown status code
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(781): CakeResponse->statusCode('msg-ok')
+#1 /Users/abiezon/Sites/curriculum/app/Controller/AcquirementsController.php(54): Controller->redirect(Array, 'msg-ok')
+#2 [internal function]: AcquirementsController->add()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(AcquirementsController), Array)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AcquirementsController), Object(CakeRequest), Object(CakeResponse))
+#6 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2012-10-25 20:45:45 Error: [CakeException] Unknown status code
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(781): CakeResponse->statusCode('msg-ok')
+#1 /Users/abiezon/Sites/curriculum/app/Controller/AcquirementsController.php(54): Controller->redirect(Array, 'msg-ok')
+#2 [internal function]: AcquirementsController->add()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(AcquirementsController), Array)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(AcquirementsController), Object(CakeRequest), Object(CakeResponse))
+#6 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2012-10-25 20:53:07 Error: Fatal Error (4): parse error, expecting `T_VARIABLE' in [/Users/abiezon/Sites/curriculum/app/Model/Course.php, line 62]
+2012-10-25 20:53:07 Error: [FatalErrorException] parse error, expecting `T_VARIABLE'
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/abiezon/...', 62)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/abiezon/...', 62, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/abiezon/...', 62, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-25 20:53:07 Error: Fatal Error (256): [InvalidArgumentException] The eventKey variable is required
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(653): CakeEventManager->attach(NULL)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(922): Controller->getEventManager()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(127): Controller->render()
+#3 [internal function]: ErrorHandler::handleException(Object(FatalErrorException))
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(212): call_user_func('ErrorHandler::h...', Object(FatalErrorException))
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/abiezon/...', 62)
+#6 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/abiezon/...', 62, Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/abiezon/...', 62, Array)
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#9 [internal function]: App::shutdown()
+#10 {main} in [/Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php, line 136]
+2012-10-25 20:53:07 Error: [FatalErrorException] [InvalidArgumentException] The eventKey variable is required
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(653): CakeEventManager->attach(NULL)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(922): Controller->getEventManager()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(127): Controller->render()
+#3 [internal function]: ErrorHandler::handleException(Object(FatalErrorException))
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(212): call_user_func('ErrorHandler::h...', Object(FatalErrorException))
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/abiezon/...', 62)
+#6 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/abiezon/...', 62, Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/abiezon/...', 62, Array)
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#9 [internal function]: App::shutdown()
+#10 {main}
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(256, '[InvalidArgumen...', '/Users/abiezon/...', 136)
+#1 [internal function]: ErrorHandler::handleError(256, '[InvalidArgumen...', '/Users/abiezon/...', 136, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(136): trigger_error('[InvalidArgumen...', 256)
+#3 [internal function]: ErrorHandler::handleException(Object(FatalErrorException))
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(212): call_user_func('ErrorHandler::h...', Object(FatalErrorException))
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/abiezon/...', 62)
+#6 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/abiezon/...', 62, Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/abiezon/...', 62, Array)
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#9 [internal function]: App::shutdown()
+#10 {main}
+2012-10-25 20:53:14 Error: Fatal Error (4): parse error, expecting `T_VARIABLE' in [/Users/abiezon/Sites/curriculum/app/Model/Course.php, line 62]
+2012-10-25 20:53:14 Error: [FatalErrorException] parse error, expecting `T_VARIABLE'
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/abiezon/...', 62)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/abiezon/...', 62, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/abiezon/...', 62, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-25 20:53:17 Error: Fatal Error (4): parse error, expecting `T_VARIABLE' in [/Users/abiezon/Sites/curriculum/app/Model/Course.php, line 62]
+2012-10-25 20:53:17 Error: [FatalErrorException] parse error, expecting `T_VARIABLE'
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/abiezon/...', 62)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/abiezon/...', 62, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/abiezon/...', 62, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-29 15:30:35 Error: [MissingControllerException] Controller class PersonalReferralsController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-29 15:34:05 Error: [MissingControllerException] Controller class ObjetivesController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-30 15:24:12 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/abiezon/Sites/curriculum/app/Controller/PersonalReferraisController.php, line 40]
+2012-10-30 15:24:12 Error: [FatalErrorException] parse error, expecting `')''
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/abiezon/...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/abiezon/...', 40, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/abiezon/...', 40, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-30 15:24:18 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/abiezon/Sites/curriculum/app/Controller/PersonalReferraisController.php, line 40]
+2012-10-30 15:24:18 Error: [FatalErrorException] parse error, expecting `')''
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/abiezon/...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/abiezon/...', 40, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/abiezon/...', 40, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-30 15:24:20 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/abiezon/Sites/curriculum/app/Controller/PersonalReferraisController.php, line 40]
+2012-10-30 15:24:20 Error: [FatalErrorException] parse error, expecting `')''
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/abiezon/...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/abiezon/...', 40, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/abiezon/...', 40, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-30 15:25:21 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/abiezon/Sites/curriculum/app/Controller/PersonalReferraisController.php, line 40]
+2012-10-30 15:25:21 Error: [FatalErrorException] parse error, expecting `')''
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/abiezon/...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/abiezon/...', 40, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/abiezon/...', 40, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-30 15:25:23 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/abiezon/Sites/curriculum/app/Controller/PersonalReferraisController.php, line 40]
+2012-10-30 15:25:23 Error: [FatalErrorException] parse error, expecting `')''
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/abiezon/...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/abiezon/...', 40, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/abiezon/...', 40, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-30 15:25:27 Error: Fatal Error (4): parse error, expecting `')'' in [/Users/abiezon/Sites/curriculum/app/Controller/PersonalReferraisController.php, line 40]
+2012-10-30 15:25:27 Error: [FatalErrorException] parse error, expecting `')''
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/abiezon/...', 40)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/abiezon/...', 40, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/abiezon/...', 40, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-30 15:39:49 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/abiezon/Sites/curriculum/app/Controller/ObjectivesController.php, line 52]
+2012-10-30 15:39:49 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/abiezon/...', 52)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/abiezon/...', 52, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/abiezon/...', 52, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-10-31 12:00:43 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-31 12:04:46 Error: [MissingControllerException] Controller class ImgController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-31 14:07:58 Error: [NotFoundException] Candidato inválido
+#0 [internal function]: CandidatesController->view()
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CandidatesController), Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CandidatesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

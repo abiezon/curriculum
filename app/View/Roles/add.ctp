@@ -1,3 +1,5 @@
+<div id="content">
+	<div class="box">
 <div class="box-head">
 	<h2><?php echo __('Edit Role'); ?></h2>
 </div>
@@ -15,6 +17,8 @@
 		</div>
 	
 </div>
+</div>
+</div>
 
 <!-- <div class="roles form">
 <?php echo $this->Form->create('Role'); ?>
@@ -26,7 +30,31 @@
 	</fieldset>
 <?php echo $this->Form->end(__('Submit')); ?>
 </div> -->
-<div class="actions">
+<div id="sidebar" class="actions">
+	
+	<!-- Box -->
+	<div class="box">
+		
+		<!-- Box Head -->
+		<div class="box-head">
+			<h2><?php echo __('Menu')?></h2>
+		</div>
+		<!-- End Box Head-->
+		
+		<div class="box-content">
+			<ul>
+
+				<li><?php echo $this->Html->link(__('List Roles'), array('action' => 'index')); ?></li>
+				<li><?php echo $this->Html->link(__('List Candidates'), array('controller' => 'candidates', 'action' => 'index')); ?> </li>
+				<li><?php echo $this->Html->link(__('New Candidate'), array('controller' => 'candidates', 'action' => 'add')); ?> </li>
+			</ul>				
+			<div class="cl">&nbsp;</div>			
+			
+		</div>
+	</div>
+	<!-- End Box -->
+</div>
+<!-- <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
 	<ul>
 
@@ -34,4 +62,4 @@
 		<li><?php echo $this->Html->link(__('List Candidates'), array('controller' => 'candidates', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Candidate'), array('controller' => 'candidates', 'action' => 'add')); ?> </li>
 	</ul>
-</div>
+</div> -->

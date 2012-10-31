@@ -43,11 +43,11 @@ class CoursesController extends AppController {
  */
 	public function add($continue = null) {
 		$idCandidate = $this->Session->read('candidate_id');
-		$this->layout = 'new';			
+		$this->layout = 'layout';			
 		if ($this->request->is('post')) {
 			$this->Course->create();
 			if ($this->Course->save($this->request->data)) {
-				$this->Session->setFlash(__('The course has been saved'));
+				$this->Session->setFlash(__('The course has been saved'),'msg-ok');
 				// $this->redirect(array('action' => 'index'));
 				if($continue):
 					$this->redirect(array('controller'=>'candidates','action'=>'view',$idCandidate));
@@ -56,7 +56,7 @@ class CoursesController extends AppController {
 				endif;	
 					
 			} else {
-				$this->Session->setFlash(__('The course could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The course could not be saved. Please, try again.'),'msg-error');
 			}
 		}
 		$candidates = $this->Course->Candidate->find('list',array('conditions'=>array('Candidate.id'=>$idCandidate)));
@@ -79,10 +79,10 @@ class CoursesController extends AppController {
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Course->save($this->request->data)) {
-				$this->Session->setFlash(__('The course has been saved'));
+				$this->Session->setFlash(__('The course has been saved'),'msg-ok');
 				$this->redirect(array('controller'=>'candidates','action' => 'view',$idCandidate));
 			} else {
-				$this->Session->setFlash(__('The course could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The course could not be saved. Please, try again.'),'msg-error');
 			}
 		} else {
 			$this->request->data = $this->Course->read(null, $id);
@@ -106,13 +106,13 @@ class CoursesController extends AppController {
 		$this->Course->id = $id;
 		$idCandidate = $this->Session->read('candidate_id');
 		if (!$this->Course->exists()) {
-			throw new NotFoundException(__('Invalid course'));
+			throw new NotFoundException(__('Invalid course'),'msg-ok');
 		}
 		if ($this->Course->delete()) {
 			$this->Session->setFlash(__('Course deleted'));
 			$this->redirect(array('controller'=>'candidates','action' => 'view',$idCandidate));
 		}
-		$this->Session->setFlash(__('Course was not deleted'));
+		$this->Session->setFlash(__('Course was not deleted'),'msg-error');
 		$this->redirect(array('controller'=>'candidates','action' => 'view',$idCandidate));
 	}
 }

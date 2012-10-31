@@ -11,6 +11,7 @@
 
 		echo $this->Html->css('style');
 		echo $this->Html->css('style2');
+		echo $this->Html->script('jquery-1.7');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -41,14 +42,7 @@
 		
 		<!-- Main Nav -->
 		<div id="navigation">
-			<ul>
-			    <li><a href="#" ><span>Home</span></a></li>
-			    <li><a href="#" class="active"><span>Candidato</span></a></li>
-			    <li><a href="#"><span>Aba3</span></a></li>
-			    <li><a href="#"><span>Aba4</span></a></li>
-			    <li><a href="#"><span>Aba5</span></a></li>
-			    <li><a href="#"><span>Aba6</span></a></li>
-			</ul>
+			<?php echo $this->element('menu_superior');?>			
 		</div>
 		<!-- End Main Nav -->
 	</div>
@@ -76,20 +70,20 @@
 			<div class="cl">&nbsp;</div>
 			
 			<!-- Content -->
-			<div id="content">
+			<!-- <div id="content"> -->
 				
 				<!-- Box -->
-				<div class="box">
+				<!-- <div class="box"> -->
 					
 					<?php echo $this->fetch('content'); ?>
 					
-				</div>			
+				<!-- </div>			 -->
 
-			</div>
+			<!-- </div> -->
 			<!-- End Content -->
 			
 			<!-- Sidebar -->
-			<?php  echo $this->element("sidebar")?>
+			
 			<!-- End Sidebar -->
 			
 			<div class="cl">&nbsp;</div>			
@@ -103,9 +97,7 @@
 <div id="footer">
 	<div class="shell">
 		<span class="left">&copy; 2012 - Betel</span>
-		<span class="right">
-			Design by <a href="http://chocotemplates.com" target="_blank" title="The Sweetest CSS Templates WorldWide">Chocotemplates.com</a>
-		</span>
+			
 	</div>
 </div>
 <!-- End Footer -->

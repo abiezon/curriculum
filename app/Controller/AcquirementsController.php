@@ -42,11 +42,11 @@ class AcquirementsController extends AppController {
  */
 	public function add($continue = null) {
 		$idCandidate = $this->Session->read('candidate_id');
-		$this->layout = "new";
+		$this->layout = "layout";
 		if ($this->request->is('post')) {
 			$this->Acquirement->create();
 			if ($this->Acquirement->save($this->request->data)) {
-				$this->Session->setFlash(__('The acquirement has been saved'));
+				$this->Session->setFlash(__('The acquirement has been saved'),'msg-ok');
 				// $this->redirect(array('action' => 'index'));
 				if($continue):
 					$this->redirect(array('controller'=>'candidates','action'=>'view',$idCandidate));
@@ -55,7 +55,7 @@ class AcquirementsController extends AppController {
 				endif;
 					
 			} else {
-				$this->Session->setFlash(__('The acquirement could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The acquirement could not be saved. Please, try again.'),'msg-error');
 			}
 		}
 		$candidates = $this->Acquirement->Candidate->find('list',array('conditions'=>array('Candidate.id'=>$idCandidate)));		
@@ -78,10 +78,10 @@ class AcquirementsController extends AppController {
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Acquirement->save($this->request->data)) {
-				$this->Session->setFlash(__('The acquirement has been saved'));
+				$this->Session->setFlash(__('The acquirement has been saved'),'msg-ok');
 				$this->redirect(array('controller'=>'candidates','action' => 'view',$idCandidate));
 			} else {
-				$this->Session->setFlash(__('The acquirement could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The acquirement could not be saved. Please, try again.'),'msg-error');
 			}
 		} else {
 			$this->request->data = $this->Acquirement->read(null, $id);
@@ -108,10 +108,10 @@ class AcquirementsController extends AppController {
 			throw new NotFoundException(__('Invalid acquirement'));
 		}
 		if ($this->Acquirement->delete()) {
-			$this->Session->setFlash(__('Acquirement deleted'));
+			$this->Session->setFlash(__('Acquirement deleted'),'msg-ok');
 			$this->redirect(array('controller'=>'candidates','action' => 'view',$idCandidate));
 		}
-		$this->Session->setFlash(__('Acquirement was not deleted'));
+		$this->Session->setFlash(__('Acquirement was not deleted'),'msg-error');
 		$this->redirect(array('controller'=>'candidates','action' => 'view',$idCandidate));
 	}
 }

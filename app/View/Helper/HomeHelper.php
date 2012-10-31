@@ -49,12 +49,38 @@ class HomeHelper extends AppHelper {
 		return $option[$search];
 	}
 	
+	public function viewAtualWork($i){
+
+		if($i == 0)
+			return "Não";
+		else
+			return "Sim";
+		
+	}
+	
+	public function viewLanguage($i){
+
+		$options = array(
+			'0'=>'Lê',
+			'1'=>'Lê e Escreve',
+			'2'=>'Lê, Escreve e Fala');
+			
+		return $options[$i];	
+		
+	}
+	
 	public function menuSideBar($params){
 		//debug($params['controller']);
 		$menu = array("candidates"=>array(
-						"<a href='pages/default' class='add-button'><span>Home</span></a>",
-						"<a href='/index' class='add-button'><span>Listar Candidatos</span></a>"
-						));
+						"<a href='/pages'>Home</a>",
+						"<a href='/candidates/index'><span>Listar</span></a>"
+						),
+					 "roles"=>array(
+						"<a href='/pages'><span>Home</span></a>",
+						"<a href='/roles/index'><span>Listar</span></a>",
+						"<a href='/roles/add'><span>Adicionar</span></a>"
+						),	
+					);
 		
 		return $menu[$params['controller']];
 		

@@ -11,7 +11,7 @@ class CandidatesController extends AppController {
 	public $presetVars = array(
 	    array('field' => 'name', 'type' => 'value'),	    
 	);
-	public $helpers = array("Home");	
+	public $helpers = array("Home",'Js' => array('Jquery'));	
 
 /**
  * index method
@@ -55,13 +55,13 @@ class CandidatesController extends AppController {
 		$this->layout = 'layout';
 		if ($this->request->is('post')) {
 			$this->Candidate->create();
-			// debug($this->request->data);die();
+             
 			if ($this->Candidate->saveAssociated($this->request->data)) {
-				$this->Session->setFlash(__('The candidate has been saved'),'msg-ok');
-				// $this->redirect(array('action' => 'index'));
-				$this->Session->write('candidate_id' ,$this->Candidate->id);
+				$this->Session->setFlash(__('Candidato salvo com sucesso! Você pode continuar editando este candidato.'),'msg-ok');
+                $this->redirect(array('action' => 'view', $this->Candidate->id));
+                $this->Session->write('candidate_id' ,$this->Candidate->id);
 				// $this->redirect(array('controller'=>'experiences','action'=>'add', 'candidate'=>$this->Candidate->id));
-				$this->redirect(array('controller'=>'experiences','action'=>'add'));
+                // $this->redirect(array('controller'=>'experiences','action'=>'add'));
 			} else {
 				$this->Session->setFlash(__('The candidate could not be saved. Please, try again.'),'msg-error');
 			}
@@ -84,6 +84,8 @@ class CandidatesController extends AppController {
 			throw new NotFoundException(__('Invalid candidate'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
+		    $this->request->data['Candidate']['phone'] = str_replace("-","",str_replace("(","",str_replace(")","",$this->request->data['Candidate']['phone'])));
+		            
 			if ($this->Candidate->save($this->request->data)) {
 				$this->Session->setFlash(__('The candidate has been saved'),'msg-ok');
 				$this->redirect(array('action' => 'index'));

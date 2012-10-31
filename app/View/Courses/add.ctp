@@ -1,3 +1,5 @@
+<div id="content">
+	<div class="box">
 <!-- <div class="box"> -->
 	<!-- Box Head -->
 	<div class="box-head">
@@ -13,23 +15,48 @@
 			<?php
 				echo $this->Form->input('candidate_id',array('disabled'=>false,'class'=>'field'));
 				echo $this->Form->input('institution',array('class'=>'field size1'));
-				echo $this->Form->input('duration',array('class'=>'field'));
+				echo $this->Form->input('duration',array('class'=>'field size3','type'=>'text'));
 				echo $this->Form->input('name_course',array('class'=>'field size1'));
 			?>			
 		</div>
 		<!-- End Form -->
-		
+		<p class="actions"><?php echo $this->Html->link($continue == "" ?__('Leave') :__('Back'), array(
+			'controller' => 'candidates',
+			'action' => 'view',	$idCandidate
+			)); ?> 
+		</p>
 		<!-- Form Buttons -->
 		<div class="buttons">
 			<!-- <input type="button" class="button" value="preview" /> -->
-			<?php echo $this->Form->submit(__('Save and Continue'),array('class'=>'button')); ?>
+			<?php echo $this->Form->end($continue == "" ?__('Save and Continue'):__('Save')); ?>
 		</div>
 		<!-- End Form Buttons -->
 	</form>
 <!-- </div> -->
 
-
-
+</div>
+</div>
+<div id="sidebar" class="actions">
+	
+	<!-- Box -->
+	<div class="box">
+		
+		<!-- Box Head -->
+		<div class="box-head">
+			<h2><?php echo __('Menu')?></h2>
+		</div>
+		<!-- End Box Head-->
+		
+		<div class="box-content">
+			<ul>
+				<li><?php echo $this->Html->link(__('Ver Candidato'), array('controller' => 'candidates', 'action' => 'view',$idCandidate)); ?> </li>
+			</ul>				
+			<div class="cl">&nbsp;</div>			
+			
+		</div>
+	</div>
+	<!-- End Box -->
+</div>
 
 <!-- <div class="courses form">
 <?php echo $this->Form->create('Course'); ?>

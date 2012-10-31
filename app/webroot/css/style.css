@@ -57,12 +57,15 @@ h1 {
 	font-size: 190%;
 }*/
 .related {
-	height: 160px;
+	min-height: 160px;
+	margin: 5em auto;
 }
 .related h3 {
 	color: #2c6877;
 	font-family:'Gill Sans','lucida grande', helvetica, arial, sans-serif;
 	font-size: 165%;
+	margin-bottom:1em;
+	padding-left: 1em;
 }
 h4 {
 	color: #993;
@@ -145,11 +148,11 @@ div.view {
 /*	border-left:1px solid #666;*/
 	padding:10px 2%;
 }
-div.actions {
+/*div.actions {
 	float:left;
 	width:16%;
 	padding:10px 1.5%;
-}
+}*/
 div.actions h3 {
 	padding-top:0;
 	color:#777;
@@ -285,9 +288,9 @@ dd {
 /** Forms **/
 form {
 	clear: both;
-	margin-right: 20px;
+/*	margin-right: 20px;*/
 	padding: 0;
-	width: 95%;
+/*	width: 95%;*/
 }
 fieldset {
 	border: none;
@@ -860,8 +863,8 @@ background: url(/img/add.png) no-repeat;
 float: right;
 width: 32px;
 height: 32px;
-/*margin-right: 40px;*/
-margin-top: -10px;
+margin-right: 10px;
+/*margin-top: -10px;*/
 }
 .new-right{
 	float:right !important;
@@ -874,19 +877,29 @@ margin-top: -10px;
 	color: #2c6877;
 	font-family: 'Gill Sans','lucida grande', helvetica, arial, sans-serif;
 	font-size: 165%;
+	padding-left: 1em;
 }
 .description p{
-	margin: 1em 1em;
+	margin: 1em 3em;
 }
 .description p span{
 	font: bold 14px Arial;
 }
 .left{
 	float: left;
-	display: inline;
+	display: inline;             	
 	width: 30%;
 }
 .right{
 	float:right;
+}
+
+.btn-voltar{
+   float: left;
+    
+} 
+.back{
+	height: 28px;
+	margin: 2px auto auto 20px;
 }
 	

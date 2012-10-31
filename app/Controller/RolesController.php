@@ -43,6 +43,7 @@ class RolesController extends AppController {
 		$this->layout = 'layout';
 		if ($this->request->is('post')) {
 			$this->Role->create();
+			// debug($this->request->data);die();
 			if ($this->Role->save($this->request->data)) {
 				$this->Session->setFlash(__('The role has been saved'),'msg-ok');
 				$this->redirect(array('action' => 'index'));

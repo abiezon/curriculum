@@ -1,5 +1,6 @@
 <!-- <div class="candidates view"> -->
-	
+	<div id="content">
+		<div class="box">	
 	<div class="box-head">
 		<h2><?php echo __('Candidate'); ?></h2>
 	</div>	
@@ -17,17 +18,19 @@
 		<p><span><?php echo __('Name'); ?>:&nbsp;</span><?php echo h($candidate['Candidate']['name']); ?></p>
 		<p><span><?php echo __('Gender'); ?>:&nbsp;</span><?php echo $this->Home->viewGender(h($candidate['Candidate']['gender'])); ?></p>
 		<p><span><?php echo __('Date of birth'); ?>:&nbsp;</span><?php echo h($candidate['Candidate']['date_birth']); ?><p>
+		<p><span><?php echo __('Idade'); ?>:&nbsp;</span><?php echo h($candidate['Candidate']['age']).' anos'; ?></p> 
 		<p><span><?php echo __('Email'); ?>:&nbsp;</span><?php echo h($candidate['Candidate']['email']); ?></p>
 		<p><span><?php echo __('Schooling'); ?>:&nbsp;</span><?php echo $this->Home->viewSchooling(h($candidate['Candidate']['schooling'])); ?></p>
 		<p><span><?php echo __('Rg'); ?>:&nbsp;</span><?php echo h($candidate['Candidate']['rg']); ?></p>
 		<p><span><?php echo __('Cpf'); ?>:&nbsp;</span><?php echo h($candidate['Candidate']['cpf']); ?></p>
+		<p><span><?php echo __('Telefone'); ?>:&nbsp;</span><?php echo h($candidate['Candidate']['phone']); ?></p> 
 	</div>
 	
 	<div class="description">
 		<p class="title"><?php echo __('Endereço')?></p>
 		<p><span><?php echo __('Street'); ?>:&nbsp;</span><?php echo h($candidate['Candidate']['street']); ?></p>
 		<p><span><?php echo __('Street Number'); ?>:&nbsp;</span><?php echo h($candidate['Candidate']['street_number']); ?></p>
-		<p><span><?php echo __('Complement'); ?>:&nbsp;</span><?php echo h($candidate['Candidate']['date_birth']); ?><p>
+		<p><span><?php echo __('Complement'); ?>:&nbsp;</span><?php echo h($candidate['Candidate']['complement']); ?><p>
 		<p><span><?php echo __('State'); ?>:&nbsp;</span><?php echo h($candidate['Candidate']['state']); ?></p>
 		<p><span><?php echo __('City'); ?>:&nbsp;</span><?php echo h($candidate['Candidate']['city']); ?></p>		
 	</div>
@@ -35,6 +38,7 @@
 		<p class="title"><?php echo __('Created'); ?></p>
 		<p><?php echo h($candidate['Candidate']['created']); ?></p>				
 	</div>	
+	
 <!-- </div> -->
 <!-- <div class="actions">
 	<h3><?php echo __('Actions'); ?></h3>
@@ -68,7 +72,7 @@
 			<td><?php echo $experience['time_worked']; ?></td>
 			<!-- <td><?php echo $experience['start_date']; ?></td> -->
 			<!-- <td><?php echo $experience['end_date']; ?></td> -->
-			<td><?php echo $experience['current_job']; ?></td>
+			<td><?php echo $this->Home->viewAtualWork($experience['current_job']); ?></td>
 			<!-- <td><?php echo $experience['job_description']; ?></td> -->
 			<td class="actions">
 				<?php echo $this->Html->link(__('View'), array('controller' => 'experiences', 'action' => 'view', $experience['id']),array('class'=>'replace btn-ver')); ?>
@@ -86,7 +90,65 @@
 </div>
 
 <div class="related">
-	<h3><?php echo __('Related Acquirements'); ?></h3>
+	<h3><?php echo __('Objetivos'); ?></h3>	
+	<?php if (!empty($candidate['Objective'])): ?>
+	<table cellpadding = "0" cellspacing = "0">
+	<tr>				
+		<th><?php echo __('Description'); ?></th>
+		<th class="actions"><?php echo __('Actions'); ?></th>
+	</tr>
+	<?php
+		$i = 0;
+		foreach ($candidate['Objective'] as $objective): ?>
+		<tr>			
+			<td><?php echo $this->Text->truncate($objective['description'], 150, array('ellipsis'=>'...','exact'=> false)); ?></td>
+			<td class="actions">
+				<?php echo $this->Html->link(__('View'), array('controller' => 'objectives', 'action' => 'view', $objective['id']),array('class'=>'replace btn-ver')); ?>
+				<?php echo $this->Html->link(__('Edit'), array('controller' => 'objectives', 'action' => 'edit', $objective['id']),array('class'=>'replace btn-editar')); ?>
+				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'objectives', 'action' => 'delete', $objective['id']), array('class'=>'replace btn-deletar'), __('Are you sure you want to delete # %s?', $objective['id'])); ?>
+			</td>
+		</tr>
+	<?php endforeach; ?>
+	</table>
+<?php endif; ?>
+
+	<div class="actions new-right">
+		<p><?php echo $this->Html->link(__('New Objective'), array('controller' => 'objectives', 'action' => 'add'),array('class'=>'replace btn-add','title'=>__('Novo Objetivo'))); ?></p> 
+	</div>
+</div>
+
+<div class="related">
+	<h3><?php echo __('Referências Pessoais'); ?></h3>	
+	<?php if (!empty($candidate['PersonalReferral'])): ?>
+	<table cellpadding = "0" cellspacing = "0">
+	<tr>				
+		<th><?php echo __('Name'); ?></th>
+		<th><?php echo __('Telefone'); ?></th>
+		<th class="actions"><?php echo __('Actions'); ?></th>
+	</tr>
+	<?php
+		$i = 0;
+		foreach ($candidate['PersonalReferral'] as $personal_referral): ?>
+		<tr>						
+			<td><?php echo $personal_referral['name_contact']; ?></td>
+			<td><?php echo $personal_referral['phone_contact']; ?></td>
+			<td class="actions">
+				<?php echo $this->Html->link(__('View'), array('controller' => 'personal_referrais', 'action' => 'view', $personal_referral['id']),array('class'=>'replace btn-ver')); ?>
+				<?php echo $this->Html->link(__('Edit'), array('controller' => 'personal_referrais', 'action' => 'edit', $personal_referral['id']),array('class'=>'replace btn-editar')); ?>
+				<?php echo $this->Form->postLink(__('Delete'), array('controller' => 'personal_referrais', 'action' => 'delete', $personal_referral['id']), array('class'=>'replace btn-deletar'), __('Are you sure you want to delete # %s?', $personal_referral['id'])); ?>
+			</td>
+		</tr>
+	<?php endforeach; ?>
+	</table>
+<?php endif; ?>
+
+	<div class="actions new-right">
+		<p><?php echo $this->Html->link(__('New PersonalReferral'), array('controller' => 'personal_referrais', 'action' => 'add'),array('class'=>'replace btn-add','title'=>__('Nova Referência'))); ?></p> 
+	</div>
+</div>
+
+<div class="related">
+	<h3><?php echo __('Conhecimentos Específicos'); ?></h3>
 	<?php if (!empty($candidate['Acquirement'])): ?>
 	<table cellpadding = "0" cellspacing = "0">
 	<tr>				
@@ -158,7 +220,7 @@
 		foreach ($candidate['Language'] as $language): ?>
 		<tr>					
 			<td><?php echo $language['language']; ?></td>
-			<td><?php echo $language['fluency']; ?></td>
+			<td><?php echo $this->Home->viewLanguage($language['fluency'])	; ?></td>
 			<td class="actions">
 				<?php echo $this->Html->link(__('View'), array('controller' => 'languages', 'action' => 'view', $language['id']),array('class'=>'replace btn-ver')); ?>
 				<?php echo $this->Html->link(__('Edit'), array('controller' => 'languages', 'action' => 'edit', $language['id']),array('class'=>'replace btn-editar')); ?>
@@ -173,4 +235,29 @@
 		<p><?php echo $this->Html->link(__('New Language'), array('controller' => 'languages', 'action' => 'add'),array('class'=>'replace btn-add','title'=>__('New Language'))); ?> </p>
 	</div>
 </div>
+</div>
+</div>
 
+<div id="sidebar" class="actions">
+	
+	<!-- Box -->
+	<div class="box">
+		
+		<!-- Box Head -->
+		<div class="box-head">
+			<h2><?php echo __('Menu')?></h2>
+		</div>
+		<!-- End Box Head-->
+		
+		<div class="box-content">
+			<ul>
+				<li><?php echo $this->Html->link(__('Edit Candidate'), array('action' => 'edit', $candidate['Candidate']['id'])); ?> </li>
+				<li><?php echo $this->Form->postLink(__('Delete Candidate'), array('action' => 'delete', $candidate['Candidate']['id']), null, __('Are you sure you want to delete # %s?', $candidate['Candidate']['id'])); ?> </li>
+				<li><?php echo $this->Html->link(__('List Candidates'), array('action' => 'index')); ?> </li>
+			</ul>				
+			<div class="cl">&nbsp;</div>			
+			
+		</div>
+	</div>
+	<!-- End Box -->
+</div>

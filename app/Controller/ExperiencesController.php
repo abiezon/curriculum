@@ -43,7 +43,7 @@ class ExperiencesController extends AppController {
  */
 	public function add($continue = null) {
 		$idCandidate = $this->Session->read('candidate_id');
-		$this->layout = 'new';				
+		$this->layout = 'layout';				
 		if ($this->request->is('post')) {
 			$this->Experience->create();
 			if ($this->Experience->save($this->request->data)) {

@@ -78,24 +78,24 @@ class Candidate extends AppModel {
 				'message' => 'Tamanho mínimo de 8 caracteres'
 			),
 		),
-		'email' => array(
-		        'isUnique' => array (
-		            'rule' => 'isUnique',
-		            'message' => 'Este endereço de email já foi cadastrado.'),
-		        'valid' => array (
-		            'rule' => array('email', false),
-		            'message' => 'Email inválido.'),        
-				'notempty' => array(
-					'rule' => array('notempty'),
-					'message' => 'Your custom message here')	
-		    ),
+		// 'email' => array(
+		// 		        'isUnique' => array (
+		// 		            'rule' => 'isUnique',
+		// 		            'message' => 'Este endereço de email já foi cadastrado.'),
+		// 		        'valid' => array (
+		// 		            'rule' => array('email', false),
+		// 		            'message' => 'Email inválido.'),        
+		// 				'allowEmpty' => true,	
+		// 		    ),
 		'cpf'=> array(
 				'rule' => '/[0-9]{11}$/i',
-				'message' => 'Preencha o campo (CPF) corretamente'
+				'message' => 'Preencha o campo (CPF) corretamente',
+				'allowEmpty' => true,
 		 ),
 		'rg'=> array(
 				'rule' => '/[0-9]{5,}$/i',
-				'message' => 'Preencha o campo (RG) corretamente'
+				'message' => 'Preencha o campo (RG) corretamente',
+				'allowEmpty' => true,
 		 ),
 		'state'=> array(
 				'rule' => array('notempty'),
@@ -195,7 +195,39 @@ class Candidate extends AppModel {
 			'exclusive' => '',
 			'finderQuery' => '',
 			'counterQuery' => ''
+		),
+		'PersonalReferral' => array(
+			'className' => 'PersonalReferral',
+			'foreignKey' => 'candidate_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'Objective' => array(
+			'className' => 'Objective',
+			'foreignKey' => 'candidate_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
 		)
-	);
+	); 
+	
+	// public function beforeSave(){
+	//         $this->data['Candidate']['phone'] = str_replace("-","",str_replace("(","",str_replace(")","",$this->data['Candidate']['phone'])));
+	//         debug($this->data['Candidate']['phone']); die();
+	//         return true;
+	//     }   
 
 }

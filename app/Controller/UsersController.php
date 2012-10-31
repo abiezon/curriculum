@@ -37,28 +37,30 @@ class UsersController extends AppController {
     }
 
     public function add() {
+		$this->layout = 'layout';
         if ($this->request->is('post')) {
             $this->User->create();
             if ($this->User->save($this->request->data)) {
-                $this->Session->setFlash(__('The user has been saved'));
+                $this->Session->setFlash(__('The user has been saved'),'msg-ok');
                 $this->redirect(array('action' => 'index'));
             } else {
-                $this->Session->setFlash(__('The user could not be saved. Please, try again.'));
+                $this->Session->setFlash(__('The user could not be saved. Please, try again.'),'msg-error');
             }
         }
     }
 
     public function edit($id = null) {
+		$this->layout = 'layout';
         $this->User->id = $id;
         if (!$this->User->exists()) {
             throw new NotFoundException(__('Invalid user'));
         }
         if ($this->request->is('post') || $this->request->is('put')) {
             if ($this->User->save($this->request->data)) {
-                $this->Session->setFlash(__('The user has been saved'));
+                $this->Session->setFlash(__('The user has been saved'),'msg-ok');
                 $this->redirect(array('action' => 'index'));
             } else {
-                $this->Session->setFlash(__('The user could not be saved. Please, try again.'));
+                $this->Session->setFlash(__('The user could not be saved. Please, try again.'),'msg-error');
             }
         } else {
             $this->request->data = $this->User->read(null, $id);
@@ -76,11 +78,11 @@ class UsersController extends AppController {
         }
 		if($this->User->id != $this->Auth->user('id')):
         	if ($this->User->delete()) {
-	            $this->Session->setFlash(__('User deleted'));
+	            $this->Session->setFlash(__('User deleted'),'msg-ok');
 	            $this->redirect(array('action' => 'index'));
 	        }
 		endif;	
-        $this->Session->setFlash(__('User was not deleted'));
+        $this->Session->setFlash(__('User was not deleted'),'msg-error');
         $this->redirect(array('action' => 'index'));
     }
 }

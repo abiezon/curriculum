@@ -1,3 +1,5 @@
+<div id="content">
+	<div class="box">
 <!-- <div class="box"> -->
 	<!-- Box Head -->
 	<div class="box-head">
@@ -13,7 +15,7 @@
 				
 			<?php
 				echo $this->Form->input('candidate_id',array('disabled'=>false,'class'=>'field'));
-				echo $this->Form->input('company_name',array('class'=>'field size1'));
+				echo $this->Form->input('company_name',array('class'=>'field size1','label'=>'Nome da Empresa'));
 				echo $this->Form->input('function',array('class'=>'field size1'));
 				echo $this->Form->input('time_worked',array('class'=>'field size2'));
 				echo $this->Form->input('current_job',array('type'=>'checkbox','class'=>'checkbox'));
@@ -23,7 +25,13 @@
 			?>
 		</div>
 		<!-- End Form -->
-		
+		<p>&nbsp;</p>	
+		<p class="actions"><?php echo $this->Html->link($continue == "" ?__('Leave') :__('Back'), array(
+			'controller' => 'candidates',
+			'action' => 'view',
+			$idCandidate
+			)); ?> 
+		</p>
 		<!-- Form Buttons -->
 		<div class="buttons">
 			<!-- <input type="button" class="button" value="preview" /> -->
@@ -34,8 +42,30 @@
 <!-- </div> -->
 
 
+</div>
+</div>
 
-
+<div id="sidebar" class="actions">
+	
+	<!-- Box -->
+	<div class="box">
+		
+		<!-- Box Head -->
+		<div class="box-head">
+			<h2><?php echo __('Menu')?></h2>
+		</div>
+		<!-- End Box Head-->
+		
+		<div class="box-content">
+			<ul>
+				<!-- <li><?php echo $this->Form->postLink(__('Delete'), array('action' => 'delete', $this->Form->value('Acquirement.id')), null, __('Are you sure you want to delete # %s?', $this->Form->value('Acquirement.id'))); ?></li> -->
+			</ul>				
+			<div class="cl">&nbsp;</div>			
+			
+		</div>
+	</div>
+	<!-- End Box -->
+</div>
 
 <!-- <div class="experiences form">
 <?php echo $this->Form->create('Experience'); ?>
