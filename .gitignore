@@ -7,3 +7,4 @@ app/tmp/cache
 app/tmp/cache/*
 app/tmp/logs
 app/tmp/logs/*
+app/tmp/cache/models
