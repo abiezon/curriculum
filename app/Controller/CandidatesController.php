@@ -3,7 +3,7 @@ App::uses('AppController', 'Controller');
 /**
  * Candidates Controller
  *
- * @property Candidate $Candidate
+ * @property Candidate $Candidate                         
  */
 class CandidatesController extends AppController {
 

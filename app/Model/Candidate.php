@@ -23,9 +23,14 @@ class Candidate extends AppModel {
           $nameField = '%' . $data['name'] . '%';
           return array(
               'OR' => array(
-                  $this->alias . '.name LIKE' => $nameField,
+                  $this->alias . '.name LIKE' => $nameField, 
+                  $this->alias.'.age LIKE' =>  $nameField,
+                  $this->Role->alias.'.role_name LIKE' => $nameField,
                   ));
-      }
+                  
+      } 
+      
+     
 
 	// public function isOwnedBy($candidate, $user) {
 	// 	    return $this->field('id', array('id' => $candidate, 'user_id' => $user)) === $candidate;

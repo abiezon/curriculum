@@ -10,8 +10,9 @@
 		echo $this->Html->meta('icon');
 
 		echo $this->Html->css('style');
-		echo $this->Html->css('style2');
+    echo $this->Html->css('style2');
 		echo $this->Html->script('jquery-1.7');
+		 echo $this->Html->script('functions'); 
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -55,9 +56,7 @@
 		
 		<!-- Small Nav -->
 		<div class="small-nav">
-			<a href="#">Dashboard</a>
-			<span>&gt;</span>
-			Current Articles
+			 <?php echo $this->Html->getCrumbs(' > ','Home'); ?>
 		</div>
 		<!-- End Small Nav -->
 		

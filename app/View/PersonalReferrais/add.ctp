@@ -1,5 +1,7 @@
 <?php echo $this->Html->script('jquery.maskedinput-1.3'); ?> 
-
+<?php $this->Html->addCrumb('Candidatos', '/candidates');?>
+<?php $this->Html->addCrumb('Currículo', '/candidates/view/'.$idCandidate);?>
+<?php $this->Html->addCrumb('Nova Referência Pessoal');?>
 <!-- <div class="box"> -->
 	<!-- Box Head -->
 	<div id="content">
@@ -21,17 +23,12 @@
         	?>		    		
 		</div>
 		<!-- End Form -->
-		<p>&nbsp;</p>	
-		<p class="actions"><?php echo $this->Html->link(__('Back'), array(
-			'controller' => 'candidates',
-			'action' => 'view',	$idCandidate
-			)); ?> 
-		</p>
+		
 		<!-- Form Buttons -->
 		<div class="buttons">
-			<!-- <input type="button" class="button" value="preview" /> -->
-			<?php echo $this->Form->end(__('Save')); ?>
-		</div>
+            <input type="button" class="button" value="Cancelar" onclick="location.href='<?php echo $this->Html->url(array('controller' => 'candidates', 'action' => 'view',$idCandidate)); ?>';" />		
+    		<?php echo $this->Form->button(__('Save'),array('class'=>'button')); ?>
+    	</div>
 		<!-- End Form Buttons -->
 	</form>
 	

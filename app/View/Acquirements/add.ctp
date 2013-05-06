@@ -1,30 +1,6 @@
-<!-- <div class="acquirements form">
-<?php echo $this->Form->create('Acquirement'); ?>
-	<fieldset>
-		<legend><?php echo __('Add Acquirement'); ?></legend>
-	<?php
-		echo $this->Form->input('candidate_id',array('disabled'=>false));
-		echo $this->Form->input('description');
-	?>
-	</fieldset>
-	<p>&nbsp;</p>	
-	<p class="actions"><?php echo $this->Html->link($continue == "" ?__('Leave') :__('Back'), array(
-		'controller' => 'candidates',
-		'action' => 'view',	$idCandidate
-		)); ?> 
-	</p>
-<?php echo $this->Form->end($continue == "" ?__('Save and Continue'):__('Save')); ?>
-</div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-
-		<!-- <li><?php echo $this->Html->link(__('List Acquirements'), array('action' => 'index')); ?></li> -->
-		<!-- <li><?php echo $this->Html->link(__('List Candidates'), array('controller' => 'candidates', 'action' => 'index')); ?> </li> -->
-		<!-- <li><?php echo $this->Html->link(__('New Candidate'), array('controller' => 'candidates', 'action' => 'add')); ?> </li> -->
-	<!-- </ul>
-	</div> -->
-<!-- <div class="box"> -->
+<?php $this->Html->addCrumb('Candidatos', '/candidates');?>
+<?php $this->Html->addCrumb('Currículo', '/candidates/view/'.$idCandidate);?>
+<?php $this->Html->addCrumb('Novo Conhecimento Específico');?>
 	<!-- Box Head -->
 	<div id="content">
 		<div class="box">
@@ -45,17 +21,12 @@
 			?>			
 		</div>
 		<!-- End Form -->
-		<p>&nbsp;</p>	
-		<p class="actions"><?php echo $this->Html->link($continue == "" ?__('Leave') :__('Back'), array(
-			'controller' => 'candidates',
-			'action' => 'view',	$idCandidate
-			)); ?> 
-		</p>
+		
 		<!-- Form Buttons -->
 		<div class="buttons">
-			<!-- <input type="button" class="button" value="preview" /> -->
-			<?php echo $this->Form->end($continue == "" ?__('Save and Continue'):__('Save')); ?>
-		</div>
+            <input type="button" class="button" value="Cancelar" onclick="location.href='<?php echo $this->Html->url(array('controller' => 'candidates', 'action' => 'view',$idCandidate)); ?>';" />		
+    		<?php echo $this->Form->button(__('Save'),array('class'=>'button')); ?>
+    	</div>
 		<!-- End Form Buttons -->
 	</form>
 <!-- </div> -->

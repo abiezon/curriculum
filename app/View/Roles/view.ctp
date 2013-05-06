@@ -1,3 +1,5 @@
+<?php $this->Html->addCrumb('Função', '/roles');?>
+<?php $this->Html->addCrumb('Visualizar');?>
 <div id="content">
 	<div class="box">
 <div class="box-head">

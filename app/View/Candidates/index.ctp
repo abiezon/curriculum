@@ -1,3 +1,5 @@
+<?php $this->Html->addCrumb('Candidatos');?>
+
 <div id="content">
 	<div class="box">
 <div class="box-head">
@@ -7,8 +9,8 @@
 		        echo $this->Form->create('Candidate', array(
 		            'url' => array_merge(array('action' => 'index'), $this->params['pass'])
 		            ));
-		        echo $this->Form->input('name', array('div' => false, 'empty' => true,'class'=>'field small-field')); // empty creates blank option.
-		        echo $this->Form->submit(__('Search', true), array('div' => false,'class'=>'button'));
+		        echo $this->Form->input('name', array('div' => false, 'empty' => true,'class'=>'field small-field','label'=>'Buscar')); // empty creates blank option.
+		        echo $this->Form->submit(__('Ir', true), array('div' => false,'class'=>'button'));
 		        echo $this->Form->end();
 		    ?>
 	</div>
@@ -29,6 +31,7 @@
 			<th><?php echo $this->Paginator->sort('state'); ?></th>
 			<th><?php echo $this->Paginator->sort('city'); ?></th>
 			<th><?php echo $this->Paginator->sort('email'); ?></th>
+
 			<!-- <th><?php echo $this->Paginator->sort('created'); ?></th>
 						<th><?php echo $this->Paginator->sort('modified'); ?></th> -->
 			<th class="actions"><?php echo __('Actions'); ?></th>
@@ -48,6 +51,7 @@
 		<td><?php echo h($candidate['Candidate']['state']); ?>&nbsp;</td>
 		<td><?php echo h($candidate['Candidate']['city']); ?>&nbsp;</td>
 		<td><?php echo h($candidate['Candidate']['email']); ?>&nbsp;</td>
+		
 		<!-- <td><?php echo h($candidate['Candidate']['created']); ?>&nbsp;</td>
 				<td><?php echo h($candidate['Candidate']['modified']); ?>&nbsp;</td> -->
 		<td class="actions">

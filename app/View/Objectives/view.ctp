@@ -1,3 +1,6 @@
+<?php $this->Html->addCrumb('Candidatos', '/candidates');?>
+<?php $this->Html->addCrumb('Currículo', '/candidates/view/'.$idCandidate);?>
+<?php $this->Html->addCrumb('Objetivo');?>
 <div id="content">
 	<div class="box">
 <div class="box-head">

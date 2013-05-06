@@ -1,6 +1,8 @@
+<?php $this->Html->addCrumb('Candidatos', '/candidates');?>
+<?php $this->Html->addCrumb('Currículo');?>
 <!-- <div class="candidates view"> -->
 	<div id="content">
-		<div class="box">	
+		<div class="box">	                                        
 	<div class="box-head">
 		<h2><?php echo __('Candidate'); ?></h2>
 	</div>	
@@ -17,12 +19,14 @@
 		<p class="title"><?php echo __('Dados Pessoais')?></p>
 		<p><span><?php echo __('Name'); ?>:&nbsp;</span><?php echo h($candidate['Candidate']['name']); ?></p>
 		<p><span><?php echo __('Gender'); ?>:&nbsp;</span><?php echo $this->Home->viewGender(h($candidate['Candidate']['gender'])); ?></p>
-		<p><span><?php echo __('Date of birth'); ?>:&nbsp;</span><?php echo h($candidate['Candidate']['date_birth']); ?><p>
+		<p><span><?php echo __('Date of birth'); ?>:&nbsp;</span><?php echo h($candidate['Candidate']['date_birth']); ?><p> 
+		<p><span><?php echo __('Estado Civil'); ?>:&nbsp;</span><?php echo $this->Home->MaritalStatus(h($candidate['Candidate']['marital_status'])); ?></p>  
 		<p><span><?php echo __('Idade'); ?>:&nbsp;</span><?php echo h($candidate['Candidate']['age']).' anos'; ?></p> 
 		<p><span><?php echo __('Email'); ?>:&nbsp;</span><?php echo h($candidate['Candidate']['email']); ?></p>
 		<p><span><?php echo __('Schooling'); ?>:&nbsp;</span><?php echo $this->Home->viewSchooling(h($candidate['Candidate']['schooling'])); ?></p>
 		<p><span><?php echo __('Rg'); ?>:&nbsp;</span><?php echo h($candidate['Candidate']['rg']); ?></p>
 		<p><span><?php echo __('Cpf'); ?>:&nbsp;</span><?php echo h($candidate['Candidate']['cpf']); ?></p>
+		<p><span><?php echo __('Celular'); ?>:&nbsp;</span><?php echo h($candidate['Candidate']['cel_phone']); ?></p>  
 		<p><span><?php echo __('Telefone'); ?>:&nbsp;</span><?php echo h($candidate['Candidate']['phone']); ?></p> 
 	</div>
 	

@@ -1,3 +1,4 @@
+<?php $this->Html->addCrumb('Função');?>
 <div id="content">
 	<div class="box">
 <div class="box-head">

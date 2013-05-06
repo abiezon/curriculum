@@ -1,3 +1,6 @@
+<?php $this->Html->addCrumb('Candidatos', '/candidates');?>
+<?php $this->Html->addCrumb('Currículo', '/candidates/view/'.$idCandidate);?>
+<?php $this->Html->addCrumb('Experiência');?> 
 <div id="content">
 	<div class="box">
 <div class="box-head">
@@ -30,7 +33,7 @@
 </div>
 <div class="description">
 	<p class="title"><?php echo __('Current Job'); ?></p>
-	<p><?php echo h($experience['Experience']['current_job']); ?></p>
+	<p><?php echo $this->Home->viewAtualWork(h($experience['Experience']['current_job'])); ?></p>
 </div>
 <div class="description">
 	<p class="title"><?php echo __('Job Description'); ?></p>

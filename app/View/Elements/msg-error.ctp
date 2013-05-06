@@ -1,4 +1,7 @@
-<div class="msg msg-error">
-	<p><strong><?php echo $message ?></strong></p>
-	<a href="#" class="close">close</a>
-</div>
+
+
+<div class="alert alert-error msg msg-error">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+   <p><strong><?php echo $message ?></strong></p>
+       
+ </div>

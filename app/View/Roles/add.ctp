@@ -1,3 +1,5 @@
+<?php $this->Html->addCrumb('Função', '/roles');?>
+<?php $this->Html->addCrumb('Nova Função');?>
 <div id="content">
 	<div class="box">
 <div class="box-head">
@@ -12,24 +14,15 @@
 			echo $this->Form->input('role_name',array('class'=>'field size1'));
 		?>
 		<div class="buttons">
-			<!-- <input type="button" class="button" value="preview" /> -->
-			<?php echo $this->Form->end(__('Submit'),array('class'=>'button')); ?>	
-		</div>
+            <input type="button" class="button" value="Cancelar" onclick="location.href='<?php echo $this->Html->url(array('controller' => 'roles', 'action' => 'index')); ?>';" />		
+    		<?php echo $this->Form->button(__('Save'),array('class'=>'button')); ?>
+    	</div> 
+    	<?php echo $this->Form->end();?>
 	
 </div>
 </div>
 </div>
 
-<!-- <div class="roles form">
-<?php echo $this->Form->create('Role'); ?>
-	<fieldset>
-		<legend><?php echo __('Add Role'); ?></legend>
-	<?php
-		echo $this->Form->input('role_name');
-	?>
-	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
-</div> -->
 <div id="sidebar" class="actions">
 	
 	<!-- Box -->
@@ -54,12 +47,4 @@
 	</div>
 	<!-- End Box -->
 </div>
-<!-- <div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
 
-		<li><?php echo $this->Html->link(__('List Roles'), array('action' => 'index')); ?></li>
-		<li><?php echo $this->Html->link(__('List Candidates'), array('controller' => 'candidates', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Candidate'), array('controller' => 'candidates', 'action' => 'add')); ?> </li>
-	</ul>
-</div> -->

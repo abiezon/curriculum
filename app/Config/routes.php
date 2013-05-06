@@ -31,6 +31,28 @@
  * ...and connect the rest of 'Pages' controller's urls.
  */
 	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
+    /* Candidates routes */ 
+	Router::connect('/curriculo', array('controller' => 'candidates', 'action' => 'index'));
+	Router::connect('/curriculo/novo', array('controller' => 'candidates', 'action' => 'add'));
+	Router::connect('/curriculo/editar/*', array('controller' => 'candidates', 'action' => 'edit'));
+	Router::connect('/curriculo/visualizar/*', array('controller' => 'candidates', 'action' => 'view'));
+	/*Roles routes */     
+	Router::connect('/funcao', array('controller' => 'roles', 'action' => 'index'));
+	Router::connect('/funcao/nova', array('controller' => 'roles', 'action' => 'add'));
+	Router::connect('/funcao/editar/*', array('controller' => 'roles', 'action' => 'edit'));
+	Router::connect('/funcao/visualizar/*', array('controller' => 'roles', 'action' => 'view')); 
+	/* Experiencies routes */
+	Router::connect('/curriculo/experiencia/visualizar/*', array('controller' => 'experiences', 'action' => 'view'));
+	Router::connect('/curriculo/experiencia/editar/*', array('controller' => 'experiences', 'action' => 'edit'));
+	Router::connect('/curriculo/experiencia/nova', array('controller' => 'experiences', 'action' => 'add')); 
+	
+	/* Employees routes */
+	Router::connect('/funcionario', array('controller' => 'employees', 'action' => 'index'));
+	Router::connect('/funcionario/novo', array('controller' => 'employees', 'action' => 'add'));
+	Router::connect('/funcionario/editar/*', array('controller' => 'employees', 'action' => 'edit'));
+	Router::connect('/funcionario/visualizar/*', array('controller' => 'employees', 'action' => 'view')); 
+	
+	Router::connect('/capacitacao', array('controller' => 'capabilities', 'action' => 'index'));
 
 /**
  * Load all plugin routes.  See the CakePlugin documentation on 

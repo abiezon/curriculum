@@ -69,6 +69,16 @@ class HomeHelper extends AppHelper {
 		
 	}
 	
+	public function viewNameCapabicity($id){
+	  App::import('model','Capabilitie');
+	  $capabicity = new Capabilitie();
+	  
+	  $name = $capabicity->find('list',array('fields'=>'name_capabicity','conditions'=>array('Capabilitie.id'=>$id)));
+	  
+	  return $name[$id];   
+	  
+	}
+	
 	public function menuSideBar($params){
 		//debug($params['controller']);
 		$menu = array("candidates"=>array(
@@ -84,6 +94,43 @@ class HomeHelper extends AppHelper {
 		
 		return $menu[$params['controller']];
 		
+	}
+	
+	public function isEmployee($type = null){
+	     
+	  if($type == NULL or $type == 0):
+	       
+	       $isEmployee = "Não";
+	       
+	  else:
+	      
+	      $isEmployee = "Sim"; 
+	    
+	  endif;
+	  
+	  return $isEmployee;  
+	  
+	  
+	}
+	
+	public function Role($id_role = null){
+	  App::import('model','Role');
+	  $role = new Role();	  
+	  $roleName =  $role->find('list',array('fields'=>'Role.role_name','conditions'=> array('Role.id'=>$id_role)));	       
+	  return $roleName[$id_role];	  
+	}
+	
+	public function maritalStatus($status = null){
+	   $array = array(''=>'Selecione','1' => 'Solteiro','2'=>'Casado','3'=>'Divorciado','4'=>'Amaziado','5'=>'Outros'); 
+	   if(isset($status)){
+	     
+	           $return = $array[$status];
+	     
+	   } else{
+	         $return = $array;
+	   }
+	  
+	    return $return;
 	}
 }
 ?>

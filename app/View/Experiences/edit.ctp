@@ -1,3 +1,6 @@
+<?php $this->Html->addCrumb('Candidatos', '/candidates');?>
+<?php $this->Html->addCrumb('Currículo', '/candidates/view/'.$idCandidate);?>
+<?php $this->Html->addCrumb('Editar Experiência');?>
 <div id="content">
 	<div class="box">
 <div class="box-head">
@@ -19,16 +22,9 @@
 		echo $this->Form->input('job_description',array('class'=>'field size1'));
 	?>
 	
-	<p>&nbsp;</p>	
-	<p class="actions"><?php echo $this->Html->link(__('Back'), array(
-		'controller' => 'candidates',
-		'action' => 'view',
-		$idCandidate
-		)); ?> 
-	</p>
 	<div class="buttons">
-		<!-- <input type="button" class="button" value="preview" /> -->
-		<?php echo $this->Form->end(__('Save')); ?>
+        <input type="button" class="button" value="Cancelar" onclick="location.href='<?php echo $this->Html->url(array('controller' => 'candidates', 'action' => 'view',$idCandidate)); ?>';" />		
+		<?php echo $this->Form->button(__('Save'),array('class'=>'button')); ?>
 	</div>
 
 </div>

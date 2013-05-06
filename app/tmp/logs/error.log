@@ -2196,3 +2196,1274 @@
 #3 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CandidatesController), Object(CakeRequest), Object(CakeResponse))
 #4 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2012-10-31 15:06:53 Error: [MissingControllerException] Controller class CandicatesController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-31 15:46:12 Error: [MissingControllerException] Controller class CanditatesController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-10-31 15:48:49 Error: [NotFoundException] Candidato inválido
+#0 [internal function]: CandidatesController->view()
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CandidatesController), Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CandidatesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-11-10 10:44:59 Error: [MissingControllerException] Controller class EmployeeController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-10 10:46:42 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/abiezon/Sites/curriculum/app/Controller/EmployeeCapabilitiesController.php, line 51]
+2012-11-10 10:46:42 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/abiezon/...', 51)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/abiezon/...', 51, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/abiezon/...', 51, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-10 10:47:02 Error: [MissingControllerException] Controller class EmployeesCapabilitiesController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-10 10:47:18 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/abiezon/Sites/curriculum/app/Controller/EmployeeCapabilitiesController.php, line 51]
+2012-11-10 10:47:18 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/abiezon/...', 51)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/abiezon/...', 51, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/abiezon/...', 51, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-10 10:47:40 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/abiezon/Sites/curriculum/app/Controller/EmployeeCapabilitiesController.php, line 51]
+2012-11-10 10:47:40 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/abiezon/...', 51)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/abiezon/...', 51, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/abiezon/...', 51, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-10 10:48:50 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/abiezon/Sites/curriculum/app/Controller/CapabilitiesController.php, line 50]
+2012-11-10 10:48:50 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/abiezon/...', 50)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/abiezon/...', 50, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/abiezon/...', 50, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-10 10:49:20 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `cu...')
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1730): DboSource->create(Object(CapabicityType), Array, Array)
+#4 /Users/abiezon/Sites/curriculum/app/Controller/CapabicityTypesController.php(43): Model->save(Array)
+#5 [internal function]: CapabicityTypesController->add()
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CapabicityTypesController), Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CapabicityTypesController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-11-10 10:51:05 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/abiezon/Sites/curriculum/app/Controller/EmployeeCapabilitiesController.php, line 51]
+2012-11-10 10:51:05 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/abiezon/...', 51)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/abiezon/...', 51, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/abiezon/...', 51, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-10 10:51:11 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/abiezon/Sites/curriculum/app/Controller/CapabilitiesController.php, line 50]
+2012-11-10 10:51:11 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/abiezon/...', 50)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/abiezon/...', 50, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/abiezon/...', 50, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-10 10:57:30 Error: [NotFoundException] Candidato inválido
+#0 [internal function]: CandidatesController->edit('Editar Curr??cu...', '2')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CandidatesController), Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CandidatesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-11-10 10:57:38 Error: [NotFoundException] Candidato inválido
+#0 [internal function]: CandidatesController->edit('Editar Curr??cu...', '2')
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CandidatesController), Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CandidatesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-11-10 11:03:21 Error: [MissingControllerException] Controller class FuncoesController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-10 11:18:12 Error: [MissingControllerException] Controller class FuncionarioController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-10 11:19:10 Error: [MissingActionException] Action EmployeesController::inde() could not be found.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(EmployeesController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2012-11-10 11:19:55 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/abiezon/Sites/curriculum/app/Controller/EmployeeCapabilitiesController.php, line 51]
+2012-11-10 11:19:55 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/abiezon/...', 51)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/abiezon/...', 51, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/abiezon/...', 51, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-10 11:36:02 Error: [MissingControllerException] Controller class CurriculosController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-10 11:36:26 Error: [MissingControllerException] Controller class CurriculosController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-11-10 11:37:53 Error: [MissingViewException] View file "/Users/abiezon/Sites/curriculum/app/View/Users/edit.ctp" is missing.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-11-12 20:06:46 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/abiezon/Sites/curriculum/app/Controller/EmployeeCapabilitiesController.php, line 51]
+2012-11-12 20:06:46 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/abiezon/...', 51)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/abiezon/...', 51, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/abiezon/...', 51, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-12 20:06:50 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/abiezon/Sites/curriculum/app/Controller/CapabilitiesController.php, line 50]
+2012-11-12 20:06:50 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/abiezon/...', 50)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/abiezon/...', 50, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/abiezon/...', 50, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-12 20:11:16 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/abiezon/Sites/curriculum/app/Controller/CapabilitiesController.php, line 51]
+2012-11-12 20:11:16 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/abiezon/...', 51)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/abiezon/...', 51, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/abiezon/...', 51, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-12 20:11:32 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/abiezon/Sites/curriculum/app/Controller/CapabilitiesController.php, line 51]
+2012-11-12 20:11:32 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/abiezon/...', 51)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/abiezon/...', 51, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/abiezon/...', 51, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-11-12 20:14:01 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'EmployeeCapabilitie.capabilitie_id' in 'where clause'
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Employe...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Employe...', Array, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Employe...', false)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2630): DboSource->read(Object(AppModel), Array)
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1846): Model->find('all', Array)
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1743): Model->_saveMulti(Array, '1', Object(Mysql))
+#7 /Users/abiezon/Sites/curriculum/app/Controller/CapabilitiesController.php(44): Model->save(Array)
+#8 [internal function]: CapabilitiesController->add()
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CapabilitiesController), Array)
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CapabilitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-11-12 20:17:53 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'EmployeeCapabilitie.capabilitie_id' in 'where clause'
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Employe...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Employe...', Array, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Employe...', false)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2630): DboSource->read(Object(AppModel), Array)
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1846): Model->find('all', Array)
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1743): Model->_saveMulti(Array, '2', Object(Mysql))
+#7 /Users/abiezon/Sites/curriculum/app/Controller/CapabilitiesController.php(44): Model->save(Array)
+#8 [internal function]: CapabilitiesController->add()
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CapabilitiesController), Array)
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CapabilitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-11-12 20:22:29 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `cu...')
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Employee), Array, Array)
+#4 /Users/abiezon/Sites/curriculum/app/Controller/EmployeesController.php(46): Model->save(Array)
+#5 [internal function]: EmployeesController->add()
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EmployeesController), Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(EmployeesController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-11-12 20:27:49 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'EmployeeCapabilitie.capabilitie_id' in 'on clause'
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Employe...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Employe...', Array, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1254): DboSource->fetchAll('SELECT `Employe...', false)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1117): DboSource->queryAssociation(Object(Capabilitie), Object(Employee), 'hasAndBelongsTo...', 'Employee', Array, Array, true, Array, 0, Array)
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Capabilitie), Array)
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1516): Model->find('first', Array)
+#7 /Users/abiezon/Sites/curriculum/app/Controller/CapabilitiesController.php(76): Model->read(NULL, '2')
+#8 [internal function]: CapabilitiesController->edit('2')
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CapabilitiesController), Array)
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CapabilitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-11-12 20:28:03 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'EmployeeCapabilitie.capabilitie_id' in 'on clause'
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Employe...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Employe...', Array, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1254): DboSource->fetchAll('SELECT `Employe...', false)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1117): DboSource->queryAssociation(Object(Capabilitie), Object(Employee), 'hasAndBelongsTo...', 'Employee', Array, Array, true, Array, 0, Array)
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Capabilitie), Array)
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1516): Model->find('first', Array)
+#7 /Users/abiezon/Sites/curriculum/app/Controller/CapabilitiesController.php(33): Model->read(NULL, '1')
+#8 [internal function]: CapabilitiesController->view('1')
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CapabilitiesController), Array)
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CapabilitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-11-12 20:28:31 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'EmployeeCapabilitie.capabilitie_id' in 'where clause'
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Employe...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Employe...', Array, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Employe...', false)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2630): DboSource->read(Object(AppModel), Array)
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1846): Model->find('all', Array)
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1743): Model->_saveMulti(Array, '3', Object(Mysql))
+#7 /Users/abiezon/Sites/curriculum/app/Controller/CapabilitiesController.php(44): Model->save(Array)
+#8 [internal function]: CapabilitiesController->add()
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CapabilitiesController), Array)
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CapabilitiesController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-12-06 11:32:53 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/abiezon/Sites/curriculum/app/Controller/EmployeeCapabilitiesController.php, line 78]
+2012-12-06 11:32:53 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/abiezon/...', 78)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/abiezon/...', 78, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/abiezon/...', 78, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-07 15:45:57 Error: Fatal Error (4): parse error, expecting `T_FUNCTION' in [/Users/abiezon/Sites/curriculum/app/Model/Candidate.php, line 30]
+2012-12-07 15:45:57 Error: [FatalErrorException] parse error, expecting `T_FUNCTION'
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/abiezon/...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/abiezon/...', 30, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/abiezon/...', 30, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-07 15:46:05 Error: Fatal Error (4): parse error, expecting `T_FUNCTION' in [/Users/abiezon/Sites/curriculum/app/Model/Candidate.php, line 30]
+2012-12-07 15:46:05 Error: [FatalErrorException] parse error, expecting `T_FUNCTION'
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/abiezon/...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/abiezon/...', 30, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/abiezon/...', 30, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-07 15:46:09 Error: Fatal Error (4): parse error, expecting `T_FUNCTION' in [/Users/abiezon/Sites/curriculum/app/Model/Candidate.php, line 30]
+2012-12-07 15:46:09 Error: [FatalErrorException] parse error, expecting `T_FUNCTION'
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/abiezon/...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/abiezon/...', 30, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/abiezon/...', 30, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-07 15:46:30 Error: Fatal Error (4): parse error, expecting `T_FUNCTION' in [/Users/abiezon/Sites/curriculum/app/Model/Candidate.php, line 30]
+2012-12-07 15:46:30 Error: [FatalErrorException] parse error, expecting `T_FUNCTION'
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/abiezon/...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/abiezon/...', 30, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/abiezon/...', 30, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-07 15:46:32 Error: Fatal Error (4): parse error, expecting `T_FUNCTION' in [/Users/abiezon/Sites/curriculum/app/Model/Candidate.php, line 30]
+2012-12-07 15:46:32 Error: [FatalErrorException] parse error, expecting `T_FUNCTION'
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/abiezon/...', 30)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/abiezon/...', 30, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/abiezon/...', 30, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-07 15:53:44 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'LIKE '%32%'))    LIMIT 20' at line 1
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Candida...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Candida...', Array, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Candida...', false)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Candidate), Array)
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Component/PaginatorComponent.php(173): Model->find('all', Array)
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#7 /Users/abiezon/Sites/curriculum/app/Controller/CandidatesController.php(29): Controller->paginate()
+#8 [internal function]: CandidatesController->index()
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CandidatesController), Array)
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CandidatesController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2012-12-17 09:15:09 Error: Fatal Error (1): Call to a member function find() on a non-object in [/Users/abiezon/Sites/curriculum/app/Controller/CapabilitiesController.php, line 81]
+2012-12-17 09:15:09 Error: [FatalErrorException] Call to a member function find() on a non-object
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/abiezon/...', 81)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/abiezon/...', 81, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/abiezon/...', 81, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-17 09:17:23 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'date_birth' cannot be null
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `cu...')
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1730): DboSource->create(Object(Employee), Array, Array)
+#4 /Users/abiezon/Sites/curriculum/app/Controller/EmployeesController.php(46): Model->save(Array)
+#5 [internal function]: EmployeesController->add()
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EmployeesController), Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(EmployeesController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2012-12-17 10:51:37 Error: [MissingControllerException] Controller class EmployeesCapabilitiesController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2012-12-17 11:12:20 Error: [MissingViewException] View file "/Users/abiezon/Sites/curriculum/app/View/EmployeeCapabilities/enroll.ctp" is missing.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(EmployeeCapabilitiesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2012-12-17 11:18:00 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/EmployeeCapabilities/enroll.ctp, line 61]
+2012-12-17 11:18:00 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 61)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 61, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 61, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-17 11:18:06 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/EmployeeCapabilities/enroll.ctp, line 61]
+2012-12-17 11:18:06 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 61)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 61, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 61, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-17 11:21:22 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/EmployeeCapabilities/enroll.ctp, line 67]
+2012-12-17 11:21:22 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 67)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 67, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 67, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2012-12-17 11:21:25 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/EmployeeCapabilities/enroll.ctp, line 67]
+2012-12-17 11:21:25 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 67)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 67, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 67, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-14 15:49:25 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/EmployeeCapabilities/enroll.ctp, line 95]
+2013-01-14 15:49:25 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 95)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 95, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 95, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-14 15:49:35 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/EmployeeCapabilities/enroll.ctp, line 95]
+2013-01-14 15:49:35 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 95)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 95, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 95, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-14 15:49:49 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/EmployeeCapabilities/enroll.ctp, line 95]
+2013-01-14 15:49:49 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 95)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 95, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 95, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-14 15:49:51 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/EmployeeCapabilities/enroll.ctp, line 95]
+2013-01-14 15:49:51 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 95)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 95, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 95, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-14 15:50:14 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/EmployeeCapabilities/enroll.ctp, line 95]
+2013-01-14 15:50:14 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 95)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 95, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 95, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-14 15:50:17 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/EmployeeCapabilities/enroll.ctp, line 95]
+2013-01-14 15:50:17 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 95)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 95, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 95, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-14 15:50:21 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/EmployeeCapabilities/enroll.ctp, line 95]
+2013-01-14 15:50:21 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 95)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 95, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 95, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-14 15:50:23 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/EmployeeCapabilities/enroll.ctp, line 95]
+2013-01-14 15:50:23 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 95)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 95, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 95, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-14 15:50:26 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/EmployeeCapabilities/enroll.ctp, line 95]
+2013-01-14 15:50:26 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 95)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 95, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 95, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-14 15:50:30 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/EmployeeCapabilities/enroll.ctp, line 95]
+2013-01-14 15:50:30 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 95)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 95, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 95, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-14 15:51:04 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/EmployeeCapabilities/enroll.ctp, line 95]
+2013-01-14 15:51:04 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 95)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 95, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 95, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-15 15:16:52 Error: Fatal Error (1): Call to a member function get() on a non-object in [/Users/abiezon/Sites/curriculum/app/Controller/EmployeeCapabilitiesController.php, line 53]
+2013-01-15 15:16:53 Error: [FatalErrorException] Call to a member function get() on a non-object
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/abiezon/...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/abiezon/...', 53, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/abiezon/...', 53, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-15 15:23:08 Error: Fatal Error (1): Call to a member function get() on a non-object in [/Users/abiezon/Sites/curriculum/app/Controller/EmployeeCapabilitiesController.php, line 53]
+2013-01-15 15:23:08 Error: [FatalErrorException] Call to a member function get() on a non-object
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/Users/abiezon/...', 53)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/Users/abiezon/...', 53, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/Users/abiezon/...', 53, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-15 15:53:30 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-15 15:53:45 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-15 16:01:41 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-15 16:01:42 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-15 16:01:42 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-15 16:01:43 Error: [MissingControllerException] Controller class JsController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-15 16:21:25 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/EmployeeCapabilities/add.ctp, line 6]
+2013-01-15 16:21:25 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 6)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 6, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 6, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-15 16:26:53 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `cu...')
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1730): DboSource->create(Object(EmployeeCapabilitie), Array, Array)
+#4 /Users/abiezon/Sites/curriculum/app/Controller/EmployeeCapabilitiesController.php(46): Model->save(Array)
+#5 [internal function]: EmployeeCapabilitiesController->add('4')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EmployeeCapabilitiesController), Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(EmployeeCapabilitiesController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-01-15 16:28:31 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `cu...')
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1730): DboSource->create(Object(EmployeeCapabilitie), Array, Array)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2225): Model->save(Array, Array)
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2031): Model->saveAssociated(Array, Array)
+#6 /Users/abiezon/Sites/curriculum/app/Controller/EmployeeCapabilitiesController.php(46): Model->saveAll(Array)
+#7 [internal function]: EmployeeCapabilitiesController->add('4')
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EmployeeCapabilitiesController), Array)
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(EmployeeCapabilitiesController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-01-15 16:29:08 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `cu...')
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1730): DboSource->create(Object(EmployeeCapabilitie), Array, Array)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2225): Model->save(Array, Array)
+#5 /Users/abiezon/Sites/curriculum/app/Controller/EmployeeCapabilitiesController.php(46): Model->saveAssociated(Array)
+#6 [internal function]: EmployeeCapabilitiesController->add('4')
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EmployeeCapabilitiesController), Array)
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(EmployeeCapabilitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-01-15 16:45:40 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`curriculum`.`employee_capabilities`, CONSTRAINT `employee_capabilities_ibfk_1` FOREIGN KEY (`employee_id`) REFERENCES `employees` (`id`))
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `cu...')
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1730): DboSource->create(Object(EmployeeCapabilitie), Array, Array)
+#4 /Users/abiezon/Sites/curriculum/app/Controller/EmployeeCapabilitiesController.php(47): Model->save(Array)
+#5 [internal function]: EmployeeCapabilitiesController->add('4')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EmployeeCapabilitiesController), Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(EmployeeCapabilitiesController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-01-15 16:46:08 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`curriculum`.`employee_capabilities`, CONSTRAINT `employee_capabilities_ibfk_1` FOREIGN KEY (`employee_id`) REFERENCES `employees` (`id`))
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `cu...')
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1730): DboSource->create(Object(EmployeeCapabilitie), Array, Array)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2225): Model->save(Array, Array)
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2031): Model->saveAssociated(Array, Array)
+#6 /Users/abiezon/Sites/curriculum/app/Controller/EmployeeCapabilitiesController.php(47): Model->saveAll(Array)
+#7 [internal function]: EmployeeCapabilitiesController->add('4')
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EmployeeCapabilitiesController), Array)
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(EmployeeCapabilitiesController), Object(CakeRequest), Object(CakeResponse))
+#11 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2013-01-15 16:52:30 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`curriculum`.`employee_capabilities`, CONSTRAINT `employee_capabilities_ibfk_1` FOREIGN KEY (`employee_id`) REFERENCES `employees` (`id`))
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `cu...')
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1730): DboSource->create(Object(EmployeeCapabilitie), Array, Array)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2225): Model->save(Array, Array)
+#5 /Users/abiezon/Sites/curriculum/app/Controller/EmployeeCapabilitiesController.php(47): Model->saveAssociated(Array)
+#6 [internal function]: EmployeeCapabilitiesController->add('4')
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EmployeeCapabilitiesController), Array)
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(EmployeeCapabilitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-01-15 16:56:01 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`curriculum`.`employee_capabilities`, CONSTRAINT `employee_capabilities_ibfk_1` FOREIGN KEY (`employee_id`) REFERENCES `employees` (`id`))
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `cu...')
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1730): DboSource->create(Object(EmployeeCapabilitie), Array, Array)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2225): Model->save(Array, Array)
+#5 /Users/abiezon/Sites/curriculum/app/Controller/EmployeeCapabilitiesController.php(47): Model->saveAssociated(Array)
+#6 [internal function]: EmployeeCapabilitiesController->add('4')
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EmployeeCapabilitiesController), Array)
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(EmployeeCapabilitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-01-15 16:56:08 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`curriculum`.`employee_capabilities`, CONSTRAINT `employee_capabilities_ibfk_1` FOREIGN KEY (`employee_id`) REFERENCES `employees` (`id`))
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `cu...')
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1730): DboSource->create(Object(EmployeeCapabilitie), Array, Array)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2225): Model->save(Array, Array)
+#5 /Users/abiezon/Sites/curriculum/app/Controller/EmployeeCapabilitiesController.php(47): Model->saveAssociated(Array)
+#6 [internal function]: EmployeeCapabilitiesController->add('4')
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EmployeeCapabilitiesController), Array)
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(EmployeeCapabilitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-01-15 16:56:12 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`curriculum`.`employee_capabilities`, CONSTRAINT `employee_capabilities_ibfk_1` FOREIGN KEY (`employee_id`) REFERENCES `employees` (`id`))
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `cu...')
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1730): DboSource->create(Object(EmployeeCapabilitie), Array, Array)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2225): Model->save(Array, Array)
+#5 /Users/abiezon/Sites/curriculum/app/Controller/EmployeeCapabilitiesController.php(47): Model->saveAssociated(Array)
+#6 [internal function]: EmployeeCapabilitiesController->add('4')
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EmployeeCapabilitiesController), Array)
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(EmployeeCapabilitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-01-15 16:57:52 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`curriculum`.`employee_capabilities`, CONSTRAINT `employee_capabilities_ibfk_1` FOREIGN KEY (`employee_id`) REFERENCES `employees` (`id`))
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `cu...')
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1730): DboSource->create(Object(EmployeeCapabilitie), Array, Array)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2225): Model->save(Array, Array)
+#5 /Users/abiezon/Sites/curriculum/app/Controller/EmployeeCapabilitiesController.php(47): Model->saveAssociated(Array)
+#6 [internal function]: EmployeeCapabilitiesController->add('4')
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EmployeeCapabilitiesController), Array)
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(EmployeeCapabilitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-01-15 17:07:28 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`curriculum`.`employee_capabilities`, CONSTRAINT `employee_capabilities_ibfk_1` FOREIGN KEY (`employee_id`) REFERENCES `employees` (`id`))
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `cu...')
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1730): DboSource->create(Object(EmployeeCapabilitie), Array, Array)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2089): Model->save(Array, Array)
+#5 /Users/abiezon/Sites/curriculum/app/Controller/EmployeeCapabilitiesController.php(47): Model->saveMany(Array)
+#6 [internal function]: EmployeeCapabilitiesController->add('4')
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EmployeeCapabilitiesController), Array)
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(EmployeeCapabilitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-01-15 17:46:50 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Array' in 'field list'
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('INSERT INTO `cu...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1009): DboSource->execute('INSERT INTO `cu...')
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(1730): DboSource->create(Object(EmployeeCapabilitie), Array, Array)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2089): Model->save(Array, Array)
+#5 /Users/abiezon/Sites/curriculum/app/Controller/EmployeeCapabilitiesController.php(47): Model->saveMany(Array)
+#6 [internal function]: EmployeeCapabilitiesController->add('4')
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EmployeeCapabilitiesController), Array)
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(EmployeeCapabilitiesController), Object(CakeRequest), Object(CakeResponse))
+#10 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2013-01-28 11:44:01 Error: [MissingControllerException] Controller class EmployyesController could not be found.
+#0 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-28 16:56:46 Error: Fatal Error (1): Class 'Capabilie' not found in [/Users/abiezon/Sites/curriculum/app/View/Helper/HomeHelper.php, line 73]
+2013-01-28 16:56:46 Error: [FatalErrorException] Class 'Capabilie' not found
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Class 'Capabili...', '/Users/abiezon/...', 73)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Capabili...', '/Users/abiezon/...', 73, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Capabili...', '/Users/abiezon/...', 73, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-28 17:03:06 Error: Fatal Error (1): Class 'Capabilie' not found in [/Users/abiezon/Sites/curriculum/app/View/Helper/HomeHelper.php, line 74]
+2013-01-28 17:03:06 Error: [FatalErrorException] Class 'Capabilie' not found
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Class 'Capabili...', '/Users/abiezon/...', 74)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Capabili...', '/Users/abiezon/...', 74, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Capabili...', '/Users/abiezon/...', 74, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-28 17:03:07 Error: Fatal Error (1): Class 'Capabilie' not found in [/Users/abiezon/Sites/curriculum/app/View/Helper/HomeHelper.php, line 74]
+2013-01-28 17:03:07 Error: [FatalErrorException] Class 'Capabilie' not found
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Class 'Capabili...', '/Users/abiezon/...', 74)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'Capabili...', '/Users/abiezon/...', 74, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Class 'Capabili...', '/Users/abiezon/...', 74, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-28 17:03:30 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1052 Column 'id' in where clause is ambiguous
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Capabil...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Capabil...', Array, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Capabil...', false)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Capabilitie), Array)
+#5 /Users/abiezon/Sites/curriculum/app/View/Helper/HomeHelper.php(76): Model->find('first', Array)
+#6 /Users/abiezon/Sites/curriculum/app/View/Employees/view.ctp(80): HomeHelper->viewNameCapabicity('4')
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(920): include('/Users/abiezon/...')
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(883): View->_evaluate('/Users/abiezon/...', Array)
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(475): View->_render('/Users/abiezon/...')
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#11 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#12 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(EmployeesController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-01-29 09:40:19 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Capabilitie.2' in 'field list'
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Capabil...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Capabil...', Array, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Capabil...', false)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Capabilitie), Array)
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(600): Model->find('first', Array)
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(784): DboSource->query('findById', Array, Object(Capabilitie))
+#7 /Users/abiezon/Sites/curriculum/app/Controller/CapabilitiesController.php(127): Model->__call('findById', Array)
+#8 /Users/abiezon/Sites/curriculum/app/Controller/CapabilitiesController.php(127): Capabilitie->findById('3', Array)
+#9 [internal function]: CapabilitiesController->enrollment('3')
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CapabilitiesController), Array)
+#11 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CapabilitiesController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-01-29 09:40:28 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Capabilitie.2' in 'field list'
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Capabil...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Capabil...', Array, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Capabil...', false)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Capabilitie), Array)
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(600): Model->find('first', Array)
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(784): DboSource->query('findById', Array, Object(Capabilitie))
+#7 /Users/abiezon/Sites/curriculum/app/Controller/CapabilitiesController.php(127): Model->__call('findById', Array)
+#8 /Users/abiezon/Sites/curriculum/app/Controller/CapabilitiesController.php(127): Capabilitie->findById('3', Array)
+#9 [internal function]: CapabilitiesController->enrollment('3')
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CapabilitiesController), Array)
+#11 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CapabilitiesController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-01-29 09:41:37 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Capabilitie.2' in 'field list'
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Capabil...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Capabil...', Array, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Capabil...', false)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Capabilitie), Array)
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(600): Model->find('first', Array)
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(784): DboSource->query('findById', Array, Object(Capabilitie))
+#7 /Users/abiezon/Sites/curriculum/app/Controller/CapabilitiesController.php(127): Model->__call('findById', Array)
+#8 /Users/abiezon/Sites/curriculum/app/Controller/CapabilitiesController.php(127): Capabilitie->findById('3', Array)
+#9 [internal function]: CapabilitiesController->enrollment('3')
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CapabilitiesController), Array)
+#11 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#12 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CapabilitiesController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-01-29 10:11:30 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/Capabilities/enrollment.ctp, line 32]
+2013-01-29 10:11:31 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 32, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 32, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-29 10:11:39 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/Capabilities/enrollment.ctp, line 32]
+2013-01-29 10:11:39 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 32, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 32, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-29 10:11:41 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/Capabilities/enrollment.ctp, line 32]
+2013-01-29 10:11:41 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 32, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 32, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-29 10:11:43 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/Capabilities/enrollment.ctp, line 32]
+2013-01-29 10:11:43 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 32, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 32, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-29 10:11:45 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/Capabilities/enrollment.ctp, line 32]
+2013-01-29 10:11:45 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 32, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 32, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-29 10:11:48 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/Capabilities/enrollment.ctp, line 32]
+2013-01-29 10:11:48 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 32, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 32, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-29 10:12:00 Error: Fatal Error (4): parse error, expecting `';'' in [/Users/abiezon/Sites/curriculum/app/View/Capabilities/enrollment.ctp, line 32]
+2013-01-29 10:12:00 Error: [FatalErrorException] parse error, expecting `';''
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/abiezon/...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/abiezon/...', 32, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/abiezon/...', 32, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-29 10:12:01 Error: Fatal Error (4): parse error, expecting `';'' in [/Users/abiezon/Sites/curriculum/app/View/Capabilities/enrollment.ctp, line 32]
+2013-01-29 10:12:01 Error: [FatalErrorException] parse error, expecting `';''
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/abiezon/...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/abiezon/...', 32, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/abiezon/...', 32, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-29 10:12:37 Error: Fatal Error (4): parse error, expecting `';'' in [/Users/abiezon/Sites/curriculum/app/View/Capabilities/enrollment.ctp, line 32]
+2013-01-29 10:12:37 Error: [FatalErrorException] parse error, expecting `';''
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/abiezon/...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/abiezon/...', 32, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/abiezon/...', 32, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-29 10:12:40 Error: Fatal Error (4): parse error, expecting `';'' in [/Users/abiezon/Sites/curriculum/app/View/Capabilities/enrollment.ctp, line 32]
+2013-01-29 10:12:40 Error: [FatalErrorException] parse error, expecting `';''
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/abiezon/...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/abiezon/...', 32, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/abiezon/...', 32, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-29 10:12:47 Error: Fatal Error (4): parse error, expecting `';'' in [/Users/abiezon/Sites/curriculum/app/View/Capabilities/enrollment.ctp, line 32]
+2013-01-29 10:12:47 Error: [FatalErrorException] parse error, expecting `';''
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/abiezon/...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/abiezon/...', 32, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/abiezon/...', 32, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-29 10:12:48 Error: Fatal Error (4): parse error, expecting `';'' in [/Users/abiezon/Sites/curriculum/app/View/Capabilities/enrollment.ctp, line 32]
+2013-01-29 10:12:48 Error: [FatalErrorException] parse error, expecting `';''
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/abiezon/...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/abiezon/...', 32, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/abiezon/...', 32, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-29 10:12:48 Error: Fatal Error (4): parse error, expecting `';'' in [/Users/abiezon/Sites/curriculum/app/View/Capabilities/enrollment.ctp, line 32]
+2013-01-29 10:12:48 Error: [FatalErrorException] parse error, expecting `';''
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/abiezon/...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/abiezon/...', 32, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/abiezon/...', 32, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-29 10:12:49 Error: Fatal Error (4): parse error, expecting `';'' in [/Users/abiezon/Sites/curriculum/app/View/Capabilities/enrollment.ctp, line 32]
+2013-01-29 10:12:49 Error: [FatalErrorException] parse error, expecting `';''
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/abiezon/...', 32)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/abiezon/...', 32, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/abiezon/...', 32, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-29 10:34:33 Error: Fatal Error (4): parse error, expecting `','' or `';'' in [/Users/abiezon/Sites/curriculum/app/View/Capabilities/enrollment.ctp, line 43]
+2013-01-29 10:34:33 Error: [FatalErrorException] parse error, expecting `','' or `';''
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error, ex...', '/Users/abiezon/...', 43)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error, ex...', '/Users/abiezon/...', 43, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error, ex...', '/Users/abiezon/...', 43, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-01-29 17:32:40 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`curriculum`.`employee_capabilities`, CONSTRAINT `employee_capabilities_ibfk_1` FOREIGN KEY (`employee_id`) REFERENCES `employees` (`id`))
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('DELETE `Employe...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/Database/Mysql.php(397): DboSource->execute('DELETE `Employe...')
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2382): Mysql->delete(Object(Employee), Array)
+#4 /Users/abiezon/Sites/curriculum/app/Controller/EmployeesController.php(102): Model->delete()
+#5 [internal function]: EmployeesController->delete('3')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EmployeesController), Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(EmployeesController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-01-29 17:34:39 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1451 Cannot delete or update a parent row: a foreign key constraint fails (`curriculum`.`employee_capabilities`, CONSTRAINT `employee_capabilities_ibfk_1` FOREIGN KEY (`employee_id`) REFERENCES `employees` (`id`))
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('DELETE `Employe...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/Database/Mysql.php(397): DboSource->execute('DELETE `Employe...')
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2382): Mysql->delete(Object(Employee), Array)
+#4 /Users/abiezon/Sites/curriculum/app/Controller/EmployeesController.php(102): Model->delete()
+#5 [internal function]: EmployeesController->delete('1')
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EmployeesController), Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(EmployeesController), Object(CakeRequest), Object(CakeResponse))
+#9 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2013-02-01 15:29:04 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/Employees/index.ctp, line 48]
+2013-02-01 15:29:04 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 48)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 48, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 48, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-01 15:29:15 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/Employees/index.ctp, line 48]
+2013-02-01 15:29:15 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 48)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 48, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 48, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-01 15:29:20 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/Employees/index.ctp, line 48]
+2013-02-01 15:29:20 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 48)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 48, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 48, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-01 15:37:42 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/Employees/index.ctp, line 27]
+2013-02-01 15:37:42 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 27)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 27, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 27, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-01 17:22:53 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/Employees/index.ctp, line 12]
+2013-02-01 17:22:53 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 12, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 12, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-02-01 17:27:42 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Employee.name' in 'where clause'
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Employe...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Employe...', Array, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Employe...', false)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Employee), Array)
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Component/PaginatorComponent.php(173): Model->find('all', Array)
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#7 /Users/abiezon/Sites/curriculum/app/Controller/EmployeesController.php(26): Controller->paginate()
+#8 [internal function]: EmployeesController->index()
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EmployeesController), Array)
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(EmployeesController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-03-12 12:23:28 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Candidate' in 'where clause'
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Candida...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Candida...', Array, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Candida...', false)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Candidate), Array)
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Component/PaginatorComponent.php(173): Model->find('all', Array)
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#7 /Users/abiezon/Sites/curriculum/app/Controller/CandidatesController.php(134): Controller->paginate()
+#8 [internal function]: CandidatesController->employee()
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CandidatesController), Array)
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CandidatesController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-03-12 12:24:14 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Candidate' in 'where clause'
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Candida...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Candida...', Array, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Candida...', false)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Candidate), Array)
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Component/PaginatorComponent.php(173): Model->find('all', Array)
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#7 /Users/abiezon/Sites/curriculum/app/Controller/CandidatesController.php(134): Controller->paginate()
+#8 [internal function]: CandidatesController->employee()
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(CandidatesController), Array)
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CandidatesController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-03-12 12:35:48 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Employee.roles_id' in 'on clause'
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Employe...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Employe...', Array, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Employe...', false)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Employee), Array)
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Component/PaginatorComponent.php(173): Model->find('all', Array)
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#7 /Users/abiezon/Sites/curriculum/app/Controller/EmployeesController.php(26): Controller->paginate()
+#8 [internal function]: EmployeesController->index()
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EmployeesController), Array)
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(EmployeesController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-03-12 12:36:33 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Employee.roles_id' in 'on clause'
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Employe...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Employe...', Array, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Employe...', false)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Employee), Array)
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Component/PaginatorComponent.php(173): Model->find('all', Array)
+#6 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate(NULL, Array, Array)
+#7 /Users/abiezon/Sites/curriculum/app/Controller/EmployeesController.php(26): Controller->paginate()
+#8 [internal function]: EmployeesController->index()
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EmployeesController), Array)
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#11 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(EmployeesController), Object(CakeRequest), Object(CakeResponse))
+#12 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2013-03-12 12:40:31 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/Controller/EmployeesController.php, line 25]
+2013-03-12 12:40:31 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 25, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 25, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-12 12:40:36 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/Controller/EmployeesController.php, line 25]
+2013-03-12 12:40:36 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 25, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 25, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-12 12:40:38 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/Controller/EmployeesController.php, line 25]
+2013-03-12 12:40:38 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 25, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 25, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-12 12:40:48 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/Controller/EmployeesController.php, line 25]
+2013-03-12 12:40:48 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 25, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 25, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-12 12:40:50 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/Controller/EmployeesController.php, line 25]
+2013-03-12 12:40:50 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 25, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 25, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-12 12:41:01 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/Controller/EmployeesController.php, line 25]
+2013-03-12 12:41:01 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 25)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 25, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 25, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-12 13:16:14 Error: [MissingViewException] View file "/Users/abiezon/Sites/curriculum/app/View/Users/edit.ctp" is missing.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(472): View->_getViewFileName(NULL)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-03-25 22:22:01 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/Model/EmployeeCapabilitie.php, line 51]
+2013-03-25 22:22:01 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 51)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 51, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 51, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-25 22:22:01 Error: Fatal Error (256): [InvalidArgumentException] The eventKey variable is required
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(653): CakeEventManager->attach(NULL)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(922): Controller->getEventManager()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(127): Controller->render()
+#3 [internal function]: ErrorHandler::handleException(Object(FatalErrorException))
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(212): call_user_func('ErrorHandler::h...', Object(FatalErrorException))
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 51)
+#6 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 51, Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 51, Array)
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#9 [internal function]: App::shutdown()
+#10 {main} in [/Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php, line 136]
+2013-03-25 22:22:01 Error: [FatalErrorException] [InvalidArgumentException] The eventKey variable is required
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(653): CakeEventManager->attach(NULL)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(922): Controller->getEventManager()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(127): Controller->render()
+#3 [internal function]: ErrorHandler::handleException(Object(FatalErrorException))
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(212): call_user_func('ErrorHandler::h...', Object(FatalErrorException))
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 51)
+#6 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 51, Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 51, Array)
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#9 [internal function]: App::shutdown()
+#10 {main}
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(256, '[InvalidArgumen...', '/Users/abiezon/...', 136)
+#1 [internal function]: ErrorHandler::handleError(256, '[InvalidArgumen...', '/Users/abiezon/...', 136, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(136): trigger_error('[InvalidArgumen...', 256)
+#3 [internal function]: ErrorHandler::handleException(Object(FatalErrorException))
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(212): call_user_func('ErrorHandler::h...', Object(FatalErrorException))
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 51)
+#6 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 51, Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 51, Array)
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#9 [internal function]: App::shutdown()
+#10 {main}
+2013-03-25 22:22:11 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/Model/EmployeeCapabilitie.php, line 51]
+2013-03-25 22:22:11 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 51)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 51, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 51, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-25 22:22:17 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/Model/EmployeeCapabilitie.php, line 51]
+2013-03-25 22:22:17 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 51)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 51, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 51, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-03-26 13:03:09 Error: [NotFoundException] Invalid employee
+#0 [internal function]: EmployeesController->view()
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EmployeesController), Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(EmployeesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2013-04-04 12:56:08 Error: Fatal Error (1): Call to undefined function print() in [/Users/abiezon/Sites/curriculum/app/View/Capabilities/edit.ctp, line 27]
+2013-04-04 12:56:08 Error: [FatalErrorException] Call to undefined function print()
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/Users/abiezon/...', 27)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/Users/abiezon/...', 27, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/Users/abiezon/...', 27, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-04 12:58:47 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/Capabilities/edit.ctp, line 29]
+2013-04-04 12:58:47 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 29, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 29, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-04 12:58:51 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/Capabilities/edit.ctp, line 29]
+2013-04-04 12:58:51 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 29, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 29, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-04 13:02:49 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/Capabilities/edit.ctp, line 29]
+2013-04-04 13:02:49 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 29)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 29, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 29, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-08 12:46:53 Error: Fatal Error (1): Unsupported operand types in [/Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php, line 844]
+2013-04-08 12:46:53 Error: [FatalErrorException] Unsupported operand types
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(1, 'Unsupported ope...', '/Users/abiezon/...', 844)
+#1 [internal function]: ErrorHandler::handleError(1, 'Unsupported ope...', '/Users/abiezon/...', 844, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 1, 'Unsupported ope...', '/Users/abiezon/...', 844, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-08 12:47:51 Error: [MissingModelException] employeeCapabilities
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(1082): PaginatorComponent->paginate('employeeCapabil...', Array, Array)
+#1 /Users/abiezon/Sites/curriculum/app/Controller/EmployeeCapabilitiesController.php(21): Controller->paginate('employeeCapabil...')
+#2 [internal function]: EmployeeCapabilitiesController->index('1')
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(485): ReflectionMethod->invokeArgs(Object(EmployeeCapabilitiesController), Array)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(EmployeeCapabilitiesController), Object(CakeRequest), Object(CakeResponse))
+#6 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2013-04-08 22:01:12 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/Helper/HomeHelper.php, line 120]
+2013-04-08 22:01:12 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 120)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 120, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 120, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-08 22:01:12 Error: Fatal Error (256): [InvalidArgumentException] The eventKey variable is required
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(653): CakeEventManager->attach(NULL)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(922): Controller->getEventManager()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(127): Controller->render()
+#3 [internal function]: ErrorHandler::handleException(Object(FatalErrorException))
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(212): call_user_func('ErrorHandler::h...', Object(FatalErrorException))
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 120)
+#6 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 120, Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 120, Array)
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#9 [internal function]: App::shutdown()
+#10 {main} in [/Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php, line 136]
+2013-04-08 22:01:12 Error: [FatalErrorException] [InvalidArgumentException] The eventKey variable is required
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(653): CakeEventManager->attach(NULL)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(922): Controller->getEventManager()
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(127): Controller->render()
+#3 [internal function]: ErrorHandler::handleException(Object(FatalErrorException))
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(212): call_user_func('ErrorHandler::h...', Object(FatalErrorException))
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 120)
+#6 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 120, Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 120, Array)
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#9 [internal function]: App::shutdown()
+#10 {main}
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(256, '[InvalidArgumen...', '/Users/abiezon/...', 136)
+#1 [internal function]: ErrorHandler::handleError(256, '[InvalidArgumen...', '/Users/abiezon/...', 136, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(136): trigger_error('[InvalidArgumen...', 256)
+#3 [internal function]: ErrorHandler::handleException(Object(FatalErrorException))
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(212): call_user_func('ErrorHandler::h...', Object(FatalErrorException))
+#5 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 120)
+#6 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 120, Array)
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 120, Array)
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#9 [internal function]: App::shutdown()
+#10 {main}
+2013-04-08 22:01:17 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/Helper/HomeHelper.php, line 120]
+2013-04-08 22:01:17 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 120)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 120, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 120, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-08 22:01:19 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/Helper/HomeHelper.php, line 120]
+2013-04-08 22:01:19 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 120)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 120, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 120, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-08 22:02:56 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Role.name' in 'field list'
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(461): PDOStatement->execute(Array)
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(427): DboSource->_execute('SELECT `Role`.`...', Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(671): DboSource->execute('SELECT `Role`.`...', Array, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Datasource/DboSource.php(1082): DboSource->fetchAll('SELECT `Role`.`...', false)
+#4 /Users/abiezon/Sites/curriculum/lib/Cake/Model/Model.php(2630): DboSource->read(Object(Role), Array)
+#5 /Users/abiezon/Sites/curriculum/app/View/Helper/HomeHelper.php(120): Model->find('first', Array)
+#6 /Users/abiezon/Sites/curriculum/app/View/Capabilities/view.ctp(53): HomeHelper->Role('2')
+#7 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(920): include('/Users/abiezon/...')
+#8 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(883): View->_evaluate('/Users/abiezon/...', Array)
+#9 /Users/abiezon/Sites/curriculum/lib/Cake/View/View.php(475): View->_render('/Users/abiezon/...')
+#10 /Users/abiezon/Sites/curriculum/lib/Cake/Controller/Controller.php(957): View->render(NULL, NULL)
+#11 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(193): Controller->render()
+#12 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(CapabilitiesController), Object(CakeRequest), Object(CakeResponse))
+#13 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}
+2013-04-10 21:57:59 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/EmployeeCapabilities/index.ctp, line 12]
+2013-04-10 21:57:59 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 12, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 12, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-10 21:58:02 Error: Fatal Error (4): parse error in [/Users/abiezon/Sites/curriculum/app/View/EmployeeCapabilities/index.ctp, line 12]
+2013-04-10 21:58:02 Error: [FatalErrorException] parse error
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Error/ErrorHandler.php(162): ErrorHandler::handleFatalError(4, 'parse error', '/Users/abiezon/...', 12)
+#1 [internal function]: ErrorHandler::handleError(4, 'parse error', '/Users/abiezon/...', 12, Array)
+#2 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(926): call_user_func('ErrorHandler::h...', 4, 'parse error', '/Users/abiezon/...', 12, Array)
+#3 /Users/abiezon/Sites/curriculum/lib/Cake/Core/App.php(899): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2013-04-19 21:21:25 Error: [MissingActionException] Action UsersController::index_submit() could not be found.
+#0 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/abiezon/Sites/curriculum/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/abiezon/Sites/curriculum/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

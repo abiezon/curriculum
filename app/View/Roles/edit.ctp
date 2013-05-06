@@ -1,3 +1,5 @@
+<?php $this->Html->addCrumb('Função', '/roles');?>
+<?php $this->Html->addCrumb('Editar Função');?>
 <div id="content">
 	<div class="box">
 <div class="box-head">
@@ -11,10 +13,12 @@
 			echo $this->Form->input('id');
 			echo $this->Form->input('role_name',array('class'=>'field size1'));
 		?>
+		
 		<div class="buttons">
-			<!-- <input type="button" class="button" value="preview" /> -->
-			<?php echo $this->Form->end(__('Submit'),array('class'=>'button')); ?>	
-		</div>
+            <input type="button" class="button" value="Cancelar" onclick="location.href='<?php echo $this->Html->url(array('controller' => 'roles', 'action' => 'index')); ?>';" />		
+    		<?php echo $this->Form->button(__('Save'),array('class'=>'button')); ?>
+    	</div>
+    	 <?php echo $this->Form->end();?>
 	
 </div>
 </div>
@@ -42,16 +46,5 @@
 	</div>
 	<!-- End Box -->
 </div>
-
-<!-- <div class="roles form">
-<?php echo $this->Form->create('Role'); ?>
-	<fieldset>
-		<legend><?php echo __('Edit Role'); ?></legend>
-	<?php
-		echo $this->Form->input('id');
-		echo $this->Form->input('role_name');
-	?>
-	</fieldset>
-<?php echo $this->Form->end(__('Submit')); ?>
-</div> -->
+ 
 
