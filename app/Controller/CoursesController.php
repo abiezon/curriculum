@@ -13,6 +13,7 @@ class CoursesController extends AppController {
  * @return void
  */
 	public function index() {
+		$this->layout = 'layout';
 		$this->Course->recursive = 0;
 		$this->set('courses', $this->paginate());
 	}
@@ -26,10 +27,13 @@ class CoursesController extends AppController {
  */
 	public function view($id = null) {
 		$this->Course->id = $id;
+		$idCandidate = $this->Session->read('candidate_id');
+		$this->layout = 'layout';
 		if (!$this->Course->exists()) {
 			throw new NotFoundException(__('Invalid course'));
 		}
 		$this->set('course', $this->Course->read(null, $id));
+		$this->set('idCandidate',$idCandidate);
 	}
 
 /**
@@ -38,11 +42,12 @@ class CoursesController extends AppController {
  * @return void
  */
 	public function add($continue = null) {
-		$idCandidate = $this->Session->read('candidate_id');			
+		$idCandidate = $this->Session->read('candidate_id');
+		$this->layout = 'layout';			
 		if ($this->request->is('post')) {
 			$this->Course->create();
 			if ($this->Course->save($this->request->data)) {
-				$this->Session->setFlash(__('The course has been saved'));
+				$this->Session->setFlash(__('The course has been saved'),'msg-ok');
 				// $this->redirect(array('action' => 'index'));
 				if($continue):
 					$this->redirect(array('controller'=>'candidates','action'=>'view',$idCandidate));
@@ -51,11 +56,11 @@ class CoursesController extends AppController {
 				endif;	
 					
 			} else {
-				$this->Session->setFlash(__('The course could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The course could not be saved. Please, try again.'),'msg-error');
 			}
 		}
 		$candidates = $this->Course->Candidate->find('list',array('conditions'=>array('Candidate.id'=>$idCandidate)));
-		$this->set(compact('candidates','continue'));
+		$this->set(compact('candidates','continue','idCandidate'));
 	}
 
 /**
@@ -67,22 +72,23 @@ class CoursesController extends AppController {
  */
 	public function edit($id = null) {
 		$this->Course->id = $id;
+		$this->layout = 'layout';
 		$idCandidate = $this->Session->read('candidate_id');
 		if (!$this->Course->exists()) {
 			throw new NotFoundException(__('Invalid course'));
 		}
 		if ($this->request->is('post') || $this->request->is('put')) {
 			if ($this->Course->save($this->request->data)) {
-				$this->Session->setFlash(__('The course has been saved'));
+				$this->Session->setFlash(__('The course has been saved'),'msg-ok');
 				$this->redirect(array('controller'=>'candidates','action' => 'view',$idCandidate));
 			} else {
-				$this->Session->setFlash(__('The course could not be saved. Please, try again.'));
+				$this->Session->setFlash(__('The course could not be saved. Please, try again.'),'msg-error');
 			}
 		} else {
 			$this->request->data = $this->Course->read(null, $id);
 		}
 		$candidates = $this->Course->Candidate->find('list');
-		$this->set(compact('candidates'));
+		$this->set(compact('candidates','idCandidate'));
 	}
 
 /**
@@ -98,14 +104,15 @@ class CoursesController extends AppController {
 			throw new MethodNotAllowedException();
 		}
 		$this->Course->id = $id;
+		$idCandidate = $this->Session->read('candidate_id');
 		if (!$this->Course->exists()) {
-			throw new NotFoundException(__('Invalid course'));
+			throw new NotFoundException(__('Invalid course'),'msg-ok');
 		}
 		if ($this->Course->delete()) {
 			$this->Session->setFlash(__('Course deleted'));
-			$this->redirect(array('action' => 'index'));
+			$this->redirect(array('controller'=>'candidates','action' => 'view',$idCandidate));
 		}
-		$this->Session->setFlash(__('Course was not deleted'));
-		$this->redirect(array('action' => 'index'));
+		$this->Session->setFlash(__('Course was not deleted'),'msg-error');
+		$this->redirect(array('controller'=>'candidates','action' => 'view',$idCandidate));
 	}
 }

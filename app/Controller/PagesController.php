@@ -53,6 +53,7 @@ class PagesController extends AppController {
  */
 	public function display() {
 		$path = func_get_args();
+		$this->layout = 'layout';
 
 		$count = count($path);
 		if (!$count) {
@@ -71,5 +72,15 @@ class PagesController extends AppController {
 		}
 		$this->set(compact('page', 'subpage', 'title_for_layout'));
 		$this->render(implode('/', $path));
+	}
+	public function isAuthorized($user) {
+	    // All registered users can add posts
+	    if ($this->action === 'display') {
+	        return true;
+	    }
+
+	    
+
+	    return parent::isAuthorized($user);
 	}
 }

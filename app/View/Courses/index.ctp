@@ -1,3 +1,5 @@
+<div id="content">
+	<div class="box">
 <div class="courses index">
 	<h2><?php echo __('Courses'); ?></h2>
 	<table cellpadding="0" cellspacing="0">
@@ -42,11 +44,29 @@
 	?>
 	</div>
 </div>
-<div class="actions">
-	<h3><?php echo __('Actions'); ?></h3>
-	<ul>
-		<li><?php echo $this->Html->link(__('New Course'), array('action' => 'add')); ?></li>
-		<li><?php echo $this->Html->link(__('List Candidates'), array('controller' => 'candidates', 'action' => 'index')); ?> </li>
-		<li><?php echo $this->Html->link(__('New Candidate'), array('controller' => 'candidates', 'action' => 'add')); ?> </li>
-	</ul>
+</div>
+</div>
+
+<div id="sidebar" class="actions">
+	
+	<!-- Box -->
+	<div class="box">
+		
+		<!-- Box Head -->
+		<div class="box-head">
+			<h2><?php echo __('Menu')?></h2>
+		</div>
+		<!-- End Box Head-->
+		
+		<div class="box-content">
+			<ul>
+				<li><?php echo $this->Html->link(__('New Course'), array('action' => 'add')); ?></li>
+				<li><?php echo $this->Html->link(__('List Candidates'), array('controller' => 'candidates', 'action' => 'index')); ?> </li>
+				<li><?php echo $this->Html->link(__('New Candidate'), array('controller' => 'candidates', 'action' => 'add')); ?> </li>
+			</ul>				
+			<div class="cl">&nbsp;</div>			
+			
+		</div>
+	</div>
+	<!-- End Box -->
 </div>
